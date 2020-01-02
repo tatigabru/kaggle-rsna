@@ -5,17 +5,14 @@ CUR_DIR=$pwd
 bash download_data.sh
 
 # Run model training in debug mode
-python src/train.py --action train --debug True
+python src/train_runner.py --action train --debug True
 
 # Run full model training
-python src/train.py --action train --debug False
+python src/train_runner.py --action train --model se_resnext101_dr0.75_512 --debug False --num-epochs 16
 
-# Plot predictions
-python src/train.py --action test_model --debug True --epoch 12
-
-# Check metric score
-python src/train.py --action check_metric --debug False
+# Test model
+python src/train_runner.py --action test_model --model se_resnext101_dr0.75_512 --debug True --epoch 12
 
 # Generate and save oof predictions
-python src/train.py --action generate_predictions --debug True
+python src/train_runner.py --action generate_predictions --model se_resnext101_dr0.75_512 --debug False --num-epochs 16
 
