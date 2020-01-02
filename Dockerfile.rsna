@@ -1,0 +1,44 @@
+FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
+
+MAINTAINER Tati Gabru, Version 1.0
+
+# Common arguments
+ARG env_name=rsna
+
+# System set up
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get update && apt-get install -y --no-install-recommends \
+         build-essential \
+         cmake \
+         git \
+         curl \
+         vim \
+         ca-certificates \
+         unzip \
+	 zip \    
+         locales \
+	 emacs \
+	 openssh-server \
+	 screen \	 	  
+	 libturbojpeg \
+	 rsync \
+         tree \
+         tmux \
+         wget
+
+# Install Anaconda
+RUN wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh    
+    echo yes | bash Anaconda3-4.0.0-Linux-x86_64.sh
+    source ~/.bashrc
+    conda update -n base conda
+
+# Create a virtual environment
+RUN conda create -y -n env_name python=3.6
+    conda activate env_name
+
+RUN pip install --upgrade pip
+    pip install -r requirements.txt
+
+# Install needed pytorch version and pycocotools with anaconda
+RUN conda install -y -n env_name pytorch=0.4.1 cuda90 -c pytorch
+    conda install -y -c conda-forge pycocotools

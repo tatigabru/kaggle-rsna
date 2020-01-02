@@ -1,0 +1,1755 @@
+patientId,x,y,width,height,Target,class
+000924cf-0f8d-42bd-9158-1af53881a557,,,,,0,Normal
+000db696-cf54-4385-b10b-6b16fbb3f985,316.0,318.0,170.0,478.0,1,Lung Opacity
+000db696-cf54-4385-b10b-6b16fbb3f985,316.0,318.0,170.0,478.0,1,Lung Opacity
+000db696-cf54-4385-b10b-6b16fbb3f985,660.0,375.0,146.0,402.0,1,Lung Opacity
+000db696-cf54-4385-b10b-6b16fbb3f985,660.0,375.0,146.0,402.0,1,Lung Opacity
+000fe35a-2649-43d4-b027-e67796d412e0,570.0,282.0,269.0,409.0,1,Lung Opacity
+000fe35a-2649-43d4-b027-e67796d412e0,570.0,282.0,269.0,409.0,1,Lung Opacity
+000fe35a-2649-43d4-b027-e67796d412e0,83.0,227.0,296.0,438.0,1,Lung Opacity
+000fe35a-2649-43d4-b027-e67796d412e0,83.0,227.0,296.0,438.0,1,Lung Opacity
+001031d9-f904-4a23-b3e5-2c088acd19c6,66.0,160.0,373.0,608.0,1,Lung Opacity
+001031d9-f904-4a23-b3e5-2c088acd19c6,66.0,160.0,373.0,608.0,1,Lung Opacity
+001031d9-f904-4a23-b3e5-2c088acd19c6,552.0,164.0,376.0,676.0,1,Lung Opacity
+001031d9-f904-4a23-b3e5-2c088acd19c6,552.0,164.0,376.0,676.0,1,Lung Opacity
+0010f549-b242-4e94-87a8-57d79de215fc,,,,,0,Normal
+001916b8-3d30-4935-a5d1-8eaddb1646cd,198.0,375.0,114.0,206.0,1,Lung Opacity
+0022073f-cec8-42ec-ab5f-bc2314649235,575.0,232.0,246.0,528.0,1,Lung Opacity
+0022073f-cec8-42ec-ab5f-bc2314649235,575.0,232.0,246.0,528.0,1,Lung Opacity
+0022073f-cec8-42ec-ab5f-bc2314649235,161.0,230.0,223.0,486.0,1,Lung Opacity
+0022073f-cec8-42ec-ab5f-bc2314649235,161.0,230.0,223.0,486.0,1,Lung Opacity
+0022995a-45eb-4cfa-9a59-cd15f5196c64,,,,,0,Normal
+0025d2de-bd78-4d36-9f72-e15a5e22ca82,,,,,0,Normal
+00293de0-a530-41dc-9621-0b3def01d06d,,,,,0,Normal
+002c591d-df62-4e34-8eda-838c664430a9,,,,,0,Normal
+002cb550-2e31-42f1-a29d-fbc279977e71,176.0,342.0,170.0,239.0,1,Lung Opacity
+002cb550-2e31-42f1-a29d-fbc279977e71,176.0,342.0,170.0,239.0,1,Lung Opacity
+002cb550-2e31-42f1-a29d-fbc279977e71,515.0,333.0,167.0,251.0,1,Lung Opacity
+002cb550-2e31-42f1-a29d-fbc279977e71,515.0,333.0,167.0,251.0,1,Lung Opacity
+0049f7b2-229b-4a46-91a3-0e321a3ca80a,,,,,0,No Lung Opacity / Not Normal
+0053ee32-1e03-4dc2-a103-f46ad0448787,,,,,0,Normal
+005f5517-ab76-4b0d-8a26-f808d97171c4,,,,,0,Normal
+0067d70b-0e6d-41ff-a9b8-8edf6d5e25e4,,,,,0,No Lung Opacity / Not Normal
+006e75c8-1fd9-4a5a-99e7-285addebed55,,,,,0,No Lung Opacity / Not Normal
+0087bd3a-55a7-4045-b111-b018fa52d361,257.0,398.0,146.0,341.0,1,Lung Opacity
+0087bd3a-55a7-4045-b111-b018fa52d361,257.0,398.0,146.0,341.0,1,Lung Opacity
+0087bd3a-55a7-4045-b111-b018fa52d361,647.0,367.0,170.0,347.0,1,Lung Opacity
+0087bd3a-55a7-4045-b111-b018fa52d361,647.0,367.0,170.0,347.0,1,Lung Opacity
+0088be53-27f2-4c30-882b-a73a3a5c8c71,,,,,0,Normal
+008b69b2-446a-43dd-9ba2-9ccff8f3da41,,,,,0,No Lung Opacity / Not Normal
+0092d9c5-26b6-4e66-b196-49b2224ab8d1,,,,,0,No Lung Opacity / Not Normal
+00a05408-8291-4231-886e-13763e103161,156.0,187.0,173.0,371.0,1,Lung Opacity
+00a05408-8291-4231-886e-13763e103161,156.0,187.0,173.0,371.0,1,Lung Opacity
+00a05408-8291-4231-886e-13763e103161,491.0,194.0,156.0,222.0,1,Lung Opacity
+00a05408-8291-4231-886e-13763e103161,491.0,194.0,156.0,222.0,1,Lung Opacity
+00dd08bb-b7ea-4617-801e-02b3051c3475,,,,,0,Normal
+00ddefb9-d94e-4e86-b945-970be30483d7,,,,,0,Normal
+00ec0d87-8e2a-44bd-b79c-4b91cfabcacf,,,,,0,Normal
+00eeb3c9-a892-4fac-a67a-aaa6cc7ffd5c,670.0,453.0,233.0,336.0,1,Lung Opacity
+00eeb3c9-a892-4fac-a67a-aaa6cc7ffd5c,670.0,453.0,233.0,336.0,1,Lung Opacity
+00eeb3c9-a892-4fac-a67a-aaa6cc7ffd5c,300.0,442.0,187.0,298.0,1,Lung Opacity
+00eeb3c9-a892-4fac-a67a-aaa6cc7ffd5c,300.0,442.0,187.0,298.0,1,Lung Opacity
+00f2de16-a231-40c3-9a5f-8198f530a4b0,,,,,0,Normal
+00fcc4f0-d7b5-4473-99a9-aa7d3ca071c9,,,,,0,Normal
+0101174b-6643-4d4e-b4ba-b6d41d0ce46a,255.0,277.0,221.0,279.0,1,Lung Opacity
+0103fadb-1663-40a6-8a9e-09d626cd2091,,,,,0,Normal
+0111d61a-8a5d-4dc8-8c00-7365f8a8de3d,,,,,0,No Lung Opacity / Not Normal
+0124882b-de2f-4023-985f-debb74aa6ebb,,,,,0,Normal
+0135d3e6-15d6-4491-a263-0bac7b7c2b47,,,,,0,Normal
+013c7df0-d66d-4cb1-b3bc-a70085160311,622.0,404.0,180.0,364.0,1,Lung Opacity
+013c7df0-d66d-4cb1-b3bc-a70085160311,622.0,404.0,180.0,364.0,1,Lung Opacity
+013c7df0-d66d-4cb1-b3bc-a70085160311,191.0,377.0,213.0,285.0,1,Lung Opacity
+013c7df0-d66d-4cb1-b3bc-a70085160311,191.0,377.0,213.0,285.0,1,Lung Opacity
+01469010-0fab-4a07-86c6-962996ce2ca0,,,,,0,No Lung Opacity / Not Normal
+014c6a19-38e2-4e7f-8f14-dd4f0a4582e4,,,,,0,Normal
+016b050d-bf68-4a32-8d3e-421338819519,,,,,0,No Lung Opacity / Not Normal
+016fd98f-09a8-4b99-a8df-c3c26992f22e,,,,,0,No Lung Opacity / Not Normal
+018951e6-9fb3-4e92-8ce7-e3a018daf93f,254.0,272.0,223.0,342.0,1,Lung Opacity
+018951e6-9fb3-4e92-8ce7-e3a018daf93f,254.0,272.0,223.0,342.0,1,Lung Opacity
+018951e6-9fb3-4e92-8ce7-e3a018daf93f,629.0,259.0,223.0,377.0,1,Lung Opacity
+018951e6-9fb3-4e92-8ce7-e3a018daf93f,629.0,259.0,223.0,377.0,1,Lung Opacity
+020f45a7-14f8-4ed6-9639-3969d1a87b8c,,,,,0,No Lung Opacity / Not Normal
+021082a9-a734-42a8-bbe2-233e19a59103,,,,,0,No Lung Opacity / Not Normal
+02242633-faa0-4927-81de-b2b44940068a,,,,,0,Normal
+0232c2b8-f7ac-4f42-84be-510ccb7cf351,661.0,396.0,227.0,275.0,1,Lung Opacity
+0232c2b8-f7ac-4f42-84be-510ccb7cf351,661.0,396.0,227.0,275.0,1,Lung Opacity
+0232c2b8-f7ac-4f42-84be-510ccb7cf351,223.0,373.0,191.0,264.0,1,Lung Opacity
+0232c2b8-f7ac-4f42-84be-510ccb7cf351,223.0,373.0,191.0,264.0,1,Lung Opacity
+02336c62-4e72-4818-8198-c327096a71e0,,,,,0,Normal
+023558cc-fcca-4fc2-9749-175e2727d49d,,,,,0,No Lung Opacity / Not Normal
+02363fdb-4cd0-4631-b3d8-7a10fddffa28,584.0,690.0,177.0,137.0,1,Lung Opacity
+02363fdb-4cd0-4631-b3d8-7a10fddffa28,584.0,690.0,177.0,137.0,1,Lung Opacity
+02363fdb-4cd0-4631-b3d8-7a10fddffa28,219.0,696.0,140.0,130.0,1,Lung Opacity
+02363fdb-4cd0-4631-b3d8-7a10fddffa28,219.0,696.0,140.0,130.0,1,Lung Opacity
+02475a31-ed48-4ff3-b401-5d74694bff8d,134.0,472.0,145.0,197.0,1,Lung Opacity
+02475a31-ed48-4ff3-b401-5d74694bff8d,134.0,472.0,145.0,197.0,1,Lung Opacity
+02475a31-ed48-4ff3-b401-5d74694bff8d,835.0,474.0,112.0,172.0,1,Lung Opacity
+02475a31-ed48-4ff3-b401-5d74694bff8d,835.0,474.0,112.0,172.0,1,Lung Opacity
+0257438d-8365-4000-935e-3de03114734e,,,,,0,Normal
+02589621-9494-4801-99a8-a4e89c1b525d,232.0,288.0,141.0,424.0,1,Lung Opacity
+02589621-9494-4801-99a8-a4e89c1b525d,232.0,288.0,141.0,424.0,1,Lung Opacity
+02589621-9494-4801-99a8-a4e89c1b525d,642.0,307.0,128.0,286.0,1,Lung Opacity
+02589621-9494-4801-99a8-a4e89c1b525d,642.0,307.0,128.0,286.0,1,Lung Opacity
+025b6ef8-0fd0-4900-8519-52dc9181f3f1,,,,,0,Normal
+025d196b-cfa4-44a5-9e31-0f73dc3b318f,605.0,559.0,106.0,75.0,1,Lung Opacity
+0266f96e-df45-4d2c-b445-bc96485b8f12,,,,,0,Normal
+02743848-e50a-4faf-a3f4-a6215613a23d,605.0,84.0,279.0,547.0,1,Lung Opacity
+02743848-e50a-4faf-a3f4-a6215613a23d,605.0,84.0,279.0,547.0,1,Lung Opacity
+02743848-e50a-4faf-a3f4-a6215613a23d,223.0,102.0,236.0,540.0,1,Lung Opacity
+02743848-e50a-4faf-a3f4-a6215613a23d,223.0,102.0,236.0,540.0,1,Lung Opacity
+0297e501-88b5-4ec0-a2fd-50a7c70b42eb,,,,,0,Normal
+029a7647-5a1b-45fd-bae0-35e4fa49f785,,,,,0,Normal
+02a07cce-e68d-4096-a6d9-dbb93ce2cdf1,,,,,0,No Lung Opacity / Not Normal
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,233.0,566.0,113.0,150.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,233.0,566.0,113.0,150.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,233.0,566.0,113.0,150.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,695.0,448.0,161.0,247.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,695.0,448.0,161.0,247.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,695.0,448.0,161.0,247.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,239.0,329.0,126.0,156.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,239.0,329.0,126.0,156.0,1,Lung Opacity
+02b7b018-0fed-44c2-a9c2-93b2b3952efc,239.0,329.0,126.0,156.0,1,Lung Opacity
+02bc87cb-6660-4faa-97e4-4de01cb640a4,,,,,0,No Lung Opacity / Not Normal
+02c7fec6-46d9-480a-9ccc-edccfbbb44ab,,,,,0,No Lung Opacity / Not Normal
+02cfa7d1-61e0-4d9e-8664-9a7469ccab76,713.0,420.0,152.0,350.0,1,Lung Opacity
+02cfa7d1-61e0-4d9e-8664-9a7469ccab76,713.0,420.0,152.0,350.0,1,Lung Opacity
+02cfa7d1-61e0-4d9e-8664-9a7469ccab76,299.0,397.0,181.0,348.0,1,Lung Opacity
+02cfa7d1-61e0-4d9e-8664-9a7469ccab76,299.0,397.0,181.0,348.0,1,Lung Opacity
+02de832c-0929-4d8e-a333-6fd53367c63e,,,,,0,Normal
+02e141b9-8bc0-45df-be3a-5508768412c6,,,,,0,Normal
+02e4191e-fb03-4581-914c-f0438a17e53e,,,,,0,Normal
+02e68787-7eae-4b26-9d01-c5782b825fdc,,,,,0,No Lung Opacity / Not Normal
+02ea47e2-e51d-4d4c-a2a2-41af99a91254,,,,,0,No Lung Opacity / Not Normal
+02f1ea1a-375f-4d1a-bac5-dd7a4b41fdbc,,,,,0,No Lung Opacity / Not Normal
+0300267e-bb80-4c68-b57c-d58338d303a0,,,,,0,Normal
+03050a9c-53cb-45a0-9595-933a7f9e90ad,,,,,0,No Lung Opacity / Not Normal
+0318e440-ca1b-435b-a04f-fceee5ef279b,,,,,0,No Lung Opacity / Not Normal
+031d627f-e6af-4588-8cca-6be8aa1222c7,247.0,716.0,173.0,77.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,247.0,716.0,173.0,77.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,247.0,716.0,173.0,77.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,267.0,436.0,98.0,194.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,267.0,436.0,98.0,194.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,267.0,436.0,98.0,194.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,649.0,498.0,231.0,269.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,649.0,498.0,231.0,269.0,1,Lung Opacity
+031d627f-e6af-4588-8cca-6be8aa1222c7,649.0,498.0,231.0,269.0,1,Lung Opacity
+0353021e-7391-4aa5-80ca-d57a51123304,,,,,0,Normal
+0361ea80-0215-4bbe-9bca-908ea7c4f8b6,646.0,412.0,149.0,333.0,1,Lung Opacity
+0361ea80-0215-4bbe-9bca-908ea7c4f8b6,646.0,412.0,149.0,333.0,1,Lung Opacity
+0361ea80-0215-4bbe-9bca-908ea7c4f8b6,259.0,452.0,117.0,164.0,1,Lung Opacity
+0361ea80-0215-4bbe-9bca-908ea7c4f8b6,259.0,452.0,117.0,164.0,1,Lung Opacity
+036244ed-39bf-473d-97b1-2646ef0e9712,,,,,0,Normal
+036a1ed9-6ce8-4a5c-80aa-4790abe94dfc,,,,,0,Normal
+03774732-81ca-4da0-a35c-ec222c14a4c9,,,,,0,No Lung Opacity / Not Normal
+037e120a-24fa-4f9c-8813-111136e3c288,,,,,0,Normal
+03946779-dbc9-41fe-9cd5-1bcce2662123,,,,,0,No Lung Opacity / Not Normal
+03946ed8-d581-4403-b052-753820035d6d,,,,,0,Normal
+03a3a168-1758-4a21-8766-fd73d9c15358,,,,,0,No Lung Opacity / Not Normal
+03a512bc-1162-404e-8c71-dc9e0dc7258f,815.0,604.0,56.0,82.0,1,Lung Opacity
+03a9b990-18bb-4370-ac03-7fa385ea72bf,,,,,0,No Lung Opacity / Not Normal
+03aeb73d-0520-48ad-b21a-8249dfcf95d8,,,,,0,No Lung Opacity / Not Normal
+03c6601a-9044-447d-8521-eca222ea1c1e,,,,,0,No Lung Opacity / Not Normal
+03cf39fd-692c-46db-80d2-f1efb09b0e31,,,,,0,No Lung Opacity / Not Normal
+03cf6091-89c8-4ea2-a3d5-7ce26cc422cb,219.0,537.0,141.0,166.0,1,Lung Opacity
+03cf9ba9-dfbe-47b9-aa96-3e69432d73c3,,,,,0,No Lung Opacity / Not Normal
+03d5bd1e-47f5-43cd-a94a-6ed6e456646f,162.0,538.0,202.0,378.0,1,Lung Opacity
+03dedd9f-7e97-42dd-99aa-afcb09e0395a,,,,,0,Normal
+03df15ef-8653-44c6-8088-4242a5073318,,,,,0,No Lung Opacity / Not Normal
+03e4827c-7338-4de3-9ac6-8831ba5637e9,310.0,388.0,140.0,133.0,1,Lung Opacity
+03e5bc75-633b-40d1-88a7-0b5fad2eba85,,,,,0,Normal
+03f8bb03-eb04-4365-ac4d-d63d2b5d49cc,65.0,154.0,300.0,573.0,1,Lung Opacity
+03f8bb03-eb04-4365-ac4d-d63d2b5d49cc,65.0,154.0,300.0,573.0,1,Lung Opacity
+03f8bb03-eb04-4365-ac4d-d63d2b5d49cc,584.0,214.0,218.0,538.0,1,Lung Opacity
+03f8bb03-eb04-4365-ac4d-d63d2b5d49cc,584.0,214.0,218.0,538.0,1,Lung Opacity
+0409b97f-7673-42e2-9943-0656c6aaca69,574.0,171.0,111.0,83.0,1,Lung Opacity
+0409d9ce-34d6-4ef9-8a80-6f01f68e6762,,,,,0,Normal
+040d29d8-e737-4236-9466-649256f9ca53,,,,,0,Normal
+04158595-a45e-402c-94e9-df6fce1bb6bf,,,,,0,Normal
+04204973-a034-4a50-a43e-2ae45186aa50,,,,,0,Normal
+0422a993-6daa-43b9-aa54-80104541f539,,,,,0,No Lung Opacity / Not Normal
+0428e86e-a279-4bdf-9b73-c9eead06a4e7,621.0,575.0,199.0,193.0,1,Lung Opacity
+0428e86e-a279-4bdf-9b73-c9eead06a4e7,621.0,575.0,199.0,193.0,1,Lung Opacity
+0428e86e-a279-4bdf-9b73-c9eead06a4e7,224.0,635.0,174.0,107.0,1,Lung Opacity
+0428e86e-a279-4bdf-9b73-c9eead06a4e7,224.0,635.0,174.0,107.0,1,Lung Opacity
+043410c0-9453-4c89-a1d6-2ee846d8a343,,,,,0,No Lung Opacity / Not Normal
+043bf858-b33e-463b-98f5-32c0e75e49b3,,,,,0,Normal
+044089f1-96a5-4612-9366-ce2791b76653,,,,,0,No Lung Opacity / Not Normal
+0444a527-72cf-4bc9-b17f-100cf7acc889,670.0,633.0,212.0,95.0,1,Lung Opacity
+0444a527-72cf-4bc9-b17f-100cf7acc889,670.0,633.0,212.0,95.0,1,Lung Opacity
+0444a527-72cf-4bc9-b17f-100cf7acc889,249.0,520.0,211.0,140.0,1,Lung Opacity
+0444a527-72cf-4bc9-b17f-100cf7acc889,249.0,520.0,211.0,140.0,1,Lung Opacity
+04558d1a-1f4d-47aa-bf07-a6f6595f9cec,729.0,299.0,183.0,454.0,1,Lung Opacity
+0456cd35-da6b-459a-8ca6-47af176000c3,,,,,0,Normal
+045a317c-52dd-4528-ae30-5c6d53e039b1,,,,,0,No Lung Opacity / Not Normal
+045df9bb-0f72-4b8a-8135-cd5120fb40ed,,,,,0,No Lung Opacity / Not Normal
+045e3b0d-46ef-4a89-8795-0a85a2be0d6b,,,,,0,Normal
+0479d585-4e1e-44b3-aabe-4aa8437a54c5,,,,,0,No Lung Opacity / Not Normal
+0488a028-fb77-46e1-85fb-f0b86cf57fee,241.0,452.0,123.0,70.0,1,Lung Opacity
+0497796c-c5a0-4eb5-b6a4-66794924727c,,,,,0,No Lung Opacity / Not Normal
+049f7858-3eb5-46a6-a3f9-d19013ea9228,,,,,0,No Lung Opacity / Not Normal
+04bf4408-b797-4f4e-921a-d6305593b060,,,,,0,No Lung Opacity / Not Normal
+04c08d05-e5f7-4de3-b0b3-d39b3bb9d113,246.0,526.0,90.0,136.0,1,Lung Opacity
+04c08d05-e5f7-4de3-b0b3-d39b3bb9d113,246.0,526.0,90.0,136.0,1,Lung Opacity
+04c08d05-e5f7-4de3-b0b3-d39b3bb9d113,677.0,614.0,118.0,199.0,1,Lung Opacity
+04c08d05-e5f7-4de3-b0b3-d39b3bb9d113,677.0,614.0,118.0,199.0,1,Lung Opacity
+04c17986-8a5d-446f-a3ec-46ace41aeca8,,,,,0,Normal
+04cdd736-43c8-486a-aa76-9ed39feea7b7,,,,,0,No Lung Opacity / Not Normal
+04ce0574-5d18-4661-973f-7bfbb0707a1c,551.0,249.0,240.0,429.0,1,Lung Opacity
+04ce0574-5d18-4661-973f-7bfbb0707a1c,551.0,249.0,240.0,429.0,1,Lung Opacity
+04ce0574-5d18-4661-973f-7bfbb0707a1c,228.0,230.0,134.0,328.0,1,Lung Opacity
+04ce0574-5d18-4661-973f-7bfbb0707a1c,228.0,230.0,134.0,328.0,1,Lung Opacity
+04e1ea5f-1e0d-4f77-82ca-81ff632641d6,,,,,0,No Lung Opacity / Not Normal
+04e6f392-a196-447f-9b75-f5af995a36d0,229.0,559.0,123.0,109.0,1,Lung Opacity
+04e9f692-f3d6-496b-ae0c-905137cc1f84,526.0,651.0,219.0,190.0,1,Lung Opacity
+04e9f692-f3d6-496b-ae0c-905137cc1f84,526.0,651.0,219.0,190.0,1,Lung Opacity
+04e9f692-f3d6-496b-ae0c-905137cc1f84,107.0,490.0,204.0,284.0,1,Lung Opacity
+04e9f692-f3d6-496b-ae0c-905137cc1f84,107.0,490.0,204.0,284.0,1,Lung Opacity
+04f9bcc7-8886-4e1a-a938-122d3a065e12,297.0,470.0,127.0,160.0,1,Lung Opacity
+050068ca-78f7-4394-b8de-6ebe347192e9,,,,,0,Normal
+051c2709-fbbf-408f-aa19-c869e16a79e2,544.0,340.0,249.0,448.0,1,Lung Opacity
+051c2709-fbbf-408f-aa19-c869e16a79e2,544.0,340.0,249.0,448.0,1,Lung Opacity
+051c2709-fbbf-408f-aa19-c869e16a79e2,148.0,404.0,229.0,407.0,1,Lung Opacity
+051c2709-fbbf-408f-aa19-c869e16a79e2,148.0,404.0,229.0,407.0,1,Lung Opacity
+05207a0f-a1bc-46f8-8acb-aa72197e52af,,,,,0,No Lung Opacity / Not Normal
+05212f46-32b5-4350-812b-2bab7509d93f,605.0,423.0,244.0,223.0,1,Lung Opacity
+05212f46-32b5-4350-812b-2bab7509d93f,605.0,423.0,244.0,223.0,1,Lung Opacity
+05212f46-32b5-4350-812b-2bab7509d93f,139.0,488.0,229.0,385.0,1,Lung Opacity
+05212f46-32b5-4350-812b-2bab7509d93f,139.0,488.0,229.0,385.0,1,Lung Opacity
+05231d4d-f492-495f-9ab2-9a847a5483dc,,,,,0,No Lung Opacity / Not Normal
+0523a43b-64f4-4ffb-81dd-1e6be8009178,,,,,0,Normal
+0526d2bc-c7f3-4660-9693-887ac6c173e9,,,,,0,No Lung Opacity / Not Normal
+053208fa-ac79-46e2-9e78-f219ac122513,,,,,0,Normal
+05333c60-bee9-4c69-adc6-fc9de52e8cdb,639.0,469.0,105.0,163.0,1,Lung Opacity
+05333c60-bee9-4c69-adc6-fc9de52e8cdb,639.0,469.0,105.0,163.0,1,Lung Opacity
+05333c60-bee9-4c69-adc6-fc9de52e8cdb,349.0,554.0,158.0,53.0,1,Lung Opacity
+05333c60-bee9-4c69-adc6-fc9de52e8cdb,349.0,554.0,158.0,53.0,1,Lung Opacity
+054eb541-ccd9-4e3c-a654-dc9855ac8e47,,,,,0,No Lung Opacity / Not Normal
+0550968f-5ad7-460c-96c5-c2702535e344,673.0,446.0,222.0,483.0,1,Lung Opacity
+0550968f-5ad7-460c-96c5-c2702535e344,673.0,446.0,222.0,483.0,1,Lung Opacity
+0550968f-5ad7-460c-96c5-c2702535e344,302.0,389.0,118.0,159.0,1,Lung Opacity
+0550968f-5ad7-460c-96c5-c2702535e344,302.0,389.0,118.0,159.0,1,Lung Opacity
+055fde50-adad-457e-9672-05c8ea1533f5,,,,,0,No Lung Opacity / Not Normal
+055fee13-c09c-4635-b35e-e50b9215d1c3,,,,,0,No Lung Opacity / Not Normal
+05632b7f-f4c5-4d67-aa93-8f3c04eb7937,696.0,622.0,243.0,214.0,1,Lung Opacity
+0566560d-cbff-4025-b803-64498357df9d,,,,,0,No Lung Opacity / Not Normal
+0567a5b7-3ba8-4741-87ed-488aebd02321,,,,,0,No Lung Opacity / Not Normal
+0567d70b-5a94-4363-a162-7207ffaff023,220.0,420.0,166.0,169.0,1,Lung Opacity
+0567d70b-5a94-4363-a162-7207ffaff023,220.0,420.0,166.0,169.0,1,Lung Opacity
+0567d70b-5a94-4363-a162-7207ffaff023,685.0,630.0,134.0,140.0,1,Lung Opacity
+0567d70b-5a94-4363-a162-7207ffaff023,685.0,630.0,134.0,140.0,1,Lung Opacity
+0572881e-d1dd-4757-a54e-b240b30da946,538.0,387.0,167.0,413.0,1,Lung Opacity
+0572881e-d1dd-4757-a54e-b240b30da946,538.0,387.0,167.0,413.0,1,Lung Opacity
+0572881e-d1dd-4757-a54e-b240b30da946,160.0,463.0,179.0,262.0,1,Lung Opacity
+0572881e-d1dd-4757-a54e-b240b30da946,160.0,463.0,179.0,262.0,1,Lung Opacity
+05744f1d-2fa5-41ce-85d3-3df6a7302064,701.0,265.0,92.0,65.0,1,Lung Opacity
+0582f503-a451-448f-87a5-a67589c5f7c5,,,,,0,Normal
+0586660a-f243-41dc-bcae-d1e342640846,,,,,0,No Lung Opacity / Not Normal
+05905ac6-1b8f-4793-a7d2-ac794b1bb2ff,,,,,0,Normal
+05ac0be8-b56e-4efb-aef7-513cd788e2c3,,,,,0,No Lung Opacity / Not Normal
+05ad9fb7-7500-492a-a5db-d8e1c69855e5,,,,,0,Normal
+05b22cd6-c876-4360-8361-92845c6de8ba,124.0,409.0,230.0,212.0,1,Lung Opacity
+05b22cd6-c876-4360-8361-92845c6de8ba,124.0,409.0,230.0,212.0,1,Lung Opacity
+05b22cd6-c876-4360-8361-92845c6de8ba,572.0,453.0,229.0,205.0,1,Lung Opacity
+05b22cd6-c876-4360-8361-92845c6de8ba,572.0,453.0,229.0,205.0,1,Lung Opacity
+05b2d676-777a-4a4d-82ab-bf3f5f9b4d60,558.0,144.0,193.0,388.0,1,Lung Opacity
+0d121525-812e-4ab2-b29f-ff04b3d97ffa,,,,,0,No Lung Opacity / Not Normal
+0d15858e-bd96-42cf-843e-57ff0c6e42a7,681.0,364.0,258.0,331.0,1,Lung Opacity
+0d15858e-bd96-42cf-843e-57ff0c6e42a7,681.0,364.0,258.0,331.0,1,Lung Opacity
+0d15858e-bd96-42cf-843e-57ff0c6e42a7,180.0,353.0,260.0,295.0,1,Lung Opacity
+0d15858e-bd96-42cf-843e-57ff0c6e42a7,180.0,353.0,260.0,295.0,1,Lung Opacity
+0d1b2c45-309a-407f-8224-36761e8451c4,,,,,0,Normal
+0d1b742e-71fb-4eaa-88eb-b70e403ee565,220.0,664.0,185.0,134.0,1,Lung Opacity
+0d2b7272-c9e2-4ab9-a8a6-5806a6572348,,,,,0,Normal
+0d39923d-02df-4a79-baf4-e00fcca9aaec,,,,,0,Normal
+0d3f8e93-755c-436f-978c-554f45449ec0,,,,,0,No Lung Opacity / Not Normal
+0d45f420-10d0-41a2-9b87-f5ea81c28599,664.0,325.0,270.0,675.0,1,Lung Opacity
+0d45f420-10d0-41a2-9b87-f5ea81c28599,664.0,325.0,270.0,675.0,1,Lung Opacity
+0d45f420-10d0-41a2-9b87-f5ea81c28599,292.0,392.0,257.0,524.0,1,Lung Opacity
+0d45f420-10d0-41a2-9b87-f5ea81c28599,292.0,392.0,257.0,524.0,1,Lung Opacity
+0d4cb628-fdfd-4a4f-838d-9054ed99cc9e,181.0,506.0,184.0,120.0,1,Lung Opacity
+0d8c48b1-8f7a-46c6-b63d-056402ed5b52,,,,,0,No Lung Opacity / Not Normal
+0d8cddcf-45bf-415e-b365-1dcb29baa0de,,,,,0,No Lung Opacity / Not Normal
+0d9cbc9a-ec1f-4e3a-9b0b-7d3c753296ba,,,,,0,No Lung Opacity / Not Normal
+0da8c767-77b7-4c69-98d4-2c5c91b9affc,219.0,262.0,239.0,516.0,1,Lung Opacity
+0da8c767-77b7-4c69-98d4-2c5c91b9affc,219.0,262.0,239.0,516.0,1,Lung Opacity
+0da8c767-77b7-4c69-98d4-2c5c91b9affc,579.0,252.0,274.0,602.0,1,Lung Opacity
+0da8c767-77b7-4c69-98d4-2c5c91b9affc,579.0,252.0,274.0,602.0,1,Lung Opacity
+0db60a41-2a6a-421b-a304-8799739eaec5,,,,,0,No Lung Opacity / Not Normal
+0dd92ecf-3247-4a0c-a77e-21d20fddcc2a,,,,,0,Normal
+0ded4efe-1a9a-4980-aca2-9d2c49632917,,,,,0,Normal
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,654.0,444.0,160.0,103.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,654.0,444.0,160.0,103.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,654.0,444.0,160.0,103.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,654.0,444.0,160.0,103.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,531.0,206.0,289.0,213.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,531.0,206.0,289.0,213.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,531.0,206.0,289.0,213.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,531.0,206.0,289.0,213.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,686.0,545.0,128.0,106.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,686.0,545.0,128.0,106.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,686.0,545.0,128.0,106.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,686.0,545.0,128.0,106.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,213.0,386.0,114.0,161.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,213.0,386.0,114.0,161.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,213.0,386.0,114.0,161.0,1,Lung Opacity
+0e03c2d7-9cea-4dc7-8e91-794a8b3ff58d,213.0,386.0,114.0,161.0,1,Lung Opacity
+0e08846c-ab58-48d1-9919-f5ea1f47d032,710.0,372.0,164.0,322.0,1,Lung Opacity
+0e08846c-ab58-48d1-9919-f5ea1f47d032,710.0,372.0,164.0,322.0,1,Lung Opacity
+0e08846c-ab58-48d1-9919-f5ea1f47d032,180.0,744.0,242.0,87.0,1,Lung Opacity
+0e08846c-ab58-48d1-9919-f5ea1f47d032,180.0,744.0,242.0,87.0,1,Lung Opacity
+0e0df6e1-1a66-4122-a14b-7a4cd106421f,144.0,550.0,198.0,70.0,1,Lung Opacity
+0e1ffb7c-6d43-4db3-a75d-8da4de98d80e,,,,,0,No Lung Opacity / Not Normal
+0e240e03-8d4e-4415-a2e1-03ec36b15bfc,,,,,0,No Lung Opacity / Not Normal
+0e245423-3ccd-41ee-84a5-b9f0a20dba71,,,,,0,No Lung Opacity / Not Normal
+0e266ced-46fe-4868-8a5a-ef1be71d8f9a,,,,,0,No Lung Opacity / Not Normal
+0e2abdaa-d654-4824-abaa-9d6fe5b67a95,,,,,0,Normal
+0e34898c-b271-4f9e-910a-0b13e5771a64,,,,,0,No Lung Opacity / Not Normal
+0e35a952-7d7e-44a1-b6dd-dd64a3461905,,,,,0,No Lung Opacity / Not Normal
+0e3a2225-066f-4aed-90e1-70663f739d9d,,,,,0,No Lung Opacity / Not Normal
+0e4cfd32-2d25-4530-90cd-26950725703a,,,,,0,Normal
+0e4f5b45-1fa4-406b-8ed8-d5ced6374c0d,245.0,518.0,171.0,84.0,1,Lung Opacity
+0e4f5b45-1fa4-406b-8ed8-d5ced6374c0d,245.0,518.0,171.0,84.0,1,Lung Opacity
+0e4f5b45-1fa4-406b-8ed8-d5ced6374c0d,681.0,441.0,122.0,131.0,1,Lung Opacity
+0e4f5b45-1fa4-406b-8ed8-d5ced6374c0d,681.0,441.0,122.0,131.0,1,Lung Opacity
+0e533087-5959-46e5-9fa5-95761a7d472f,224.0,142.0,204.0,354.0,1,Lung Opacity
+0e533087-5959-46e5-9fa5-95761a7d472f,224.0,142.0,204.0,354.0,1,Lung Opacity
+0e533087-5959-46e5-9fa5-95761a7d472f,602.0,110.0,207.0,297.0,1,Lung Opacity
+0e533087-5959-46e5-9fa5-95761a7d472f,602.0,110.0,207.0,297.0,1,Lung Opacity
+0e5397bc-f36c-4427-89f7-d95f31661c8a,,,,,0,Normal
+0e56c0b6-399e-43df-91ff-cff36f31c977,,,,,0,No Lung Opacity / Not Normal
+0e7d10d2-e99f-4e30-826c-2d0a18edbc74,706.0,209.0,144.0,338.0,1,Lung Opacity
+0e7d10d2-e99f-4e30-826c-2d0a18edbc74,706.0,209.0,144.0,338.0,1,Lung Opacity
+0e7d10d2-e99f-4e30-826c-2d0a18edbc74,223.0,216.0,193.0,156.0,1,Lung Opacity
+0e7d10d2-e99f-4e30-826c-2d0a18edbc74,223.0,216.0,193.0,156.0,1,Lung Opacity
+0e88742f-1e63-4604-94d7-be3de0415200,,,,,0,Normal
+0e9d2259-5faa-4000-969c-f4d25d4eed0d,,,,,0,No Lung Opacity / Not Normal
+0e9f4af5-64ae-41aa-b331-e012e28caac4,,,,,0,No Lung Opacity / Not Normal
+0ea1d0f4-e828-487f-9f29-06e094018054,,,,,0,No Lung Opacity / Not Normal
+0eb579bd-4113-4787-a733-71fc470107ea,,,,,0,No Lung Opacity / Not Normal
+0ecb70c9-6334-4cae-9a9f-733fba0bbc18,,,,,0,No Lung Opacity / Not Normal
+0ecc15e9-fe6a-47ff-a622-43e23c8a73ff,,,,,0,No Lung Opacity / Not Normal
+0ed09fd0-a4f5-4440-9fe7-6272d7987f33,,,,,0,No Lung Opacity / Not Normal
+0ed30a38-fd74-498f-aeaa-6febf7eb66be,,,,,0,Normal
+0edb45b6-eb6a-42d9-902d-204730c3405e,,,,,0,Normal
+0edcf2dd-71fe-4108-9303-24d51b4faf72,186.0,421.0,183.0,188.0,1,Lung Opacity
+0edcf2dd-71fe-4108-9303-24d51b4faf72,186.0,421.0,183.0,188.0,1,Lung Opacity
+0edcf2dd-71fe-4108-9303-24d51b4faf72,612.0,549.0,135.0,192.0,1,Lung Opacity
+0edcf2dd-71fe-4108-9303-24d51b4faf72,612.0,549.0,135.0,192.0,1,Lung Opacity
+0f0bc2f0-761b-4d4e-a0ae-a6f5a628ab1c,654.0,392.0,163.0,248.0,1,Lung Opacity
+0f0e4c6b-0c2f-4a0c-b75e-869260a6ba22,,,,,0,No Lung Opacity / Not Normal
+0f16a83c-dd33-4994-876d-4746f07ab223,,,,,0,Normal
+0f1a4a99-3a8a-4d4b-be2c-8a003274ed53,173.0,230.0,226.0,490.0,1,Lung Opacity
+0f1a4a99-3a8a-4d4b-be2c-8a003274ed53,173.0,230.0,226.0,490.0,1,Lung Opacity
+0f1a4a99-3a8a-4d4b-be2c-8a003274ed53,643.0,291.0,125.0,262.0,1,Lung Opacity
+0f1a4a99-3a8a-4d4b-be2c-8a003274ed53,643.0,291.0,125.0,262.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,645.0,792.0,180.0,136.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,645.0,792.0,180.0,136.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,645.0,792.0,180.0,136.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,616.0,168.0,234.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,616.0,168.0,234.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,616.0,168.0,234.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,378.0,168.0,187.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,378.0,168.0,187.0,1,Lung Opacity
+0f1ca6cb-02e3-43ed-87ce-9619095fa14b,201.0,378.0,168.0,187.0,1,Lung Opacity
+0f266626-6804-4aaa-bd44-12d230a1c181,,,,,0,No Lung Opacity / Not Normal
+0f45a78f-d20b-4370-b0c9-00da4e9a8a05,600.0,501.0,135.0,300.0,1,Lung Opacity
+0f45a78f-d20b-4370-b0c9-00da4e9a8a05,600.0,501.0,135.0,300.0,1,Lung Opacity
+0f45a78f-d20b-4370-b0c9-00da4e9a8a05,87.0,357.0,249.0,552.0,1,Lung Opacity
+0f45a78f-d20b-4370-b0c9-00da4e9a8a05,87.0,357.0,249.0,552.0,1,Lung Opacity
+0f4b80b6-fd39-451f-aebf-7cdb1b655c0b,,,,,0,Normal
+0f4c38f3-854f-4f74-9051-59c801a6c859,,,,,0,Normal
+0f510183-11b0-4356-b8ae-24ac9e3814c4,228.0,632.0,116.0,181.0,1,Lung Opacity
+0f526bd8-4383-4b59-8db0-7ed03e41c142,,,,,0,No Lung Opacity / Not Normal
+0f5460cd-0847-4977-9bbf-01de53f44f45,,,,,0,No Lung Opacity / Not Normal
+0f5b56fd-7f0f-4b80-9128-92611763172b,,,,,0,No Lung Opacity / Not Normal
+0f5d1591-5e8d-4328-9ba2-0d99deb8ad57,,,,,0,Normal
+0f60ce12-960f-4ecf-8c71-040737565327,,,,,0,No Lung Opacity / Not Normal
+0f639fad-780e-44f8-ba8d-0c934bdca870,641.0,590.0,207.0,250.0,1,Lung Opacity
+0f639fad-780e-44f8-ba8d-0c934bdca870,641.0,590.0,207.0,250.0,1,Lung Opacity
+0f639fad-780e-44f8-ba8d-0c934bdca870,244.0,223.0,212.0,534.0,1,Lung Opacity
+0f639fad-780e-44f8-ba8d-0c934bdca870,244.0,223.0,212.0,534.0,1,Lung Opacity
+0f65daf5-08f1-439a-8a50-2e64f1a8a5ac,,,,,0,No Lung Opacity / Not Normal
+0f68958e-1720-4511-a9c2-b1d217d92243,,,,,0,Normal
+0f6ed027-8700-43ff-a4a6-a8211cbbbb02,572.0,614.0,178.0,304.0,1,Lung Opacity
+0f6ed027-8700-43ff-a4a6-a8211cbbbb02,572.0,614.0,178.0,304.0,1,Lung Opacity
+0f6ed027-8700-43ff-a4a6-a8211cbbbb02,180.0,404.0,197.0,355.0,1,Lung Opacity
+0f6ed027-8700-43ff-a4a6-a8211cbbbb02,180.0,404.0,197.0,355.0,1,Lung Opacity
+0f739fa7-fa35-4c0e-997d-9dc9866346dc,,,,,0,No Lung Opacity / Not Normal
+0f7c7af4-5ef8-43fe-a598-e9929fd76f5c,,,,,0,Normal
+0f808f7e-2d1f-4af2-aa9a-aae175acd042,,,,,0,Normal
+0f87bb25-447f-4c72-b91c-f85824435051,,,,,0,Normal
+0f906606-9203-46d9-a9eb-c1f325818e9f,,,,,0,No Lung Opacity / Not Normal
+0fa65909-6ed6-4773-a968-37b1a08f1768,,,,,0,No Lung Opacity / Not Normal
+0fa93f8a-c813-4ff1-b44d-57cbe7f54d9a,,,,,0,No Lung Opacity / Not Normal
+0fac1fec-6e05-48b6-bf0d-fd5148e4a6ff,,,,,0,Normal
+0fc18a4c-0666-4287-a25d-e295bcb18351,,,,,0,No Lung Opacity / Not Normal
+0fc4edec-08ea-4cd4-bf21-a6319ef0b44d,115.0,386.0,150.0,321.0,1,Lung Opacity
+0fc4edec-08ea-4cd4-bf21-a6319ef0b44d,115.0,386.0,150.0,321.0,1,Lung Opacity
+0fc4edec-08ea-4cd4-bf21-a6319ef0b44d,608.0,402.0,134.0,239.0,1,Lung Opacity
+0fc4edec-08ea-4cd4-bf21-a6319ef0b44d,608.0,402.0,134.0,239.0,1,Lung Opacity
+0fcd1318-e6ae-4d14-b466-769128285665,599.0,540.0,194.0,133.0,1,Lung Opacity
+0fcd4b17-359c-40bf-a21c-907d0a91b5df,,,,,0,Normal
+0fd9d050-6ad7-4bd8-a18b-8e583192726f,672.0,421.0,190.0,352.0,1,Lung Opacity
+0fd9d050-6ad7-4bd8-a18b-8e583192726f,672.0,421.0,190.0,352.0,1,Lung Opacity
+0fd9d050-6ad7-4bd8-a18b-8e583192726f,277.0,528.0,109.0,195.0,1,Lung Opacity
+0fd9d050-6ad7-4bd8-a18b-8e583192726f,277.0,528.0,109.0,195.0,1,Lung Opacity
+0fda72a2-f383-4f69-af8e-e16a0fbac621,695.0,457.0,215.0,220.0,1,Lung Opacity
+0fda72a2-f383-4f69-af8e-e16a0fbac621,695.0,457.0,215.0,220.0,1,Lung Opacity
+0fda72a2-f383-4f69-af8e-e16a0fbac621,272.0,410.0,189.0,177.0,1,Lung Opacity
+0fda72a2-f383-4f69-af8e-e16a0fbac621,272.0,410.0,189.0,177.0,1,Lung Opacity
+0ff01216-ce5b-44bd-a857-bc22dc9f8f3c,,,,,0,Normal
+0ff34948-d637-46ff-a36b-02260dfa9b03,,,,,0,Normal
+0ff5bf5b-6af7-4537-90d0-1c47058d0627,694.0,483.0,220.0,330.0,1,Lung Opacity
+0ff5bf5b-6af7-4537-90d0-1c47058d0627,694.0,483.0,220.0,330.0,1,Lung Opacity
+0ff5bf5b-6af7-4537-90d0-1c47058d0627,196.0,337.0,255.0,410.0,1,Lung Opacity
+0ff5bf5b-6af7-4537-90d0-1c47058d0627,196.0,337.0,255.0,410.0,1,Lung Opacity
+0ffa20d5-7419-4c75-b821-be920771d2d4,,,,,0,No Lung Opacity / Not Normal
+0fff88da-4b97-4a84-8cac-67f093cbbd93,,,,,0,Normal
+100d2b25-aba5-4502-bd2a-edeaa66fde00,,,,,0,Normal
+100fb3d8-99c5-4723-9385-11b236f9aae4,241.0,419.0,215.0,384.0,1,Lung Opacity
+100fb3d8-99c5-4723-9385-11b236f9aae4,241.0,419.0,215.0,384.0,1,Lung Opacity
+100fb3d8-99c5-4723-9385-11b236f9aae4,709.0,374.0,197.0,400.0,1,Lung Opacity
+100fb3d8-99c5-4723-9385-11b236f9aae4,709.0,374.0,197.0,400.0,1,Lung Opacity
+100ffc09-4644-4936-95eb-54c41bdeb816,,,,,0,Normal
+1013ded6-9505-4e1b-a923-f263ad013d0e,,,,,0,Normal
+10155593-ee63-4405-861a-81ef41ddeb56,,,,,0,No Lung Opacity / Not Normal
+1015e103-bda6-4664-978d-f761cd2982cb,630.0,212.0,243.0,424.0,1,Lung Opacity
+10163e08-1de2-44e1-9145-1922f4dd6805,,,,,0,Normal
+10178701-ea33-486c-87f3-e52977d83266,,,,,0,No Lung Opacity / Not Normal
+101921f9-4651-41e1-b7dc-8e0124d5a5d1,,,,,0,Normal
+101e82b5-8be1-4318-84c9-0c64813f9ac5,,,,,0,No Lung Opacity / Not Normal
+103451bb-1f8c-4209-abce-0be7e9a6c8fb,305.0,210.0,170.0,220.0,1,Lung Opacity
+103451bb-1f8c-4209-abce-0be7e9a6c8fb,305.0,210.0,170.0,220.0,1,Lung Opacity
+103451bb-1f8c-4209-abce-0be7e9a6c8fb,641.0,215.0,141.0,170.0,1,Lung Opacity
+103451bb-1f8c-4209-abce-0be7e9a6c8fb,641.0,215.0,141.0,170.0,1,Lung Opacity
+10442f49-c354-44f8-8ca2-a4652713285a,,,,,0,No Lung Opacity / Not Normal
+106d08b7-b1b7-4ca1-be8d-8de94d2ef682,,,,,0,Normal
+106e39b9-9ca8-4437-b7f9-f114fd3aec61,22.0,353.0,131.0,153.0,1,Lung Opacity
+106e39b9-9ca8-4437-b7f9-f114fd3aec61,22.0,353.0,131.0,153.0,1,Lung Opacity
+106e39b9-9ca8-4437-b7f9-f114fd3aec61,482.0,297.0,178.0,206.0,1,Lung Opacity
+106e39b9-9ca8-4437-b7f9-f114fd3aec61,482.0,297.0,178.0,206.0,1,Lung Opacity
+1079ba63-0681-45b7-b1da-fe11ede2b9ae,,,,,0,Normal
+107f84d9-65b3-4a11-9c8d-921a5bed5b2f,565.0,240.0,181.0,383.0,1,Lung Opacity
+107f84d9-65b3-4a11-9c8d-921a5bed5b2f,565.0,240.0,181.0,383.0,1,Lung Opacity
+107f84d9-65b3-4a11-9c8d-921a5bed5b2f,204.0,312.0,212.0,304.0,1,Lung Opacity
+107f84d9-65b3-4a11-9c8d-921a5bed5b2f,204.0,312.0,212.0,304.0,1,Lung Opacity
+108a989d-bd99-4e96-8ce6-ab21ffd0d79f,,,,,0,No Lung Opacity / Not Normal
+108eeb60-7701-4796-86a8-1447fd8a0ff7,808.0,430.0,102.0,169.0,1,Lung Opacity
+10950638-0710-43fb-9705-f33942b65bf9,,,,,0,No Lung Opacity / Not Normal
+10b1ae91-9c1a-4b1d-b269-51754df1b4f6,320.0,298.0,99.0,74.0,1,Lung Opacity
+10b3c037-60a4-4589-9ab7-83088a174184,,,,,0,No Lung Opacity / Not Normal
+10be8144-046d-478b-8a8d-3b41af8b229b,,,,,0,No Lung Opacity / Not Normal
+10e2a82e-57bd-480e-9b69-e4ec1565b0ab,,,,,0,Normal
+10ec7da5-0d58-4c84-bcdc-180591028054,,,,,0,Normal
+10f2cb81-ad90-4857-a2f7-18e7d8f66907,241.0,659.0,141.0,113.0,1,Lung Opacity
+10f2cb81-ad90-4857-a2f7-18e7d8f66907,241.0,659.0,141.0,113.0,1,Lung Opacity
+10f2cb81-ad90-4857-a2f7-18e7d8f66907,653.0,631.0,155.0,142.0,1,Lung Opacity
+10f2cb81-ad90-4857-a2f7-18e7d8f66907,653.0,631.0,155.0,142.0,1,Lung Opacity
+10f8e8da-3c33-4c68-8c10-bba18360b166,,,,,0,Normal
+11083a27-8a7f-42ee-bb01-cb4a9c95440b,,,,,0,Normal
+110f1696-ffba-439f-9918-1230c656121a,,,,,0,Normal
+111c91e5-d8e8-4766-ac1c-04256d494b73,,,,,0,No Lung Opacity / Not Normal
+111ce23b-b829-4622-b737-68df649d7393,,,,,0,No Lung Opacity / Not Normal
+112bbb1f-9e2a-4421-b276-39868ef35904,681.0,670.0,208.0,98.0,1,Lung Opacity
+112bbb1f-9e2a-4421-b276-39868ef35904,681.0,670.0,208.0,98.0,1,Lung Opacity
+112bbb1f-9e2a-4421-b276-39868ef35904,232.0,659.0,188.0,124.0,1,Lung Opacity
+112bbb1f-9e2a-4421-b276-39868ef35904,232.0,659.0,188.0,124.0,1,Lung Opacity
+115bf7b6-065a-46eb-bd14-f4afbc8384f3,92.0,469.0,192.0,283.0,1,Lung Opacity
+115bf7b6-065a-46eb-bd14-f4afbc8384f3,92.0,469.0,192.0,283.0,1,Lung Opacity
+115bf7b6-065a-46eb-bd14-f4afbc8384f3,510.0,437.0,205.0,319.0,1,Lung Opacity
+115bf7b6-065a-46eb-bd14-f4afbc8384f3,510.0,437.0,205.0,319.0,1,Lung Opacity
+115d5f48-c01c-485a-8d92-da9529dd428b,,,,,0,No Lung Opacity / Not Normal
+1172e6d2-4207-4b90-b66e-bf2b3af86462,,,,,0,Normal
+11757990-5db5-45da-905d-dc9ad56b9087,,,,,0,No Lung Opacity / Not Normal
+119a9ba2-0785-4321-b074-dbfcffc5197e,,,,,0,No Lung Opacity / Not Normal
+119b4b57-ad0c-4581-89c9-64841b14aa12,,,,,0,No Lung Opacity / Not Normal
+11a2e0cb-ee1f-4d53-a211-b8faff6bf888,617.0,608.0,247.0,130.0,1,Lung Opacity
+11a2e0cb-ee1f-4d53-a211-b8faff6bf888,617.0,608.0,247.0,130.0,1,Lung Opacity
+11a2e0cb-ee1f-4d53-a211-b8faff6bf888,122.0,580.0,310.0,138.0,1,Lung Opacity
+11a2e0cb-ee1f-4d53-a211-b8faff6bf888,122.0,580.0,310.0,138.0,1,Lung Opacity
+11a355bd-9544-4211-bfa8-451777c1d3c2,627.0,488.0,263.0,338.0,1,Lung Opacity
+11a355bd-9544-4211-bfa8-451777c1d3c2,627.0,488.0,263.0,338.0,1,Lung Opacity
+11a355bd-9544-4211-bfa8-451777c1d3c2,267.0,308.0,156.0,280.0,1,Lung Opacity
+11a355bd-9544-4211-bfa8-451777c1d3c2,267.0,308.0,156.0,280.0,1,Lung Opacity
+11a4ad3f-7899-4c3c-a88d-f1c799ec04df,593.0,496.0,260.0,270.0,1,Lung Opacity
+11a4ad3f-7899-4c3c-a88d-f1c799ec04df,593.0,496.0,260.0,270.0,1,Lung Opacity
+11a4ad3f-7899-4c3c-a88d-f1c799ec04df,182.0,313.0,264.0,432.0,1,Lung Opacity
+11a4ad3f-7899-4c3c-a88d-f1c799ec04df,182.0,313.0,264.0,432.0,1,Lung Opacity
+11b092a2-141f-4a4d-8559-8cbef2f8af21,,,,,0,No Lung Opacity / Not Normal
+11b2df19-6f41-488f-8b84-4fdb6b81fd1b,,,,,0,No Lung Opacity / Not Normal
+11d0e217-7779-4446-bf81-7529de124d89,,,,,0,Normal
+11d8e718-ca03-4f4d-95fc-da6d9ba1434f,,,,,0,No Lung Opacity / Not Normal
+11e0e617-cc49-478e-bcba-209866654fde,217.0,60.0,253.0,605.0,1,Lung Opacity
+11e0e617-cc49-478e-bcba-209866654fde,217.0,60.0,253.0,605.0,1,Lung Opacity
+11e0e617-cc49-478e-bcba-209866654fde,569.0,60.0,264.0,675.0,1,Lung Opacity
+11e0e617-cc49-478e-bcba-209866654fde,569.0,60.0,264.0,675.0,1,Lung Opacity
+11e431ff-c6b8-45f1-9635-a055fbc90111,479.0,526.0,189.0,155.0,1,Lung Opacity
+11fcbe52-87f7-4074-85ac-153d5f255e35,481.0,332.0,236.0,604.0,1,Lung Opacity
+11fcbe52-87f7-4074-85ac-153d5f255e35,481.0,332.0,236.0,604.0,1,Lung Opacity
+11fcbe52-87f7-4074-85ac-153d5f255e35,95.0,324.0,266.0,543.0,1,Lung Opacity
+11fcbe52-87f7-4074-85ac-153d5f255e35,95.0,324.0,266.0,543.0,1,Lung Opacity
+11ff35a5-51dc-41d7-afe1-588ff59cbc4b,640.0,352.0,196.0,363.0,1,Lung Opacity
+11ff35a5-51dc-41d7-afe1-588ff59cbc4b,640.0,352.0,196.0,363.0,1,Lung Opacity
+11ff35a5-51dc-41d7-afe1-588ff59cbc4b,192.0,439.0,287.0,229.0,1,Lung Opacity
+11ff35a5-51dc-41d7-afe1-588ff59cbc4b,192.0,439.0,287.0,229.0,1,Lung Opacity
+120088b4-5fc5-49a1-a772-be10a37a897c,,,,,0,No Lung Opacity / Not Normal
+1202ef51-061c-43a4-8d2b-759fce4f15d4,,,,,0,Normal
+120fd100-b447-4ec9-b4fe-3cdd3f0496e9,203.0,443.0,228.0,403.0,1,Lung Opacity
+120fd100-b447-4ec9-b4fe-3cdd3f0496e9,203.0,443.0,228.0,403.0,1,Lung Opacity
+120fd100-b447-4ec9-b4fe-3cdd3f0496e9,534.0,366.0,301.0,565.0,1,Lung Opacity
+120fd100-b447-4ec9-b4fe-3cdd3f0496e9,534.0,366.0,301.0,565.0,1,Lung Opacity
+121ae1f2-0e8e-43f3-8dfc-93ffc2cfff22,,,,,0,Normal
+121eb744-2f28-443d-a361-ba0cb2401462,,,,,0,Normal
+125a4350-c49f-4056-bfc1-d016c68a1159,,,,,0,No Lung Opacity / Not Normal
+1260a8e0-dad4-4b75-8448-0c54c1e21f84,,,,,0,Normal
+12657240-8b00-4be5-994e-6bba758e168a,,,,,0,Normal
+1266cab0-e29f-47b9-87a2-17ed6658603c,,,,,0,No Lung Opacity / Not Normal
+126de93a-1209-428c-aa3d-790991cd14e5,,,,,0,No Lung Opacity / Not Normal
+127a6d90-0b91-4927-8810-2788d3e8a1a0,,,,,0,Normal
+128edd9f-2ec9-4746-a9bf-bad7cd400539,,,,,0,Normal
+12970580-799e-4c61-96ae-3439238b9ebd,,,,,0,Normal
+129a1251-95cf-4663-91ad-4e58bc0b2d08,580.0,458.0,177.0,267.0,1,Lung Opacity
+12b8f793-1aad-426a-b116-5508be9b41a3,,,,,0,No Lung Opacity / Not Normal
+12c0fe21-2770-49eb-8aa1-c4aca13c1712,88.0,307.0,124.0,210.0,1,Lung Opacity
+12c0fe21-2770-49eb-8aa1-c4aca13c1712,88.0,307.0,124.0,210.0,1,Lung Opacity
+12c0fe21-2770-49eb-8aa1-c4aca13c1712,76.0,567.0,259.0,126.0,1,Lung Opacity
+12c0fe21-2770-49eb-8aa1-c4aca13c1712,76.0,567.0,259.0,126.0,1,Lung Opacity
+12c8845f-9011-49f4-a9c3-e2121b8bcef3,,,,,0,No Lung Opacity / Not Normal
+12e5493a-1f4b-463b-a373-67981fc1e76a,,,,,0,Normal
+12eddc6c-2d66-4df7-8da1-edd5b5fc81a9,,,,,0,No Lung Opacity / Not Normal
+12ee00f1-d4ea-4546-a07c-d43280aca538,261.0,218.0,298.0,597.0,1,Lung Opacity
+12ee00f1-d4ea-4546-a07c-d43280aca538,261.0,218.0,298.0,597.0,1,Lung Opacity
+12ee00f1-d4ea-4546-a07c-d43280aca538,655.0,212.0,298.0,622.0,1,Lung Opacity
+12ee00f1-d4ea-4546-a07c-d43280aca538,655.0,212.0,298.0,622.0,1,Lung Opacity
+12f231d5-3a76-48ca-8fda-35f7fc382075,,,,,0,No Lung Opacity / Not Normal
+12fa16c8-81ed-4faa-baa4-ba9c1878c279,,,,,0,Normal
+12fd0651-0275-4d15-8868-35ba85ea70f0,165.0,519.0,224.0,313.0,1,Lung Opacity
+12fd49d8-1d27-4314-be13-d355d72f15a8,,,,,0,No Lung Opacity / Not Normal
+131caf9c-9b7f-46cb-a18e-d9c331159d6f,,,,,0,Normal
+131cd368-4db7-4883-9408-47da2b59650a,666.0,549.0,324.0,231.0,1,Lung Opacity
+131dd766-23cb-43e2-9653-13033d70765c,316.0,240.0,152.0,134.0,1,Lung Opacity
+13259a9d-5393-4a94-aceb-c550042694cb,,,,,0,Normal
+1325b50a-3e35-41a6-a871-40359dccf55e,,,,,0,No Lung Opacity / Not Normal
+1328013e-dca0-497b-9523-072bc6b23e17,221.0,341.0,205.0,465.0,1,Lung Opacity
+1328013e-dca0-497b-9523-072bc6b23e17,221.0,341.0,205.0,465.0,1,Lung Opacity
+1328013e-dca0-497b-9523-072bc6b23e17,706.0,554.0,178.0,310.0,1,Lung Opacity
+1328013e-dca0-497b-9523-072bc6b23e17,706.0,554.0,178.0,310.0,1,Lung Opacity
+1329b841-9c14-4f7c-9bce-4ba65067a20f,,,,,0,Normal
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,535.0,534.0,199.0,257.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,535.0,534.0,199.0,257.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,535.0,534.0,199.0,257.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,235.0,550.0,178.0,183.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,235.0,550.0,178.0,183.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,235.0,550.0,178.0,183.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,594.0,123.0,131.0,173.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,594.0,123.0,131.0,173.0,1,Lung Opacity
+133a1f56-1ab0-4df7-8e1b-4a6293934f3a,594.0,123.0,131.0,173.0,1,Lung Opacity
+134bc526-8ebb-4419-9274-e2249fb3623f,,,,,0,No Lung Opacity / Not Normal
+1352a7f3-1f0d-4f1f-af05-daa5d7f8624a,631.0,263.0,191.0,351.0,1,Lung Opacity
+1352a7f3-1f0d-4f1f-af05-daa5d7f8624a,631.0,263.0,191.0,351.0,1,Lung Opacity
+1352a7f3-1f0d-4f1f-af05-daa5d7f8624a,255.0,205.0,282.0,514.0,1,Lung Opacity
+1352a7f3-1f0d-4f1f-af05-daa5d7f8624a,255.0,205.0,282.0,514.0,1,Lung Opacity
+13752451-7571-4b2a-8f3e-b71a6b6e91a2,,,,,0,No Lung Opacity / Not Normal
+13990031-9dbf-4e03-9505-0f9120bdb166,476.0,543.0,150.0,179.0,1,Lung Opacity
+13990031-9dbf-4e03-9505-0f9120bdb166,476.0,543.0,150.0,179.0,1,Lung Opacity
+13990031-9dbf-4e03-9505-0f9120bdb166,229.0,648.0,162.0,97.0,1,Lung Opacity
+13990031-9dbf-4e03-9505-0f9120bdb166,229.0,648.0,162.0,97.0,1,Lung Opacity
+13aa11f7-b15f-47d4-94c1-4ded9bc8ab16,228.0,627.0,265.0,210.0,1,Lung Opacity
+13aa11f7-b15f-47d4-94c1-4ded9bc8ab16,228.0,627.0,265.0,210.0,1,Lung Opacity
+13aa11f7-b15f-47d4-94c1-4ded9bc8ab16,621.0,511.0,204.0,249.0,1,Lung Opacity
+13aa11f7-b15f-47d4-94c1-4ded9bc8ab16,621.0,511.0,204.0,249.0,1,Lung Opacity
+13b42b81-7e2f-436f-9dd7-63ec96eccb6e,,,,,0,Normal
+13bf28d4-fa19-4ba0-966a-938f676d6d04,649.0,357.0,194.0,297.0,1,Lung Opacity
+13bf28d4-fa19-4ba0-966a-938f676d6d04,649.0,357.0,194.0,297.0,1,Lung Opacity
+13bf28d4-fa19-4ba0-966a-938f676d6d04,273.0,427.0,196.0,305.0,1,Lung Opacity
+13bf28d4-fa19-4ba0-966a-938f676d6d04,273.0,427.0,196.0,305.0,1,Lung Opacity
+13cca55a-615f-4f7c-9061-7d12185baace,,,,,0,Normal
+13e7e928-b7d0-4191-8eb5-b56aaa31edc8,,,,,0,Normal
+13ebcd6e-6a66-40c4-9d58-a5c177f8b037,,,,,0,No Lung Opacity / Not Normal
+13eee970-ca31-44a9-9b8a-83e317f129dc,,,,,0,No Lung Opacity / Not Normal
+13f8bb2b-9c21-4131-aee1-eef3bc0cf88b,,,,,0,Normal
+13f9e2d3-1288-46f8-86da-f19e69bbacf7,,,,,0,Normal
+13fce2c5-6834-485f-8280-c3b0c1b952b5,244.0,479.0,217.0,195.0,1,Lung Opacity
+141fcca0-f7b6-464b-8467-5adf3cb16da2,,,,,0,Normal
+142c4c2d-ef83-468d-869e-fc0d72768cfb,,,,,0,Normal
+143b3fc0-c4b4-4e21-8095-7c3fab18c39b,,,,,0,Normal
+1462ffd1-939b-49b7-9234-eeeb7f4986cc,606.0,345.0,157.0,348.0,1,Lung Opacity
+1462ffd1-939b-49b7-9234-eeeb7f4986cc,606.0,345.0,157.0,348.0,1,Lung Opacity
+1462ffd1-939b-49b7-9234-eeeb7f4986cc,238.0,354.0,198.0,328.0,1,Lung Opacity
+1462ffd1-939b-49b7-9234-eeeb7f4986cc,238.0,354.0,198.0,328.0,1,Lung Opacity
+1467b120-791b-4d54-a7ac-26c3f2201891,,,,,0,Normal
+147896bf-619c-4a0f-afc3-f0459340cbb1,,,,,0,Normal
+147ee547-5c08-4169-8a4b-4785b90c54bc,,,,,0,No Lung Opacity / Not Normal
+1483c479-9496-47e1-bfd2-bda652f83fc9,,,,,0,No Lung Opacity / Not Normal
+149173ac-662a-4883-834d-43ff97a29b18,,,,,0,Normal
+14972d5d-9c7c-430b-bc31-17ce7fc3422e,,,,,0,Normal
+1497c967-d7c7-4c43-abd0-66a71e68e66f,646.0,645.0,142.0,134.0,1,Lung Opacity
+14a190f2-7a4c-463c-b1eb-85d7ede5e1a1,,,,,0,Normal
+14a42065-b678-4720-805e-7540d232df8c,220.0,453.0,193.0,261.0,1,Lung Opacity
+14aee86e-0d8f-4fc3-b3ec-7ca26fc782bc,,,,,0,Normal
+14b2868e-e0fc-40f2-a54e-609bf24da493,108.0,466.0,253.0,119.0,1,Lung Opacity
+14ba7fdd-0279-4a71-a0ba-b638548684eb,,,,,0,Normal
+14bc705c-8688-43f3-b1dd-90b0a4deebd5,,,,,0,Normal
+14cc479c-1385-46a1-9559-638c7da6f02d,685.0,384.0,181.0,304.0,1,Lung Opacity
+14cc479c-1385-46a1-9559-638c7da6f02d,685.0,384.0,181.0,304.0,1,Lung Opacity
+14cc479c-1385-46a1-9559-638c7da6f02d,84.0,304.0,226.0,273.0,1,Lung Opacity
+14cc479c-1385-46a1-9559-638c7da6f02d,84.0,304.0,226.0,273.0,1,Lung Opacity
+14d6efa1-b137-40c0-bc77-d512b2ed0695,,,,,0,Normal
+14d6f9e0-b838-4b0c-a3ae-0d0dda560225,,,,,0,No Lung Opacity / Not Normal
+14df3d5a-f3fd-4a64-ae75-5a9610575e11,301.0,294.0,121.0,429.0,1,Lung Opacity
+14df3d5a-f3fd-4a64-ae75-5a9610575e11,301.0,294.0,121.0,429.0,1,Lung Opacity
+14df3d5a-f3fd-4a64-ae75-5a9610575e11,609.0,362.0,191.0,388.0,1,Lung Opacity
+14df3d5a-f3fd-4a64-ae75-5a9610575e11,609.0,362.0,191.0,388.0,1,Lung Opacity
+14e97471-0144-42a2-9b7d-1b0f7d3a77b7,,,,,0,No Lung Opacity / Not Normal
+14f29678-d258-4cef-bd42-352070353966,,,,,0,Normal
+14f630ba-5e88-4944-9040-9861c91dc362,787.0,320.0,172.0,219.0,1,Lung Opacity
+14f630ba-5e88-4944-9040-9861c91dc362,787.0,320.0,172.0,219.0,1,Lung Opacity
+14f630ba-5e88-4944-9040-9861c91dc362,298.0,321.0,143.0,268.0,1,Lung Opacity
+14f630ba-5e88-4944-9040-9861c91dc362,298.0,321.0,143.0,268.0,1,Lung Opacity
+14fb269f-0b01-43c0-ac49-74f8394a6353,552.0,473.0,280.0,428.0,1,Lung Opacity
+14fb269f-0b01-43c0-ac49-74f8394a6353,552.0,473.0,280.0,428.0,1,Lung Opacity
+14fb269f-0b01-43c0-ac49-74f8394a6353,281.0,511.0,220.0,427.0,1,Lung Opacity
+14fb269f-0b01-43c0-ac49-74f8394a6353,281.0,511.0,220.0,427.0,1,Lung Opacity
+1505f53a-4da5-416e-a279-66849672051c,728.0,655.0,110.0,236.0,1,Lung Opacity
+1505f53a-4da5-416e-a279-66849672051c,728.0,655.0,110.0,236.0,1,Lung Opacity
+1505f53a-4da5-416e-a279-66849672051c,188.0,640.0,133.0,241.0,1,Lung Opacity
+1505f53a-4da5-416e-a279-66849672051c,188.0,640.0,133.0,241.0,1,Lung Opacity
+15074516-5791-4026-b665-3cfea4748323,,,,,0,No Lung Opacity / Not Normal
+152f7c75-b645-4662-91c6-234d79ffeb02,,,,,0,Normal
+153a8af1-6d5c-42fc-b681-b81953d796b3,,,,,0,No Lung Opacity / Not Normal
+153d2c23-546a-4fc4-93bc-7873e24d50fa,187.0,425.0,210.0,271.0,1,Lung Opacity
+153fce06-c27b-4eda-8db1-9f1c60ccf4a2,,,,,0,No Lung Opacity / Not Normal
+15427579-e055-4f31-a2ac-f92da3855bcb,152.0,254.0,300.0,239.0,1,Lung Opacity
+19a2b39a-60ac-4412-8e17-c69d1336538e,233.0,582.0,212.0,231.0,1,Lung Opacity
+19a2b39a-60ac-4412-8e17-c69d1336538e,233.0,582.0,212.0,231.0,1,Lung Opacity
+19a2b39a-60ac-4412-8e17-c69d1336538e,654.0,565.0,238.0,234.0,1,Lung Opacity
+19a2b39a-60ac-4412-8e17-c69d1336538e,654.0,565.0,238.0,234.0,1,Lung Opacity
+19a62d7a-3d7d-4b5b-8dca-3247af94f339,262.0,317.0,159.0,225.0,1,Lung Opacity
+19a86909-69d0-424b-9b46-1e7a246a2174,,,,,0,Normal
+19add6b5-7856-415a-9a44-e2bfda767339,639.0,285.0,172.0,321.0,1,Lung Opacity
+19add6b5-7856-415a-9a44-e2bfda767339,639.0,285.0,172.0,321.0,1,Lung Opacity
+19add6b5-7856-415a-9a44-e2bfda767339,182.0,459.0,213.0,338.0,1,Lung Opacity
+19add6b5-7856-415a-9a44-e2bfda767339,182.0,459.0,213.0,338.0,1,Lung Opacity
+19b1f7ba-bd40-4e8d-813d-da977b2306b3,222.0,522.0,180.0,188.0,1,Lung Opacity
+19b1f7ba-bd40-4e8d-813d-da977b2306b3,222.0,522.0,180.0,188.0,1,Lung Opacity
+19b1f7ba-bd40-4e8d-813d-da977b2306b3,658.0,590.0,151.0,228.0,1,Lung Opacity
+19b1f7ba-bd40-4e8d-813d-da977b2306b3,658.0,590.0,151.0,228.0,1,Lung Opacity
+19b43d5f-840f-4eb7-b34d-e36868ee7af8,299.0,561.0,195.0,171.0,1,Lung Opacity
+19b43d5f-840f-4eb7-b34d-e36868ee7af8,299.0,561.0,195.0,171.0,1,Lung Opacity
+19b43d5f-840f-4eb7-b34d-e36868ee7af8,728.0,588.0,78.0,139.0,1,Lung Opacity
+19b43d5f-840f-4eb7-b34d-e36868ee7af8,728.0,588.0,78.0,139.0,1,Lung Opacity
+19c0ec83-9922-4efa-916d-96d3c4666641,,,,,0,No Lung Opacity / Not Normal
+19c705ea-6af7-48f2-a2e7-f500ef840280,144.0,663.0,214.0,155.0,1,Lung Opacity
+19c705ea-6af7-48f2-a2e7-f500ef840280,144.0,663.0,214.0,155.0,1,Lung Opacity
+19c705ea-6af7-48f2-a2e7-f500ef840280,582.0,449.0,283.0,430.0,1,Lung Opacity
+19c705ea-6af7-48f2-a2e7-f500ef840280,582.0,449.0,283.0,430.0,1,Lung Opacity
+19d2c68d-abe7-4575-9ee5-d84b9ff656be,,,,,0,Normal
+19d52cc1-9453-4f25-b74a-a84eb23c1b27,,,,,0,Normal
+19da7299-3657-4477-b22e-998d550cfed4,,,,,0,Normal
+19f688c5-33bc-4fa3-ae34-7cf1fbd06eb5,258.0,460.0,98.0,244.0,1,Lung Opacity
+19f688c5-33bc-4fa3-ae34-7cf1fbd06eb5,258.0,460.0,98.0,244.0,1,Lung Opacity
+19f688c5-33bc-4fa3-ae34-7cf1fbd06eb5,593.0,455.0,121.0,268.0,1,Lung Opacity
+19f688c5-33bc-4fa3-ae34-7cf1fbd06eb5,593.0,455.0,121.0,268.0,1,Lung Opacity
+1a007e73-2048-4948-a4c0-ef745246bc76,245.0,439.0,152.0,304.0,1,Lung Opacity
+1a007e73-2048-4948-a4c0-ef745246bc76,245.0,439.0,152.0,304.0,1,Lung Opacity
+1a007e73-2048-4948-a4c0-ef745246bc76,691.0,509.0,157.0,274.0,1,Lung Opacity
+1a007e73-2048-4948-a4c0-ef745246bc76,691.0,509.0,157.0,274.0,1,Lung Opacity
+1a04f083-d880-4493-87be-68521bc197c1,256.0,468.0,194.0,332.0,1,Lung Opacity
+1a04f083-d880-4493-87be-68521bc197c1,256.0,468.0,194.0,332.0,1,Lung Opacity
+1a04f083-d880-4493-87be-68521bc197c1,665.0,461.0,172.0,269.0,1,Lung Opacity
+1a04f083-d880-4493-87be-68521bc197c1,665.0,461.0,172.0,269.0,1,Lung Opacity
+1a062886-29be-4120-92f3-5c1c8a951959,193.0,257.0,147.0,369.0,1,Lung Opacity
+1a062886-29be-4120-92f3-5c1c8a951959,193.0,257.0,147.0,369.0,1,Lung Opacity
+1a062886-29be-4120-92f3-5c1c8a951959,611.0,300.0,227.0,353.0,1,Lung Opacity
+1a062886-29be-4120-92f3-5c1c8a951959,611.0,300.0,227.0,353.0,1,Lung Opacity
+1a0aa05e-697c-40ba-a0c0-1dc64a913e3f,,,,,0,Normal
+1a132cab-43fd-486d-b5db-0fcece5fab39,,,,,0,No Lung Opacity / Not Normal
+1a2b6a01-88f6-4907-adef-f396a00a15b4,573.0,336.0,198.0,454.0,1,Lung Opacity
+1a2b6a01-88f6-4907-adef-f396a00a15b4,573.0,336.0,198.0,454.0,1,Lung Opacity
+1a2b6a01-88f6-4907-adef-f396a00a15b4,209.0,348.0,157.0,330.0,1,Lung Opacity
+1a2b6a01-88f6-4907-adef-f396a00a15b4,209.0,348.0,157.0,330.0,1,Lung Opacity
+1a2cef8e-99cb-43cc-b9b5-65fe5104037f,601.0,241.0,165.0,410.0,1,Lung Opacity
+1a2cef8e-99cb-43cc-b9b5-65fe5104037f,601.0,241.0,165.0,410.0,1,Lung Opacity
+1a2cef8e-99cb-43cc-b9b5-65fe5104037f,185.0,223.0,155.0,397.0,1,Lung Opacity
+1a2cef8e-99cb-43cc-b9b5-65fe5104037f,185.0,223.0,155.0,397.0,1,Lung Opacity
+1a2dc891-713d-4253-ad19-a1e7910ee2eb,576.0,651.0,166.0,206.0,1,Lung Opacity
+1a2dc891-713d-4253-ad19-a1e7910ee2eb,576.0,651.0,166.0,206.0,1,Lung Opacity
+1a2dc891-713d-4253-ad19-a1e7910ee2eb,314.0,649.0,123.0,189.0,1,Lung Opacity
+1a2dc891-713d-4253-ad19-a1e7910ee2eb,314.0,649.0,123.0,189.0,1,Lung Opacity
+1a32542e-bc47-4703-82a7-d88bedc8c07d,219.0,300.0,161.0,174.0,1,Lung Opacity
+1a32542e-bc47-4703-82a7-d88bedc8c07d,219.0,300.0,161.0,174.0,1,Lung Opacity
+1a32542e-bc47-4703-82a7-d88bedc8c07d,622.0,411.0,217.0,103.0,1,Lung Opacity
+1a32542e-bc47-4703-82a7-d88bedc8c07d,622.0,411.0,217.0,103.0,1,Lung Opacity
+1a388cdd-671b-48a9-9a4c-ca64cc60ef81,,,,,0,Normal
+1a42aa5f-54c6-4ada-b381-cdf65cfc69b1,713.0,336.0,113.0,156.0,1,Lung Opacity
+1a42aa5f-54c6-4ada-b381-cdf65cfc69b1,713.0,336.0,113.0,156.0,1,Lung Opacity
+1a42aa5f-54c6-4ada-b381-cdf65cfc69b1,193.0,336.0,165.0,231.0,1,Lung Opacity
+1a42aa5f-54c6-4ada-b381-cdf65cfc69b1,193.0,336.0,165.0,231.0,1,Lung Opacity
+1a4326c3-303c-4140-8747-ae962f87a981,,,,,0,Normal
+1a4421d2-3905-4a69-b08e-b304f1ed5c22,,,,,0,No Lung Opacity / Not Normal
+1a563761-ea16-4583-8231-6c122963c6d3,,,,,0,Normal
+1a5ad03f-aac6-4491-b2e2-e5634fdfd2be,,,,,0,No Lung Opacity / Not Normal
+1a63ca9b-22c9-4856-960f-7cdca38bdfd9,,,,,0,No Lung Opacity / Not Normal
+1a9af28f-f757-4d16-92dc-469f2da9fef7,,,,,0,Normal
+1a9c2e64-7cbd-480c-9598-9de93b69d6b2,172.0,451.0,165.0,222.0,1,Lung Opacity
+1a9c2e64-7cbd-480c-9598-9de93b69d6b2,172.0,451.0,165.0,222.0,1,Lung Opacity
+1a9c2e64-7cbd-480c-9598-9de93b69d6b2,568.0,517.0,179.0,217.0,1,Lung Opacity
+1a9c2e64-7cbd-480c-9598-9de93b69d6b2,568.0,517.0,179.0,217.0,1,Lung Opacity
+1a9c4cb9-c796-4174-9414-ca3d653b0d5c,,,,,0,Normal
+1aa03e26-b635-47f9-bd58-8ed0a8e5fa50,,,,,0,No Lung Opacity / Not Normal
+1ab17a65-3c93-467b-9c36-6a27d67f0cbc,226.0,307.0,107.0,159.0,1,Lung Opacity
+1ab46b3a-8f1b-41d2-b663-05fd8d2fadec,,,,,0,No Lung Opacity / Not Normal
+1ac5f0e8-f431-4400-b3f5-4a2224e540b2,557.0,602.0,177.0,237.0,1,Lung Opacity
+1ac5f0e8-f431-4400-b3f5-4a2224e540b2,557.0,602.0,177.0,237.0,1,Lung Opacity
+1ac5f0e8-f431-4400-b3f5-4a2224e540b2,76.0,415.0,188.0,309.0,1,Lung Opacity
+1ac5f0e8-f431-4400-b3f5-4a2224e540b2,76.0,415.0,188.0,309.0,1,Lung Opacity
+1accb591-63ca-462d-8bd8-83be3cb91df2,655.0,598.0,227.0,133.0,1,Lung Opacity
+1ad1ecd2-6d21-4f48-bf8d-7a4e6df8c395,,,,,0,Normal
+1ae12f84-02bb-426f-84b1-81a6c552ce4e,239.0,275.0,148.0,156.0,1,Lung Opacity
+1aea68e3-a8b7-4402-92a5-16a1f23c6d4a,245.0,183.0,243.0,447.0,1,Lung Opacity
+1aea68e3-a8b7-4402-92a5-16a1f23c6d4a,245.0,183.0,243.0,447.0,1,Lung Opacity
+1aea68e3-a8b7-4402-92a5-16a1f23c6d4a,676.0,262.0,202.0,453.0,1,Lung Opacity
+1aea68e3-a8b7-4402-92a5-16a1f23c6d4a,676.0,262.0,202.0,453.0,1,Lung Opacity
+1aeb19e3-7365-4d66-afef-5157a3aca280,209.0,323.0,177.0,279.0,1,Lung Opacity
+1af01c2b-ade7-4482-a406-4e1c24335f1a,,,,,0,Normal
+1af50916-9b55-4df5-b1d3-dde1af2bc441,,,,,0,Normal
+1b0b50d0-c31e-4713-b252-292423149457,,,,,0,No Lung Opacity / Not Normal
+1b0b9b81-dc8b-4b22-aaea-1a985009a522,692.0,346.0,119.0,60.0,1,Lung Opacity
+1b14f17b-bfca-4ed6-9f7f-9fe8e0b4a007,,,,,0,No Lung Opacity / Not Normal
+1b167f33-a18a-4aab-8a29-2a9d1d41c054,603.0,564.0,184.0,141.0,1,Lung Opacity
+1b191289-3e02-4521-b96d-4d412d02c102,,,,,0,No Lung Opacity / Not Normal
+1b1dc237-cefb-48f9-87ae-467e99fa9cf0,,,,,0,Normal
+1b26e086-834d-49ec-b0fc-d2fafccb4aa6,623.0,605.0,197.0,124.0,1,Lung Opacity
+1b2fcebf-3743-40ef-92e7-e0802c77a5c2,632.0,193.0,228.0,628.0,1,Lung Opacity
+1b2fcebf-3743-40ef-92e7-e0802c77a5c2,632.0,193.0,228.0,628.0,1,Lung Opacity
+1b2fcebf-3743-40ef-92e7-e0802c77a5c2,275.0,236.0,193.0,518.0,1,Lung Opacity
+1b2fcebf-3743-40ef-92e7-e0802c77a5c2,275.0,236.0,193.0,518.0,1,Lung Opacity
+1b440724-2e24-4124-b7c7-0bc82015a674,,,,,0,No Lung Opacity / Not Normal
+1b4d9ebb-644e-4602-ad36-d83cf7415be6,673.0,558.0,220.0,269.0,1,Lung Opacity
+1b4d9ebb-644e-4602-ad36-d83cf7415be6,673.0,558.0,220.0,269.0,1,Lung Opacity
+1b4d9ebb-644e-4602-ad36-d83cf7415be6,226.0,624.0,141.0,142.0,1,Lung Opacity
+1b4d9ebb-644e-4602-ad36-d83cf7415be6,226.0,624.0,141.0,142.0,1,Lung Opacity
+1b52079c-b9ef-42d3-9e9a-17aea3bc6031,,,,,0,Normal
+1b57f09b-5884-48b6-b7b5-2b3a323280b7,170.0,390.0,247.0,187.0,1,Lung Opacity
+1b57f09b-5884-48b6-b7b5-2b3a323280b7,170.0,390.0,247.0,187.0,1,Lung Opacity
+1b57f09b-5884-48b6-b7b5-2b3a323280b7,671.0,415.0,197.0,216.0,1,Lung Opacity
+1b57f09b-5884-48b6-b7b5-2b3a323280b7,671.0,415.0,197.0,216.0,1,Lung Opacity
+1b605652-ed75-4e59-9d78-4b5ee5aa11ec,,,,,0,Normal
+1b6a11ed-b7e8-4c84-9ac6-8243fae589dd,,,,,0,Normal
+1b7f9ebf-bd1c-4195-9186-d6adb65945ee,348.0,313.0,122.0,383.0,1,Lung Opacity
+1b874f35-21ac-4e21-a292-c96165ad870b,600.0,445.0,177.0,246.0,1,Lung Opacity
+1b874f35-21ac-4e21-a292-c96165ad870b,600.0,445.0,177.0,246.0,1,Lung Opacity
+1b874f35-21ac-4e21-a292-c96165ad870b,253.0,425.0,168.0,258.0,1,Lung Opacity
+1b874f35-21ac-4e21-a292-c96165ad870b,253.0,425.0,168.0,258.0,1,Lung Opacity
+1b9d9477-b479-46bc-890a-663fad2e3358,551.0,399.0,185.0,211.0,1,Lung Opacity
+1b9d9477-b479-46bc-890a-663fad2e3358,551.0,399.0,185.0,211.0,1,Lung Opacity
+1b9d9477-b479-46bc-890a-663fad2e3358,233.0,372.0,156.0,212.0,1,Lung Opacity
+1b9d9477-b479-46bc-890a-663fad2e3358,233.0,372.0,156.0,212.0,1,Lung Opacity
+1ba15f4b-4b0e-4d13-8937-fd3e0d34babe,,,,,0,No Lung Opacity / Not Normal
+1bb316b4-49a6-4c83-9c1a-d9578febc760,,,,,0,Normal
+1bc755ca-d22a-4a4f-9eb7-acc2e2b45b44,353.0,449.0,140.0,71.0,1,Lung Opacity
+1bc755ca-d22a-4a4f-9eb7-acc2e2b45b44,353.0,449.0,140.0,71.0,1,Lung Opacity
+1bc755ca-d22a-4a4f-9eb7-acc2e2b45b44,383.0,304.0,105.0,89.0,1,Lung Opacity
+1bc755ca-d22a-4a4f-9eb7-acc2e2b45b44,383.0,304.0,105.0,89.0,1,Lung Opacity
+1bd17fbe-7df0-432a-9bbe-713ba0497c54,,,,,0,Normal
+1bdb5d23-e594-4556-a8dc-0017e6bc5bf9,,,,,0,Normal
+1be3fba5-6b8b-47b4-aa7b-9d0d08d42f1f,,,,,0,No Lung Opacity / Not Normal
+1bed6235-89c8-4cfc-b4d2-36731836830d,,,,,0,Normal
+1bed7fb4-bb3f-4be4-a5be-4ca7f34312a5,294.0,601.0,118.0,167.0,1,Lung Opacity
+1bed7fb4-bb3f-4be4-a5be-4ca7f34312a5,294.0,601.0,118.0,167.0,1,Lung Opacity
+1bed7fb4-bb3f-4be4-a5be-4ca7f34312a5,566.0,498.0,145.0,185.0,1,Lung Opacity
+1bed7fb4-bb3f-4be4-a5be-4ca7f34312a5,566.0,498.0,145.0,185.0,1,Lung Opacity
+1c049d3b-394b-47d6-9b54-405d46db1ad7,654.0,433.0,95.0,118.0,1,Lung Opacity
+1c0a5548-0e11-4793-b48e-97236374c768,,,,,0,No Lung Opacity / Not Normal
+1c0a780d-1cac-4eee-b46d-470ecebc9ae0,86.0,520.0,186.0,302.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,704.0,450.0,128.0,231.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,704.0,450.0,128.0,231.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,704.0,450.0,128.0,231.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,381.0,274.0,111.0,94.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,381.0,274.0,111.0,94.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,381.0,274.0,111.0,94.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,379.0,469.0,152.0,229.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,379.0,469.0,152.0,229.0,1,Lung Opacity
+1c184066-163f-4941-9794-43e8ca7fe77b,379.0,469.0,152.0,229.0,1,Lung Opacity
+1c187dbf-3fa4-4a39-914a-39994b76d4c5,615.0,452.0,67.0,113.0,1,Lung Opacity
+1c187dbf-3fa4-4a39-914a-39994b76d4c5,615.0,452.0,67.0,113.0,1,Lung Opacity
+1c187dbf-3fa4-4a39-914a-39994b76d4c5,279.0,396.0,191.0,207.0,1,Lung Opacity
+1c187dbf-3fa4-4a39-914a-39994b76d4c5,279.0,396.0,191.0,207.0,1,Lung Opacity
+1c2633c2-6fba-4a94-84e7-648ea251f1b0,,,,,0,Normal
+1c2707d4-9385-4228-823c-51fb2a956646,,,,,0,No Lung Opacity / Not Normal
+1c2fbe4f-6785-420d-a7ef-d81b84ff45ec,272.0,422.0,126.0,194.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,658.0,346.0,145.0,122.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,658.0,346.0,145.0,122.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,658.0,346.0,145.0,122.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,658.0,346.0,145.0,122.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,258.0,786.0,157.0,151.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,258.0,786.0,157.0,151.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,258.0,786.0,157.0,151.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,258.0,786.0,157.0,151.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,315.0,363.0,126.0,144.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,315.0,363.0,126.0,144.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,315.0,363.0,126.0,144.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,315.0,363.0,126.0,144.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,667.0,683.0,226.0,191.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,667.0,683.0,226.0,191.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,667.0,683.0,226.0,191.0,1,Lung Opacity
+1c44e0a4-4612-438f-9a83-8d5bf919cb67,667.0,683.0,226.0,191.0,1,Lung Opacity
+1c524fb1-768e-481f-a1d8-d9191dd09bfe,,,,,0,No Lung Opacity / Not Normal
+1c5435c1-431c-4815-a50e-6c20dc2d929e,206.0,513.0,173.0,139.0,1,Lung Opacity
+1c5435c1-431c-4815-a50e-6c20dc2d929e,206.0,513.0,173.0,139.0,1,Lung Opacity
+1c5435c1-431c-4815-a50e-6c20dc2d929e,643.0,268.0,92.0,150.0,1,Lung Opacity
+1c5435c1-431c-4815-a50e-6c20dc2d929e,643.0,268.0,92.0,150.0,1,Lung Opacity
+1c5c3093-5a22-4728-8d74-84846c3cbe72,,,,,0,Normal
+1c63da74-f68a-498d-a4b8-fc637227a4fa,665.0,178.0,116.0,263.0,1,Lung Opacity
+1c63da74-f68a-498d-a4b8-fc637227a4fa,665.0,178.0,116.0,263.0,1,Lung Opacity
+1c63da74-f68a-498d-a4b8-fc637227a4fa,322.0,168.0,123.0,118.0,1,Lung Opacity
+1c63da74-f68a-498d-a4b8-fc637227a4fa,322.0,168.0,123.0,118.0,1,Lung Opacity
+1c7c7be7-497e-4751-89e4-09d4209a8e2a,517.0,573.0,182.0,149.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,565.0,502.0,136.0,211.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,565.0,502.0,136.0,211.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,565.0,502.0,136.0,211.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,149.0,605.0,184.0,166.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,149.0,605.0,184.0,166.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,149.0,605.0,184.0,166.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,521.0,159.0,151.0,156.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,521.0,159.0,151.0,156.0,1,Lung Opacity
+1c807df9-7cf0-4f02-bb16-7ad88384ef2e,521.0,159.0,151.0,156.0,1,Lung Opacity
+1c893e7c-371f-4bde-9145-68d5d801860d,,,,,0,No Lung Opacity / Not Normal
+1c98cf85-1e50-4def-a8e7-6749808339ff,211.0,631.0,157.0,208.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,211.0,631.0,157.0,208.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,211.0,631.0,157.0,208.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,635.0,361.0,169.0,223.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,635.0,361.0,169.0,223.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,635.0,361.0,169.0,223.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,650.0,684.0,146.0,189.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,650.0,684.0,146.0,189.0,1,Lung Opacity
+1c98cf85-1e50-4def-a8e7-6749808339ff,650.0,684.0,146.0,189.0,1,Lung Opacity
+1c9d6056-3f6e-4d56-b425-e216ead4038b,,,,,0,No Lung Opacity / Not Normal
+1caa138f-f729-4693-9693-74b14cbb0d50,,,,,0,Normal
+1caa4dac-4bac-419b-91d4-cac2d8408ccd,318.0,319.0,156.0,267.0,1,Lung Opacity
+1caa4dac-4bac-419b-91d4-cac2d8408ccd,318.0,319.0,156.0,267.0,1,Lung Opacity
+1caa4dac-4bac-419b-91d4-cac2d8408ccd,702.0,383.0,111.0,354.0,1,Lung Opacity
+1caa4dac-4bac-419b-91d4-cac2d8408ccd,702.0,383.0,111.0,354.0,1,Lung Opacity
+1cadf040-18bb-424d-aa1f-2e6fa971277b,,,,,0,Normal
+1caf1ab4-68ee-4b55-ba89-1c3f3bee1435,634.0,702.0,183.0,205.0,1,Lung Opacity
+1cc1ad56-7cf5-464c-994f-ff10d880ded9,,,,,0,No Lung Opacity / Not Normal
+1ccf9c68-7db2-4170-b118-2b390c4bac7d,,,,,0,No Lung Opacity / Not Normal
+1cdba4ee-0bb8-421d-9a24-7febeb399729,,,,,0,Normal
+1ce726b3-b936-450e-9c4a-90646b5fd001,,,,,0,Normal
+1cee8f22-8603-49a8-a69c-ea807158db1b,209.0,475.0,142.0,166.0,1,Lung Opacity
+1cee8f22-8603-49a8-a69c-ea807158db1b,209.0,475.0,142.0,166.0,1,Lung Opacity
+1cee8f22-8603-49a8-a69c-ea807158db1b,572.0,490.0,161.0,228.0,1,Lung Opacity
+1cee8f22-8603-49a8-a69c-ea807158db1b,572.0,490.0,161.0,228.0,1,Lung Opacity
+1cfe520b-cb8f-4aeb-8861-ac8ef6c79d8c,,,,,0,Normal
+1d0386e4-e101-4f48-a7cb-d4d763316d47,,,,,0,Normal
+1d1968e2-88a5-4d72-9237-caf4cbad9423,,,,,0,Normal
+1d1c3fb7-71d6-4104-8a93-320e4959bbdb,312.0,484.0,143.0,233.0,1,Lung Opacity
+1d1c3fb7-71d6-4104-8a93-320e4959bbdb,312.0,484.0,143.0,233.0,1,Lung Opacity
+1d1c3fb7-71d6-4104-8a93-320e4959bbdb,620.0,497.0,116.0,251.0,1,Lung Opacity
+1d1c3fb7-71d6-4104-8a93-320e4959bbdb,620.0,497.0,116.0,251.0,1,Lung Opacity
+1d1c51b5-1cc9-4d0c-8073-5f1cfd598f76,174.0,423.0,163.0,142.0,1,Lung Opacity
+1d1c51b5-1cc9-4d0c-8073-5f1cfd598f76,174.0,423.0,163.0,142.0,1,Lung Opacity
+1d1c51b5-1cc9-4d0c-8073-5f1cfd598f76,563.0,449.0,116.0,146.0,1,Lung Opacity
+1d1c51b5-1cc9-4d0c-8073-5f1cfd598f76,563.0,449.0,116.0,146.0,1,Lung Opacity
+1d1d8348-c6cf-4dc4-a577-a75fa779f8f7,,,,,0,No Lung Opacity / Not Normal
+1d247b6c-0687-40bf-839e-fd30e01c585d,776.0,337.0,65.0,69.0,1,Lung Opacity
+1d30b6dc-acca-4a35-a278-ca4b84629a7e,,,,,0,No Lung Opacity / Not Normal
+1d3e4775-9d2c-4e5f-81de-ce29b540a9f7,,,,,0,No Lung Opacity / Not Normal
+1d4ba8b7-5055-42a1-b928-49542438cd15,,,,,0,Normal
+1d542f61-b3df-439b-bdbd-c8b38eb8454f,,,,,0,Normal
+1d5af9ab-1f62-47b2-980f-71e8409d7c3c,,,,,0,No Lung Opacity / Not Normal
+1d7ab7b7-3479-4487-b61b-936d64b8393b,,,,,0,Normal
+1d80b0ab-2dfe-4d28-bb01-e0b60a3ce972,,,,,0,Normal
+1d9c11e2-ad66-48ae-a898-b7aba7fb0fb2,,,,,0,Normal
+1d9dde4e-97cc-4163-a3d5-8b845ad60ded,,,,,0,No Lung Opacity / Not Normal
+1dad3414-88c9-4c56-af5d-3a1488af452c,210.0,432.0,141.0,208.0,1,Lung Opacity
+1dad3414-88c9-4c56-af5d-3a1488af452c,210.0,432.0,141.0,208.0,1,Lung Opacity
+1dad3414-88c9-4c56-af5d-3a1488af452c,633.0,466.0,206.0,270.0,1,Lung Opacity
+1dad3414-88c9-4c56-af5d-3a1488af452c,633.0,466.0,206.0,270.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,650.0,308.0,79.0,171.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,650.0,308.0,79.0,171.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,650.0,308.0,79.0,171.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,302.0,289.0,127.0,93.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,302.0,289.0,127.0,93.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,302.0,289.0,127.0,93.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,240.0,479.0,163.0,106.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,240.0,479.0,163.0,106.0,1,Lung Opacity
+1db7e52d-7a40-49ff-9f24-bc72a33f9c23,240.0,479.0,163.0,106.0,1,Lung Opacity
+1dbc0249-4761-4b19-9872-de59673942da,221.0,489.0,149.0,77.0,1,Lung Opacity
+1dbc0249-4761-4b19-9872-de59673942da,221.0,489.0,149.0,77.0,1,Lung Opacity
+1dbc0249-4761-4b19-9872-de59673942da,605.0,414.0,172.0,160.0,1,Lung Opacity
+1dbc0249-4761-4b19-9872-de59673942da,605.0,414.0,172.0,160.0,1,Lung Opacity
+1dbcb00b-ba8e-466c-99a9-0beaee915ec3,,,,,0,No Lung Opacity / Not Normal
+1dbccebc-d38e-46c7-b639-acb33572823f,,,,,0,No Lung Opacity / Not Normal
+1dcc3cdf-c92f-42d1-a0fb-3d0ee823a67a,,,,,0,Normal
+1df724c0-ccf5-4299-9037-81b1470f115a,,,,,0,No Lung Opacity / Not Normal
+1dfee324-e504-49da-bfb8-5f3e5c2eda88,727.0,338.0,169.0,249.0,1,Lung Opacity
+1dfee324-e504-49da-bfb8-5f3e5c2eda88,727.0,338.0,169.0,249.0,1,Lung Opacity
+1dfee324-e504-49da-bfb8-5f3e5c2eda88,301.0,491.0,150.0,240.0,1,Lung Opacity
+1dfee324-e504-49da-bfb8-5f3e5c2eda88,301.0,491.0,150.0,240.0,1,Lung Opacity
+1e1c3b02-27fa-42a2-b51b-f46378e09fde,147.0,364.0,186.0,457.0,1,Lung Opacity
+1e1c3b02-27fa-42a2-b51b-f46378e09fde,147.0,364.0,186.0,457.0,1,Lung Opacity
+1e1c3b02-27fa-42a2-b51b-f46378e09fde,567.0,358.0,206.0,466.0,1,Lung Opacity
+1e1c3b02-27fa-42a2-b51b-f46378e09fde,567.0,358.0,206.0,466.0,1,Lung Opacity
+1e332eeb-da57-4857-8457-b8fc76941749,181.0,592.0,151.0,197.0,1,Lung Opacity
+1e332eeb-da57-4857-8457-b8fc76941749,181.0,592.0,151.0,197.0,1,Lung Opacity
+1e332eeb-da57-4857-8457-b8fc76941749,600.0,653.0,157.0,169.0,1,Lung Opacity
+1e332eeb-da57-4857-8457-b8fc76941749,600.0,653.0,157.0,169.0,1,Lung Opacity
+1e334125-d0bf-4229-bf47-c7739ec3bf5b,,,,,0,Normal
+1e57ff83-f0cb-4f2a-b8c5-f916ccd0e2c0,557.0,419.0,179.0,231.0,1,Lung Opacity
+1e57ff83-f0cb-4f2a-b8c5-f916ccd0e2c0,557.0,419.0,179.0,231.0,1,Lung Opacity
+1e57ff83-f0cb-4f2a-b8c5-f916ccd0e2c0,168.0,507.0,169.0,255.0,1,Lung Opacity
+1e57ff83-f0cb-4f2a-b8c5-f916ccd0e2c0,168.0,507.0,169.0,255.0,1,Lung Opacity
+1e616583-e09d-476d-ac25-8fa620f4298a,,,,,0,Normal
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,278.0,234.0,125.0,128.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,278.0,234.0,125.0,128.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,278.0,234.0,125.0,128.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,259.0,472.0,96.0,59.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,259.0,472.0,96.0,59.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,259.0,472.0,96.0,59.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,643.0,198.0,133.0,223.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,643.0,198.0,133.0,223.0,1,Lung Opacity
+1e6c28f1-f8d3-4d49-bb82-0cc8709a86f1,643.0,198.0,133.0,223.0,1,Lung Opacity
+1e70a641-8faa-4436-a075-8193b3b541e1,558.0,489.0,183.0,222.0,1,Lung Opacity
+1e70a641-8faa-4436-a075-8193b3b541e1,558.0,489.0,183.0,222.0,1,Lung Opacity
+1e70a641-8faa-4436-a075-8193b3b541e1,147.0,534.0,142.0,154.0,1,Lung Opacity
+1e70a641-8faa-4436-a075-8193b3b541e1,147.0,534.0,142.0,154.0,1,Lung Opacity
+1e79584e-007e-43a7-bef3-94c4889dbfdf,,,,,0,Normal
+1e83e240-c08d-4f0a-8236-d11a3f8d95ac,,,,,0,No Lung Opacity / Not Normal
+1e851877-2e99-4955-8ecb-5997fe027948,,,,,0,No Lung Opacity / Not Normal
+1e919d0a-d02e-424b-abf4-6bbf4f6f9ad3,615.0,599.0,122.0,130.0,1,Lung Opacity
+1e98c91f-9481-4ea3-917f-69f11c7740b3,603.0,245.0,206.0,268.0,1,Lung Opacity
+1e98c91f-9481-4ea3-917f-69f11c7740b3,603.0,245.0,206.0,268.0,1,Lung Opacity
+1e98c91f-9481-4ea3-917f-69f11c7740b3,194.0,424.0,214.0,246.0,1,Lung Opacity
+1e98c91f-9481-4ea3-917f-69f11c7740b3,194.0,424.0,214.0,246.0,1,Lung Opacity
+1eac099e-4467-42e1-af73-aac4feebe439,,,,,0,Normal
+1ed2b1aa-c8e6-4b76-aaeb-289fecd0095b,,,,,0,No Lung Opacity / Not Normal
+1ed9d674-2a7d-40d9-b40d-e754fc49938e,,,,,0,No Lung Opacity / Not Normal
+1edbfc97-bf4e-4c36-ad0e-f824ca6d64e5,,,,,0,No Lung Opacity / Not Normal
+1ee4530d-88fc-4509-8470-42514c98b620,,,,,0,Normal
+1eeb2724-6472-4771-a251-d8a55633851d,,,,,0,No Lung Opacity / Not Normal
+1eef9264-e6e3-41ba-b5fa-6a2ab638a7c9,526.0,641.0,109.0,153.0,1,Lung Opacity
+1f0c275d-3f1a-43ea-b24f-8834447f3bc6,,,,,0,Normal
+1f0d06c7-de90-491e-ab76-58f62575a35a,,,,,0,Normal
+1f0ef178-e4be-4ec3-b44a-232ef178f5e9,,,,,0,Normal
+1f15de5b-db66-4f98-95e2-ec108a5d5a27,,,,,0,Normal
+1f21bd75-32f1-4554-9f19-66b96328bb72,,,,,0,No Lung Opacity / Not Normal
+1f29d0c9-e758-4b71-ba67-38eb605a9dd4,,,,,0,No Lung Opacity / Not Normal
+1f40556d-19e9-4c63-bc76-4ef8dc78fc60,,,,,0,Normal
+1f447431-e2b3-4d18-8c22-30684ab71ffb,265.0,516.0,131.0,147.0,1,Lung Opacity
+1f458170-a4e7-447f-a157-2b44e85f1e6c,630.0,610.0,200.0,169.0,1,Lung Opacity
+1f458170-a4e7-447f-a157-2b44e85f1e6c,630.0,610.0,200.0,169.0,1,Lung Opacity
+1f458170-a4e7-447f-a157-2b44e85f1e6c,257.0,325.0,131.0,160.0,1,Lung Opacity
+1f458170-a4e7-447f-a157-2b44e85f1e6c,257.0,325.0,131.0,160.0,1,Lung Opacity
+1f4741e6-a0ae-41b2-8b70-bf7e927f1b13,220.0,536.0,150.0,117.0,1,Lung Opacity
+1f493e1f-cd9f-455a-8b22-c77d042d6ac2,563.0,478.0,177.0,162.0,1,Lung Opacity
+1f493e1f-cd9f-455a-8b22-c77d042d6ac2,563.0,478.0,177.0,162.0,1,Lung Opacity
+1f493e1f-cd9f-455a-8b22-c77d042d6ac2,194.0,408.0,132.0,101.0,1,Lung Opacity
+1f493e1f-cd9f-455a-8b22-c77d042d6ac2,194.0,408.0,132.0,101.0,1,Lung Opacity
+1f6e393f-ae2b-4086-acba-8e4272245a7c,,,,,0,No Lung Opacity / Not Normal
+1f6e80da-8d59-439d-a711-9d72e5195805,,,,,0,No Lung Opacity / Not Normal
+1f70d7ed-d3aa-47d7-acc6-3bc978011e42,,,,,0,No Lung Opacity / Not Normal
+1f724a40-9826-4e46-84df-bf4c333c676e,,,,,0,Normal
+1f764059-8ea1-471d-b910-efbc4e5fcdaa,,,,,0,Normal
+1f7a3519-99e6-4466-9859-5e628bebff73,607.0,438.0,175.0,157.0,1,Lung Opacity
+1f89239e-8271-4c33-abbc-7c018723b4c4,277.0,310.0,156.0,113.0,1,Lung Opacity
+1f929e8d-0289-4712-806b-8894c2ba2f93,,,,,0,No Lung Opacity / Not Normal
+1f99edfe-6ad8-4781-9f7a-cf6c3f3123ff,,,,,0,No Lung Opacity / Not Normal
+1f9aa2f6-c219-47c5-834c-173825b2a110,,,,,0,No Lung Opacity / Not Normal
+1fa87ba3-8da3-4248-9245-4286c2434f69,,,,,0,No Lung Opacity / Not Normal
+1fa9f43b-3f5f-4c16-8731-c88d71ee6e0b,,,,,0,No Lung Opacity / Not Normal
+1fbb3006-6ce6-47a5-be74-9ddcaf9b3ef0,,,,,0,Normal
+1fd15b31-7b21-483d-bbef-e9893d6a051b,675.0,430.0,169.0,123.0,1,Lung Opacity
+1fd8e4db-3283-44a1-a591-6e3e49f248ab,584.0,537.0,279.0,160.0,1,Lung Opacity
+1feec494-6f00-4ddd-ac00-c4a5b5792e8b,,,,,0,Normal
+1ffb9330-10cb-4e5a-9c27-b8e390d8b3a1,,,,,0,No Lung Opacity / Not Normal
+1ffc10a0-40a4-4a34-92b1-d9cab759f444,,,,,0,No Lung Opacity / Not Normal
+1ffee791-10f6-4b8f-bfcd-35220e8e0003,204.0,371.0,235.0,197.0,1,Lung Opacity
+1ffee791-10f6-4b8f-bfcd-35220e8e0003,204.0,371.0,235.0,197.0,1,Lung Opacity
+1ffee791-10f6-4b8f-bfcd-35220e8e0003,609.0,405.0,256.0,179.0,1,Lung Opacity
+1ffee791-10f6-4b8f-bfcd-35220e8e0003,609.0,405.0,256.0,179.0,1,Lung Opacity
+200613d9-e461-4836-ae40-b349087e01a2,,,,,0,No Lung Opacity / Not Normal
+20150694-71f9-433a-914c-c734d44f8976,,,,,0,Normal
+2017d9e5-6f8b-42f0-97e1-ac5d29f9de60,712.0,335.0,137.0,283.0,1,Lung Opacity
+20199da8-1cc3-429a-90d5-95242e065fe4,728.0,441.0,245.0,363.0,1,Lung Opacity
+20199da8-1cc3-429a-90d5-95242e065fe4,728.0,441.0,245.0,363.0,1,Lung Opacity
+20199da8-1cc3-429a-90d5-95242e065fe4,264.0,546.0,213.0,166.0,1,Lung Opacity
+20199da8-1cc3-429a-90d5-95242e065fe4,264.0,546.0,213.0,166.0,1,Lung Opacity
+201fe232-cebb-4e8d-ab9a-f41f03bd676a,167.0,481.0,266.0,376.0,1,Lung Opacity
+2037f6cd-d91f-47b9-ad6b-13a629090fdd,523.0,588.0,194.0,226.0,1,Lung Opacity
+203a63e3-238f-40ff-a0fc-de85641f7dd5,,,,,0,Normal
+203b7f39-41eb-4b06-ae00-387fbfa45dd8,597.0,322.0,271.0,599.0,1,Lung Opacity
+2050fb88-70cb-40db-810d-038337613147,577.0,401.0,285.0,318.0,1,Lung Opacity
+2050fb88-70cb-40db-810d-038337613147,577.0,401.0,285.0,318.0,1,Lung Opacity
+2050fb88-70cb-40db-810d-038337613147,146.0,389.0,290.0,286.0,1,Lung Opacity
+2050fb88-70cb-40db-810d-038337613147,146.0,389.0,290.0,286.0,1,Lung Opacity
+20527dda-ec34-4c48-9e6a-c03e0d7d0ff4,,,,,0,No Lung Opacity / Not Normal
+2055d3d1-e0d1-49a3-a416-2609e5c649bc,,,,,0,No Lung Opacity / Not Normal
+205f5b04-b42a-4890-af36-0ed2de7a56a1,555.0,174.0,272.0,438.0,1,Lung Opacity
+205f5b04-b42a-4890-af36-0ed2de7a56a1,555.0,174.0,272.0,438.0,1,Lung Opacity
+205f5b04-b42a-4890-af36-0ed2de7a56a1,202.0,342.0,304.0,590.0,1,Lung Opacity
+205f5b04-b42a-4890-af36-0ed2de7a56a1,202.0,342.0,304.0,590.0,1,Lung Opacity
+20705b50-3adb-4e95-bee6-e0fbd8f87776,,,,,0,Normal
+2081a158-b795-4a7b-bd76-be3e89a8c164,,,,,0,Normal
+208d539f-c428-44f0-8ba3-31287b6ceee8,,,,,0,No Lung Opacity / Not Normal
+20903dac-37a5-4afb-b88d-18ac705c5c08,,,,,0,No Lung Opacity / Not Normal
+209147a3-a77b-4b6f-b2be-b74e38355bcf,237.0,268.0,165.0,300.0,1,Lung Opacity
+20a80eb6-1110-4833-8efc-e2cc08adfe9a,,,,,0,Normal
+20d3f1cf-6f6b-4119-8008-bc5c6e105464,261.0,480.0,164.0,73.0,1,Lung Opacity
+20e1f3f2-953a-4a8e-b7d3-8db21a4ce933,,,,,0,Normal
+20f6d471-e33c-4f09-bdcc-2fe9de41cb41,,,,,0,Normal
+2118026e-ed2f-4d1e-baa2-0e9e1004f72c,,,,,0,Normal
+21273117-1e4c-4f9a-8ed1-f11b7c063060,,,,,0,Normal
+212ccee9-80ec-4d67-8edb-5959d344c923,,,,,0,Normal
+214dcd68-4220-4010-8510-4c8eee830c70,,,,,0,Normal
+2152d0ec-5d28-4b15-bb45-422e110aad20,,,,,0,No Lung Opacity / Not Normal
+21684515-f845-4d3e-acb0-13628edaa264,,,,,0,Normal
+216ef465-167c-495f-b1ad-8218b65338ea,266.0,332.0,227.0,540.0,1,Lung Opacity
+216ef465-167c-495f-b1ad-8218b65338ea,266.0,332.0,227.0,540.0,1,Lung Opacity
+216ef465-167c-495f-b1ad-8218b65338ea,579.0,317.0,262.0,581.0,1,Lung Opacity
+216ef465-167c-495f-b1ad-8218b65338ea,579.0,317.0,262.0,581.0,1,Lung Opacity
+2178c094-b206-4fe5-a9ef-d84540996b89,231.0,589.0,189.0,228.0,1,Lung Opacity
+21909788-6009-48a7-80c2-8ee149b18251,624.0,525.0,231.0,200.0,1,Lung Opacity
+21909788-6009-48a7-80c2-8ee149b18251,624.0,525.0,231.0,200.0,1,Lung Opacity
+21909788-6009-48a7-80c2-8ee149b18251,244.0,480.0,195.0,178.0,1,Lung Opacity
+21909788-6009-48a7-80c2-8ee149b18251,244.0,480.0,195.0,178.0,1,Lung Opacity
+219334b4-6696-4b41-90bd-0c56878ccbe6,278.0,244.0,144.0,136.0,1,Lung Opacity
+219334b4-6696-4b41-90bd-0c56878ccbe6,278.0,244.0,144.0,136.0,1,Lung Opacity
+219334b4-6696-4b41-90bd-0c56878ccbe6,563.0,170.0,136.0,224.0,1,Lung Opacity
+219334b4-6696-4b41-90bd-0c56878ccbe6,563.0,170.0,136.0,224.0,1,Lung Opacity
+21acb261-5038-406a-bb35-054fe557f0ee,,,,,0,No Lung Opacity / Not Normal
+21aea18e-5904-4663-9d36-54a43b90e4d8,,,,,0,Normal
+21afc084-1c98-42f5-b767-edb5cb8f2884,571.0,293.0,259.0,460.0,1,Lung Opacity
+21afc084-1c98-42f5-b767-edb5cb8f2884,571.0,293.0,259.0,460.0,1,Lung Opacity
+21afc084-1c98-42f5-b767-edb5cb8f2884,241.0,307.0,192.0,511.0,1,Lung Opacity
+21afc084-1c98-42f5-b767-edb5cb8f2884,241.0,307.0,192.0,511.0,1,Lung Opacity
+21b8cc03-edd2-4c5e-85e2-1c42c86b7d53,,,,,0,Normal
+21b97415-1275-4483-9705-af9174fc2b4f,180.0,469.0,243.0,277.0,1,Lung Opacity
+21cbfa1b-6faa-4356-b1eb-a180d7d9b4ac,,,,,0,Normal
+21cca2a5-6cb9-4667-bde6-5fe4ac8d2a29,,,,,0,No Lung Opacity / Not Normal
+220e0278-363d-431b-8094-1e28085ddb0f,644.0,345.0,192.0,337.0,1,Lung Opacity
+220e0278-363d-431b-8094-1e28085ddb0f,644.0,345.0,192.0,337.0,1,Lung Opacity
+220e0278-363d-431b-8094-1e28085ddb0f,334.0,234.0,170.0,411.0,1,Lung Opacity
+220e0278-363d-431b-8094-1e28085ddb0f,334.0,234.0,170.0,411.0,1,Lung Opacity
+2232fe6c-e152-4875-9b6d-1706a3b1652c,,,,,0,No Lung Opacity / Not Normal
+223d7974-cb7f-47bb-9502-d91b363153dc,,,,,0,Normal
+224a054f-8497-4e62-b4fe-b7829c62879e,,,,,0,Normal
+224c3686-d481-46f9-8a3a-4e492ba3363f,,,,,0,Normal
+2263b413-900d-4c5a-99cc-bb551a39f131,,,,,0,No Lung Opacity / Not Normal
+22956af6-6152-4458-a39d-a45706b8a96c,,,,,0,No Lung Opacity / Not Normal
+229c584f-7174-4fcf-b740-7127cbf53525,687.0,562.0,224.0,229.0,1,Lung Opacity
+229c584f-7174-4fcf-b740-7127cbf53525,687.0,562.0,224.0,229.0,1,Lung Opacity
+229c584f-7174-4fcf-b740-7127cbf53525,283.0,600.0,142.0,218.0,1,Lung Opacity
+229c584f-7174-4fcf-b740-7127cbf53525,283.0,600.0,142.0,218.0,1,Lung Opacity
+22a39d0b-3a66-400a-96cf-97a228a2de79,,,,,0,No Lung Opacity / Not Normal
+22ce653c-e7f4-45d5-9c5e-4abdc753b1b0,647.0,421.0,142.0,223.0,1,Lung Opacity
+22ce653c-e7f4-45d5-9c5e-4abdc753b1b0,647.0,421.0,142.0,223.0,1,Lung Opacity
+22ce653c-e7f4-45d5-9c5e-4abdc753b1b0,279.0,560.0,149.0,152.0,1,Lung Opacity
+22ce653c-e7f4-45d5-9c5e-4abdc753b1b0,279.0,560.0,149.0,152.0,1,Lung Opacity
+22d23df8-22af-410c-bea9-2e6e8eb1ce94,,,,,0,Normal
+22da0004-e69d-49c5-bde5-252ab5895da0,,,,,0,Normal
+22e76fb4-c74e-4cc3-820a-832a4467dac6,228.0,551.0,155.0,256.0,1,Lung Opacity
+22e76fb4-c74e-4cc3-820a-832a4467dac6,228.0,551.0,155.0,256.0,1,Lung Opacity
+22e76fb4-c74e-4cc3-820a-832a4467dac6,553.0,537.0,186.0,265.0,1,Lung Opacity
+22e76fb4-c74e-4cc3-820a-832a4467dac6,553.0,537.0,186.0,265.0,1,Lung Opacity
+22ff9ca2-6b24-422a-b8da-6f986a870077,633.0,485.0,112.0,79.0,1,Lung Opacity
+23011568-4563-4a06-96fe-9c29f08ff01c,,,,,0,No Lung Opacity / Not Normal
+232f6bcd-2006-459a-9b30-b51beea28044,602.0,421.0,197.0,148.0,1,Lung Opacity
+233fa720-d58a-4db3-beac-e99002f7080e,,,,,0,No Lung Opacity / Not Normal
+2348e8ba-483f-476d-b29d-5ba8398d7abc,256.0,582.0,154.0,210.0,1,Lung Opacity
+2348e8ba-483f-476d-b29d-5ba8398d7abc,256.0,582.0,154.0,210.0,1,Lung Opacity
+2348e8ba-483f-476d-b29d-5ba8398d7abc,657.0,574.0,190.0,213.0,1,Lung Opacity
+2348e8ba-483f-476d-b29d-5ba8398d7abc,657.0,574.0,190.0,213.0,1,Lung Opacity
+23550fde-0680-4c70-afd4-c3534df4c657,,,,,0,Normal
+235bb572-948f-446f-a7d6-40803f4dbb8c,535.0,468.0,131.0,223.0,1,Lung Opacity
+235bb572-948f-446f-a7d6-40803f4dbb8c,535.0,468.0,131.0,223.0,1,Lung Opacity
+235bb572-948f-446f-a7d6-40803f4dbb8c,163.0,277.0,150.0,360.0,1,Lung Opacity
+235bb572-948f-446f-a7d6-40803f4dbb8c,163.0,277.0,150.0,360.0,1,Lung Opacity
+23815776-6d93-4835-867a-1b251b10b1d3,591.0,538.0,191.0,117.0,1,Lung Opacity
+23817810-a792-4c97-a15c-24d3c9da1f3b,,,,,0,Normal
+238794cf-06df-4bad-a93a-4e961d6ea951,,,,,0,No Lung Opacity / Not Normal
+2387db99-efe6-4e4b-bbc8-6f725e1b757e,,,,,0,Normal
+2391484d-edaa-4e8d-a993-1ff779eafce7,,,,,0,No Lung Opacity / Not Normal
+2392ac11-428d-4739-9ac7-d170aedd262d,,,,,0,Normal
+23997b8b-5726-4b2d-bd45-b15fc1c4c2af,143.0,620.0,216.0,194.0,1,Lung Opacity
+239b10e6-a859-447b-8496-eca7b6c8a356,226.0,536.0,160.0,235.0,1,Lung Opacity
+239e9d1c-e5c1-4798-a6ba-64fd64e7c486,701.0,435.0,160.0,276.0,1,Lung Opacity
+23aa6468-59f9-4ace-b656-9fea8d64764a,616.0,340.0,163.0,190.0,1,Lung Opacity
+23ab8dcb-0331-42b0-8058-45676e48675e,205.0,523.0,195.0,211.0,1,Lung Opacity
+23ae7f52-f3be-4b6f-ba8f-ac2a72f433fc,634.0,594.0,214.0,226.0,1,Lung Opacity
+23b10103-d1f2-4180-896a-efde9c4ad10a,189.0,484.0,132.0,157.0,1,Lung Opacity
+23bf02dd-a965-4b1d-b4f3-060c330f63e9,,,,,0,No Lung Opacity / Not Normal
+23ca0450-4138-4e7a-9489-0f5b6a91031d,621.0,399.0,193.0,91.0,1,Lung Opacity
+23ca0450-4138-4e7a-9489-0f5b6a91031d,621.0,399.0,193.0,91.0,1,Lung Opacity
+23ca0450-4138-4e7a-9489-0f5b6a91031d,94.0,414.0,224.0,134.0,1,Lung Opacity
+23ca0450-4138-4e7a-9489-0f5b6a91031d,94.0,414.0,224.0,134.0,1,Lung Opacity
+23ca6e02-56e8-4872-b323-ded9792a7fa9,,,,,0,Normal
+23d10aaa-a598-44c4-9927-7c62703f535b,,,,,0,No Lung Opacity / Not Normal
+23dde3cd-bdf6-4586-bf6d-8e3306c71455,,,,,0,Normal
+23e9b940-daea-4092-a2c5-6c92bb615e25,,,,,0,Normal
+23f122ac-3693-45bb-8769-273cd644f643,,,,,0,No Lung Opacity / Not Normal
+23f653b7-5388-4213-98c6-418aa9eb980d,730.0,460.0,144.0,143.0,1,Lung Opacity
+240623d8-8d6b-4bd1-a4ad-6b34fba65f07,,,,,0,No Lung Opacity / Not Normal
+2411eac7-f0b6-4eb8-82ec-d5f1487bdebf,607.0,508.0,135.0,136.0,1,Lung Opacity
+2411eac7-f0b6-4eb8-82ec-d5f1487bdebf,607.0,508.0,135.0,136.0,1,Lung Opacity
+2411eac7-f0b6-4eb8-82ec-d5f1487bdebf,264.0,512.0,133.0,127.0,1,Lung Opacity
+2411eac7-f0b6-4eb8-82ec-d5f1487bdebf,264.0,512.0,133.0,127.0,1,Lung Opacity
+24137e3a-352c-4543-bfae-90d869e93281,,,,,0,No Lung Opacity / Not Normal
+242a6f0b-fc6e-42e6-84c9-f74e3d33372b,689.0,362.0,177.0,290.0,1,Lung Opacity
+242a6f0b-fc6e-42e6-84c9-f74e3d33372b,689.0,362.0,177.0,290.0,1,Lung Opacity
+242a6f0b-fc6e-42e6-84c9-f74e3d33372b,281.0,360.0,170.0,243.0,1,Lung Opacity
+242a6f0b-fc6e-42e6-84c9-f74e3d33372b,281.0,360.0,170.0,243.0,1,Lung Opacity
+243d4ffb-6f8d-48d4-aa86-e93dcbb7b238,,,,,0,No Lung Opacity / Not Normal
+2449f649-1a19-40b4-8d17-bd6f272377bb,,,,,0,Normal
+244ce2a0-21d8-4f75-a118-dd5a51658bc7,750.0,686.0,133.0,211.0,1,Lung Opacity
+2456fcb4-82bd-4fa9-8ef2-8e1250c3ff50,210.0,451.0,139.0,167.0,1,Lung Opacity
+2458fdf6-7200-425e-b072-0a4e08afcdca,,,,,0,No Lung Opacity / Not Normal
+245d1104-6524-4d44-ace9-e54f0645a46e,532.0,568.0,148.0,210.0,1,Lung Opacity
+245d1104-6524-4d44-ace9-e54f0645a46e,532.0,568.0,148.0,210.0,1,Lung Opacity
+245d1104-6524-4d44-ace9-e54f0645a46e,162.0,590.0,127.0,239.0,1,Lung Opacity
+245d1104-6524-4d44-ace9-e54f0645a46e,162.0,590.0,127.0,239.0,1,Lung Opacity
+246bf123-5a0d-4a3d-b4b4-6e442f8a830c,,,,,0,No Lung Opacity / Not Normal
+248212c6-2326-47ea-9976-6cbaa9c7ae3e,,,,,0,No Lung Opacity / Not Normal
+2490b2de-41fb-41dc-a73d-7e946c86124b,,,,,0,Normal
+24a37f78-cea1-42eb-94a7-b2c51c0f0915,,,,,0,No Lung Opacity / Not Normal
+24c876fa-93e4-4dd6-b1f1-a6f5f4aab729,219.0,673.0,175.0,232.0,1,Lung Opacity
+24c876fa-93e4-4dd6-b1f1-a6f5f4aab729,219.0,673.0,175.0,232.0,1,Lung Opacity
+24c876fa-93e4-4dd6-b1f1-a6f5f4aab729,626.0,774.0,125.0,160.0,1,Lung Opacity
+24c876fa-93e4-4dd6-b1f1-a6f5f4aab729,626.0,774.0,125.0,160.0,1,Lung Opacity
+24c98b8f-6d53-4ef1-b0f6-dce04a10f1b7,,,,,0,No Lung Opacity / Not Normal
+24cb4fd3-7f4b-4bc7-a9c1-24be6c6e09de,560.0,343.0,240.0,391.0,1,Lung Opacity
+24cb4fd3-7f4b-4bc7-a9c1-24be6c6e09de,560.0,343.0,240.0,391.0,1,Lung Opacity
+24cb4fd3-7f4b-4bc7-a9c1-24be6c6e09de,227.0,597.0,132.0,99.0,1,Lung Opacity
+24cb4fd3-7f4b-4bc7-a9c1-24be6c6e09de,227.0,597.0,132.0,99.0,1,Lung Opacity
+24d33a1b-f931-4635-8014-ffaf1d266986,,,,,0,No Lung Opacity / Not Normal
+24ee3bb1-b7d3-4d1f-908d-6598df7411b8,,,,,0,Normal
+250a223e-0d4f-48f9-8698-321d58c1f0c3,,,,,0,Normal
+251e735f-99f1-44ff-b595-aa6a5e80b539,,,,,0,Normal
+251f6387-f60a-46e3-9bfa-78262116bc28,,,,,0,No Lung Opacity / Not Normal
+2526df82-a04c-4aef-8df6-a48e3b4c6cde,,,,,0,No Lung Opacity / Not Normal
+2529eed9-738c-4a5d-9e77-c061d77e3510,,,,,0,Normal
+25300d70-86f1-4be6-83a9-f6ae31a0b451,577.0,511.0,195.0,86.0,1,Lung Opacity
+25310577-2bea-495f-b73c-7eff7954571e,157.0,606.0,145.0,116.0,1,Lung Opacity
+25310577-2bea-495f-b73c-7eff7954571e,157.0,606.0,145.0,116.0,1,Lung Opacity
+25310577-2bea-495f-b73c-7eff7954571e,534.0,564.0,181.0,113.0,1,Lung Opacity
+25310577-2bea-495f-b73c-7eff7954571e,534.0,564.0,181.0,113.0,1,Lung Opacity
+25465a29-78c4-44cf-984d-b3b9477f2de2,207.0,445.0,143.0,314.0,1,Lung Opacity
+25465a29-78c4-44cf-984d-b3b9477f2de2,207.0,445.0,143.0,314.0,1,Lung Opacity
+25465a29-78c4-44cf-984d-b3b9477f2de2,580.0,479.0,179.0,310.0,1,Lung Opacity
+25465a29-78c4-44cf-984d-b3b9477f2de2,580.0,479.0,179.0,310.0,1,Lung Opacity
+254d15d9-dfc5-42a2-b2d6-f208527d6396,590.0,555.0,95.0,124.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,578.0,360.0,126.0,244.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,578.0,360.0,126.0,244.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,578.0,360.0,126.0,244.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,562.0,652.0,206.0,202.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,562.0,652.0,206.0,202.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,562.0,652.0,206.0,202.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,178.0,525.0,189.0,281.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,178.0,525.0,189.0,281.0,1,Lung Opacity
+254f04d1-d24e-43bc-a00d-8f7140c222fb,178.0,525.0,189.0,281.0,1,Lung Opacity
+2550ee5f-ea6e-4683-8aeb-54ab06e0c318,,,,,0,No Lung Opacity / Not Normal
+25518fc2-dbc0-4c43-858c-e5a3b8e6c892,,,,,0,No Lung Opacity / Not Normal
+2554df23-d5d3-4ffc-86c7-952a535998fc,662.0,392.0,203.0,327.0,1,Lung Opacity
+2554df23-d5d3-4ffc-86c7-952a535998fc,662.0,392.0,203.0,327.0,1,Lung Opacity
+2554df23-d5d3-4ffc-86c7-952a535998fc,298.0,306.0,162.0,354.0,1,Lung Opacity
+2554df23-d5d3-4ffc-86c7-952a535998fc,298.0,306.0,162.0,354.0,1,Lung Opacity
+255bd0b6-8c03-4eac-8275-941ced8de709,,,,,0,Normal
+25957b99-212d-48d2-aef4-ca816f211f0e,281.0,255.0,134.0,281.0,1,Lung Opacity
+25957b99-212d-48d2-aef4-ca816f211f0e,281.0,255.0,134.0,281.0,1,Lung Opacity
+25957b99-212d-48d2-aef4-ca816f211f0e,612.0,314.0,148.0,278.0,1,Lung Opacity
+25957b99-212d-48d2-aef4-ca816f211f0e,612.0,314.0,148.0,278.0,1,Lung Opacity
+2598d635-68d5-40a8-9229-f8f242592a0a,,,,,0,No Lung Opacity / Not Normal
+259cc555-42e4-45d5-b803-d00a51e34f5b,,,,,0,Normal
+25b15466-0151-43e1-b52a-830905c853d4,532.0,642.0,159.0,236.0,1,Lung Opacity
+25ba8a50-bc9a-4ca8-81c3-9f635f52243b,767.0,445.0,101.0,357.0,1,Lung Opacity
+25ba8a50-bc9a-4ca8-81c3-9f635f52243b,767.0,445.0,101.0,357.0,1,Lung Opacity
+25ba8a50-bc9a-4ca8-81c3-9f635f52243b,289.0,556.0,191.0,178.0,1,Lung Opacity
+25ba8a50-bc9a-4ca8-81c3-9f635f52243b,289.0,556.0,191.0,178.0,1,Lung Opacity
+25c7d4f1-d16e-4fba-9155-8f79a396aa81,587.0,377.0,135.0,136.0,1,Lung Opacity
+25c7d4f1-d16e-4fba-9155-8f79a396aa81,587.0,377.0,135.0,136.0,1,Lung Opacity
+25c7d4f1-d16e-4fba-9155-8f79a396aa81,204.0,467.0,213.0,211.0,1,Lung Opacity
+25c7d4f1-d16e-4fba-9155-8f79a396aa81,204.0,467.0,213.0,211.0,1,Lung Opacity
+25c915e6-1b94-43b5-a19f-21931faac3b2,621.0,548.0,204.0,102.0,1,Lung Opacity
+25c915e6-1b94-43b5-a19f-21931faac3b2,621.0,548.0,204.0,102.0,1,Lung Opacity
+25c915e6-1b94-43b5-a19f-21931faac3b2,233.0,610.0,137.0,66.0,1,Lung Opacity
+25c915e6-1b94-43b5-a19f-21931faac3b2,233.0,610.0,137.0,66.0,1,Lung Opacity
+25d34f4c-7ebe-4fb7-a609-f0d98f5b06c5,639.0,385.0,175.0,110.0,1,Lung Opacity
+25d3bbc4-580d-40d1-9b4f-b29bf9741b93,,,,,0,No Lung Opacity / Not Normal
+25e49cde-cdd9-47ba-9e3c-bc8406433240,239.0,299.0,111.0,185.0,1,Lung Opacity
+25f20eb8-ca8b-4763-b213-8dcc63df4aed,,,,,0,No Lung Opacity / Not Normal
+25f9974d-1a95-48d4-a064-35b709a09ed9,,,,,0,No Lung Opacity / Not Normal
+26080061-2232-48a5-99aa-e0984b4d5427,,,,,0,No Lung Opacity / Not Normal
+2616cf22-5180-4ac5-ab85-6285543093aa,,,,,0,Normal
+26346765-2787-412c-be8f-6914ac16259e,,,,,0,Normal
+263abde3-1556-40de-bf7d-7e523c37c010,,,,,0,No Lung Opacity / Not Normal
+26408db2-e7f0-47de-96d8-5aa9c2b47153,316.0,462.0,139.0,132.0,1,Lung Opacity
+265048d6-e1d0-4f9e-8614-8f030271d120,,,,,0,No Lung Opacity / Not Normal
+265cf450-572c-48aa-90cd-fb7e3eff3ccf,,,,,0,No Lung Opacity / Not Normal
+265fdc5a-6b13-4ec0-a13c-81ac83bc3865,,,,,0,Normal
+266afd14-8d94-44b8-951b-9c239ab224a1,,,,,0,No Lung Opacity / Not Normal
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,629.0,342.0,170.0,158.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,629.0,342.0,170.0,158.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,629.0,342.0,170.0,158.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,583.0,518.0,171.0,176.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,583.0,518.0,171.0,176.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,583.0,518.0,171.0,176.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,244.0,366.0,186.0,244.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,244.0,366.0,186.0,244.0,1,Lung Opacity
+2673d0ba-ab94-4aac-8a9f-1599818c2c12,244.0,366.0,186.0,244.0,1,Lung Opacity
+267daad6-b373-4a1a-94b5-c2dc02f506f6,249.0,443.0,171.0,249.0,1,Lung Opacity
+267daad6-b373-4a1a-94b5-c2dc02f506f6,249.0,443.0,171.0,249.0,1,Lung Opacity
+267daad6-b373-4a1a-94b5-c2dc02f506f6,585.0,426.0,133.0,265.0,1,Lung Opacity
+267daad6-b373-4a1a-94b5-c2dc02f506f6,585.0,426.0,133.0,265.0,1,Lung Opacity
+268e70e8-ae02-4926-90fb-f458452c53d2,,,,,0,Normal
+269afae5-82da-4c2d-878b-d9e08965bf33,,,,,0,No Lung Opacity / Not Normal
+26a1ecf7-b0ce-43a6-9893-14e8fb0e4704,622.0,558.0,167.0,229.0,1,Lung Opacity
+26a1ecf7-b0ce-43a6-9893-14e8fb0e4704,622.0,558.0,167.0,229.0,1,Lung Opacity
+26a1ecf7-b0ce-43a6-9893-14e8fb0e4704,571.0,204.0,136.0,286.0,1,Lung Opacity
+26a1ecf7-b0ce-43a6-9893-14e8fb0e4704,571.0,204.0,136.0,286.0,1,Lung Opacity
+26aa5215-a443-459f-9aeb-976e65c11261,631.0,193.0,186.0,164.0,1,Lung Opacity
+26ace3f3-c994-45a2-af73-d132ed374e77,,,,,0,Normal
+26ae031c-b211-45f4-ac4d-b2983db93aa6,252.0,149.0,152.0,125.0,1,Lung Opacity
+26b60f11-48d9-488a-a664-addcdea55ec3,540.0,472.0,196.0,287.0,1,Lung Opacity
+26b60f11-48d9-488a-a664-addcdea55ec3,540.0,472.0,196.0,287.0,1,Lung Opacity
+26b60f11-48d9-488a-a664-addcdea55ec3,240.0,432.0,175.0,373.0,1,Lung Opacity
+26b60f11-48d9-488a-a664-addcdea55ec3,240.0,432.0,175.0,373.0,1,Lung Opacity
+26b7df45-166c-4337-8264-25fdd45b7c68,,,,,0,No Lung Opacity / Not Normal
+26c3d53a-f772-4ad1-96d5-e217ca8c19af,,,,,0,No Lung Opacity / Not Normal
+26c94e32-023b-4963-aca3-525ac2752d2c,,,,,0,No Lung Opacity / Not Normal
+26d6b8f2-0b42-448d-a2c7-5ab0688f2418,,,,,0,No Lung Opacity / Not Normal
+26df5099-c051-41e9-929d-99b6f1684815,65.0,436.0,252.0,181.0,1,Lung Opacity
+26df5099-c051-41e9-929d-99b6f1684815,65.0,436.0,252.0,181.0,1,Lung Opacity
+26df5099-c051-41e9-929d-99b6f1684815,459.0,381.0,195.0,342.0,1,Lung Opacity
+26df5099-c051-41e9-929d-99b6f1684815,459.0,381.0,195.0,342.0,1,Lung Opacity
+26e0313c-ca69-42dd-946e-5e0fa33c7e1a,,,,,0,Normal
+26f43936-9d55-4a68-b58e-4659a86cdb0e,,,,,0,No Lung Opacity / Not Normal
+26f4f1fa-4010-4d54-8ba3-bbe4e4e109ed,,,,,0,No Lung Opacity / Not Normal
+26f62d1f-5b9f-4eed-af49-d6a48e8ff3f7,586.0,553.0,158.0,201.0,1,Lung Opacity
+26f86e0f-62b6-44c4-8463-4d0bd24df95b,,,,,0,No Lung Opacity / Not Normal
+270b8a22-8a8f-4ba9-9f76-bdaff1c98e9c,,,,,0,Normal
+270d287b-5f32-469d-9f88-f4a87f27ef47,602.0,354.0,251.0,240.0,1,Lung Opacity
+2721b917-061a-489b-8580-db98f0e80d60,,,,,0,Normal
+27257ed5-0b0b-4840-9afd-7422ca03b3fb,,,,,0,Normal
+273d9710-bda7-42f1-9068-ebe364b44128,,,,,0,Normal
+2744f4b1-f0a3-4f65-be56-2b93eb72f56a,,,,,0,No Lung Opacity / Not Normal
+274f1a78-5887-4694-8fd6-a1847d9bc486,613.0,398.0,227.0,568.0,1,Lung Opacity
+274f1a78-5887-4694-8fd6-a1847d9bc486,613.0,398.0,227.0,568.0,1,Lung Opacity
+274f1a78-5887-4694-8fd6-a1847d9bc486,267.0,548.0,167.0,294.0,1,Lung Opacity
+274f1a78-5887-4694-8fd6-a1847d9bc486,267.0,548.0,167.0,294.0,1,Lung Opacity
+27511036-dc83-4708-a928-d0e9f2923299,,,,,0,No Lung Opacity / Not Normal
+276b4fe8-3347-46e7-a48d-2fd36a6ab837,,,,,0,No Lung Opacity / Not Normal
+276cc3c1-4b64-4933-aa0c-5edf79c0e105,,,,,0,No Lung Opacity / Not Normal
+276e7c3c-7875-41ce-93e6-0d1834a403a0,247.0,516.0,188.0,310.0,1,Lung Opacity
+277238ab-2bbf-447e-b083-f3a708c9ab2a,,,,,0,Normal
+27775937-404e-4e1a-bef0-af5d63fc0b3b,645.0,375.0,225.0,299.0,1,Lung Opacity
+27775937-404e-4e1a-bef0-af5d63fc0b3b,645.0,375.0,225.0,299.0,1,Lung Opacity
+27775937-404e-4e1a-bef0-af5d63fc0b3b,267.0,308.0,228.0,307.0,1,Lung Opacity
+27775937-404e-4e1a-bef0-af5d63fc0b3b,267.0,308.0,228.0,307.0,1,Lung Opacity
+277b4a9d-7987-4da4-b421-1d1450fc1266,,,,,0,Normal
+2785e983-bdcb-4ece-8dc4-82b14d2d2b85,,,,,0,Normal
+279abc53-f5d6-41b3-95dd-b47338c51497,,,,,0,No Lung Opacity / Not Normal
+279de21e-898d-4a8c-a1f6-fcb3335b88aa,,,,,0,Normal
+27aa5880-422d-4084-b907-409754c89713,,,,,0,Normal
+27b32500-40ef-4c14-ab88-ace5e9ceea27,270.0,397.0,193.0,305.0,1,Lung Opacity
+27b32500-40ef-4c14-ab88-ace5e9ceea27,270.0,397.0,193.0,305.0,1,Lung Opacity
+27b32500-40ef-4c14-ab88-ace5e9ceea27,629.0,280.0,261.0,343.0,1,Lung Opacity
+27b32500-40ef-4c14-ab88-ace5e9ceea27,629.0,280.0,261.0,343.0,1,Lung Opacity
+27bdb2cc-9665-40ea-a6b4-248a1112dbe8,676.0,588.0,203.0,275.0,1,Lung Opacity
+27c98d87-8bda-4d17-847a-2732aa50e55c,,,,,0,Normal
+27d43d8a-ffe0-41b6-a96a-3182901c1fe7,,,,,0,Normal
+27e7f64a-a6a4-4a36-8888-c6c96c8e7828,,,,,0,No Lung Opacity / Not Normal
+27ee75df-d2e3-40c0-994f-3efd14e6dafb,251.0,193.0,258.0,482.0,1,Lung Opacity
+27ee75df-d2e3-40c0-994f-3efd14e6dafb,251.0,193.0,258.0,482.0,1,Lung Opacity
+27ee75df-d2e3-40c0-994f-3efd14e6dafb,638.0,204.0,238.0,554.0,1,Lung Opacity
+27ee75df-d2e3-40c0-994f-3efd14e6dafb,638.0,204.0,238.0,554.0,1,Lung Opacity
+27fa7496-e222-4016-8d1a-5a8dd4db52ed,132.0,310.0,269.0,445.0,1,Lung Opacity
+27fa7496-e222-4016-8d1a-5a8dd4db52ed,132.0,310.0,269.0,445.0,1,Lung Opacity
+27fa7496-e222-4016-8d1a-5a8dd4db52ed,536.0,275.0,263.0,458.0,1,Lung Opacity
+27fa7496-e222-4016-8d1a-5a8dd4db52ed,536.0,275.0,263.0,458.0,1,Lung Opacity
+27feebaa-f4dc-4c68-9348-f0ff35134e43,635.0,522.0,251.0,368.0,1,Lung Opacity
+27feebaa-f4dc-4c68-9348-f0ff35134e43,635.0,522.0,251.0,368.0,1,Lung Opacity
+27feebaa-f4dc-4c68-9348-f0ff35134e43,210.0,590.0,252.0,211.0,1,Lung Opacity
+27feebaa-f4dc-4c68-9348-f0ff35134e43,210.0,590.0,252.0,211.0,1,Lung Opacity
+2809dd67-ff4a-4508-9e50-54c6f060535f,,,,,0,No Lung Opacity / Not Normal
+2812705b-aea4-4fe1-a53e-424755cb7659,,,,,0,Normal
+281a132a-55d5-49de-89a2-34fdfbecddeb,,,,,0,No Lung Opacity / Not Normal
+281e2883-3c05-400b-a340-6a23628a6b1c,,,,,0,No Lung Opacity / Not Normal
+28335a47-9710-4435-ab96-62b50556f99b,,,,,0,No Lung Opacity / Not Normal
+2835bc4d-02bc-4d81-9122-2ee44b681202,,,,,0,Normal
+2837efbb-3c55-436d-8de7-58608bf3245a,,,,,0,Normal
+2846f61a-9763-4ddc-80a9-a8701c974aa6,,,,,0,No Lung Opacity / Not Normal
+2847bf15-c5f4-47fc-ab15-0fec98933128,,,,,0,Normal
+285c22d0-3112-4472-9107-59642c4eb8db,,,,,0,No Lung Opacity / Not Normal
+285e0dd4-4f19-47ab-9ce0-6b02c1396f29,593.0,438.0,175.0,264.0,1,Lung Opacity
+28684a2f-1e6f-4431-969a-2f9cf574e7ba,612.0,611.0,141.0,146.0,1,Lung Opacity
+28684a2f-1e6f-4431-969a-2f9cf574e7ba,612.0,611.0,141.0,146.0,1,Lung Opacity
+28684a2f-1e6f-4431-969a-2f9cf574e7ba,28.0,507.0,260.0,347.0,1,Lung Opacity
+28684a2f-1e6f-4431-969a-2f9cf574e7ba,28.0,507.0,260.0,347.0,1,Lung Opacity
+28775c77-80e8-4f8c-be85-7a44162b5c28,612.0,354.0,251.0,297.0,1,Lung Opacity
+2877c9be-1665-4131-ac0f-7b145696ebc5,,,,,0,Normal
+28a2d8aa-9e29-48d4-b1e3-029e3451ce0b,200.0,213.0,220.0,583.0,1,Lung Opacity
+28a2d8aa-9e29-48d4-b1e3-029e3451ce0b,200.0,213.0,220.0,583.0,1,Lung Opacity
+28a2d8aa-9e29-48d4-b1e3-029e3451ce0b,583.0,235.0,257.0,570.0,1,Lung Opacity
+28a2d8aa-9e29-48d4-b1e3-029e3451ce0b,583.0,235.0,257.0,570.0,1,Lung Opacity
+28ab894f-1324-4107-9af8-78f7928f512a,,,,,0,No Lung Opacity / Not Normal
+28b55977-46e6-4113-a582-e93ba5c25cd6,,,,,0,Normal
+28b67d93-2432-41e4-9e3b-3d0ba249ad39,,,,,0,Normal
+28ba0617-0cac-4198-8b8a-c35fde545ace,238.0,255.0,159.0,307.0,1,Lung Opacity
+28ba0617-0cac-4198-8b8a-c35fde545ace,238.0,255.0,159.0,307.0,1,Lung Opacity
+28ba0617-0cac-4198-8b8a-c35fde545ace,587.0,237.0,224.0,261.0,1,Lung Opacity
+28ba0617-0cac-4198-8b8a-c35fde545ace,587.0,237.0,224.0,261.0,1,Lung Opacity
+28bb0cb8-6f05-4c48-a2bf-251a1297e380,,,,,0,No Lung Opacity / Not Normal
+28bcb9b0-b5a9-4631-81d0-0b889807ab49,,,,,0,No Lung Opacity / Not Normal
+28c22b85-a506-469f-a85e-1618a765901c,,,,,0,Normal
+28c94c54-4279-431a-b329-c69104ee0d38,628.0,501.0,182.0,157.0,1,Lung Opacity
+28d0f2da-cacb-43b0-848d-4c6389d55d99,,,,,0,No Lung Opacity / Not Normal
+28dfbd38-b24a-4cfb-a355-34c226dd2aa2,622.0,585.0,226.0,333.0,1,Lung Opacity
+28eaff00-5fb7-40ee-8206-9d2ff5b081e0,,,,,0,Normal
+28f1790b-5643-4db3-9d4d-de30d4784a0c,,,,,0,Normal
+28fa453d-027a-4569-9e22-7814e7b74f43,686.0,572.0,100.0,201.0,1,Lung Opacity
+29000617-ac33-40a4-ac5c-19fb586edb69,720.0,518.0,106.0,172.0,1,Lung Opacity
+2902bb15-a15a-4203-8a4b-6dca00a3d9fa,,,,,0,Normal
+290ba340-b0c0-44d5-ab13-e0e315504cac,,,,,0,Normal
+290e32e9-3632-4642-a1d4-70c975d376b7,543.0,275.0,173.0,333.0,1,Lung Opacity
+290e32e9-3632-4642-a1d4-70c975d376b7,543.0,275.0,173.0,333.0,1,Lung Opacity
+290e32e9-3632-4642-a1d4-70c975d376b7,261.0,300.0,150.0,300.0,1,Lung Opacity
+290e32e9-3632-4642-a1d4-70c975d376b7,261.0,300.0,150.0,300.0,1,Lung Opacity
+29128fda-79ce-4a14-bbf9-9884422075d0,799.0,445.0,172.0,219.0,1,Lung Opacity
+29128fda-79ce-4a14-bbf9-9884422075d0,799.0,445.0,172.0,219.0,1,Lung Opacity
+29128fda-79ce-4a14-bbf9-9884422075d0,343.0,523.0,182.0,215.0,1,Lung Opacity
+29128fda-79ce-4a14-bbf9-9884422075d0,343.0,523.0,182.0,215.0,1,Lung Opacity
+292a1c21-012d-4039-b95e-02524e82bce1,251.0,389.0,172.0,196.0,1,Lung Opacity
+292aa643-7569-4ef7-8a51-12b62440a2b0,,,,,0,Normal
+293f4b7b-3a6e-44a6-b9d2-810b139094cf,683.0,559.0,191.0,170.0,1,Lung Opacity
+294ffc42-a92a-40d6-bcda-96bb3c9b8def,,,,,0,No Lung Opacity / Not Normal
+295de041-5711-400a-8241-7d7cf500971e,,,,,0,Normal
+295ed916-1956-43bd-847e-d77ddb89b5fd,,,,,0,No Lung Opacity / Not Normal
+295fc946-46aa-4a42-9548-7853e51faa25,,,,,0,No Lung Opacity / Not Normal
+2967d60f-917c-4642-a257-fc9f9134ace7,,,,,0,No Lung Opacity / Not Normal
+2973b99b-fd24-44f6-a15a-7e2c7263a527,,,,,0,No Lung Opacity / Not Normal
+297d1d92-8116-4bfa-970a-9bddf591f1c2,,,,,0,No Lung Opacity / Not Normal
+2984b5f3-1b35-4a32-9acd-88f8d7452818,,,,,0,No Lung Opacity / Not Normal
+29a2fb4c-481c-4147-89ad-5b6d1e343903,,,,,0,Normal
+29bc3aa5-938c-4afe-8a7b-50ebd2cb5621,681.0,569.0,118.0,145.0,1,Lung Opacity
+29bc3aa5-938c-4afe-8a7b-50ebd2cb5621,681.0,569.0,118.0,145.0,1,Lung Opacity
+29bc3aa5-938c-4afe-8a7b-50ebd2cb5621,296.0,572.0,117.0,118.0,1,Lung Opacity
+29bc3aa5-938c-4afe-8a7b-50ebd2cb5621,296.0,572.0,117.0,118.0,1,Lung Opacity
+29c7e6ff-0de0-499d-9049-c2aae8303cd0,,,,,0,Normal
+29ce63f4-8e2d-4266-9b3d-00949aada503,,,,,0,Normal
+29cfef18-40c3-489f-adcf-05bd93765b9d,240.0,640.0,128.0,105.0,1,Lung Opacity
+29e35700-6034-41e6-a2d6-efc2b4f58c04,,,,,0,No Lung Opacity / Not Normal
+29e4656b-0648-470c-ace8-cef7398e0fc5,,,,,0,Normal
+2a0cf5f5-e589-444e-8be8-1cae28382e34,,,,,0,Normal
+2a1d9cf8-871f-4aaa-a461-cbefbb880b09,,,,,0,No Lung Opacity / Not Normal
+2a1f4a9f-7b41-4f50-bce3-abd130a42a69,,,,,0,No Lung Opacity / Not Normal
+2a495fc1-09c7-4482-a2c8-71bed72628f5,,,,,0,No Lung Opacity / Not Normal
+2a52de75-f306-4615-ba64-61585c8e016b,,,,,0,No Lung Opacity / Not Normal
+2a54c3ee-7d7f-4c32-9b77-87279b8777a7,,,,,0,No Lung Opacity / Not Normal
+2a55f0bc-4943-4473-8f08-5c0a36fdc929,,,,,0,Normal
+2a5752c7-6f90-4c5f-a5bd-9dd7736097ef,,,,,0,Normal
+2a607bec-696e-4248-b6cc-21a6266744bd,,,,,0,Normal
+2a6314e0-e011-4857-8bb8-1574e30fecd4,,,,,0,Normal
+2a689cee-3fa4-405a-98de-da24278e7d33,,,,,0,Normal
+2a740d72-0dc4-4439-93ed-60cad708d7c4,,,,,0,Normal
+2a9035ed-ec09-404d-adc3-d37688adf50a,286.0,395.0,150.0,210.0,1,Lung Opacity
+2a9035ed-ec09-404d-adc3-d37688adf50a,286.0,395.0,150.0,210.0,1,Lung Opacity
+2a9035ed-ec09-404d-adc3-d37688adf50a,666.0,410.0,105.0,206.0,1,Lung Opacity
+2a9035ed-ec09-404d-adc3-d37688adf50a,666.0,410.0,105.0,206.0,1,Lung Opacity
+2a9cbbfa-3d10-44ce-af56-7ebe00f51719,,,,,0,No Lung Opacity / Not Normal
+2ab70125-b741-487a-9f06-12a66018dc5e,,,,,0,Normal
+2abca87e-e85f-4415-9016-c11c824220a6,,,,,0,No Lung Opacity / Not Normal
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,700.0,540.0,138.0,178.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,700.0,540.0,138.0,178.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,700.0,540.0,138.0,178.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,315.0,636.0,157.0,84.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,315.0,636.0,157.0,84.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,315.0,636.0,157.0,84.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,732.0,211.0,97.0,210.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,732.0,211.0,97.0,210.0,1,Lung Opacity
+2ac47932-d7e2-4ac2-a7c6-6a9be0c4abcd,732.0,211.0,97.0,210.0,1,Lung Opacity
+2add50fb-2329-4def-9121-31f84503337a,,,,,0,No Lung Opacity / Not Normal
+2ae02282-0394-4795-8de1-23039b6cdcba,,,,,0,Normal
+2ae3e7ba-a0fe-4f0a-96db-d337714aa657,589.0,574.0,159.0,97.0,1,Lung Opacity
+2ae42ec0-68e3-463e-8559-4a5edd45f32c,,,,,0,No Lung Opacity / Not Normal
+2aed7ffb-3b2b-4094-921a-0d5fbb270ab1,,,,,0,No Lung Opacity / Not Normal
+2af2646f-3cc0-4ef2-a9e4-0beea36f335a,247.0,168.0,219.0,317.0,1,Lung Opacity
+2af2646f-3cc0-4ef2-a9e4-0beea36f335a,247.0,168.0,219.0,317.0,1,Lung Opacity
+2af2646f-3cc0-4ef2-a9e4-0beea36f335a,666.0,159.0,95.0,69.0,1,Lung Opacity
+2af2646f-3cc0-4ef2-a9e4-0beea36f335a,666.0,159.0,95.0,69.0,1,Lung Opacity
+2afaf9b4-664c-4c87-b9f5-4e411789da5d,663.0,243.0,98.0,196.0,1,Lung Opacity
+2b1e28fe-e10f-4c40-bd0b-7f29f88afd6f,,,,,0,No Lung Opacity / Not Normal
+2b1eb6ac-335c-406e-bcea-31dffed2e79f,,,,,0,Normal
+2b4a8d36-11a1-454f-8dcb-0fc2ada7dfa9,,,,,0,Normal
+2b4c09a2-c8d7-4773-84e3-f1aa664fba9a,604.0,214.0,267.0,387.0,1,Lung Opacity
+2b55eeed-3408-46fd-9e18-d7c5295a92b2,598.0,495.0,185.0,146.0,1,Lung Opacity
+2b6bb09d-7378-4c77-9e67-e1b714245f23,,,,,0,No Lung Opacity / Not Normal
+2b7d7f99-ab62-4335-978e-8b8523db2fd5,,,,,0,Normal
+2b885980-3f3c-452f-9ca6-af215dbfe61c,598.0,571.0,168.0,200.0,1,Lung Opacity
+2b885980-3f3c-452f-9ca6-af215dbfe61c,598.0,571.0,168.0,200.0,1,Lung Opacity
+2b885980-3f3c-452f-9ca6-af215dbfe61c,215.0,629.0,172.0,132.0,1,Lung Opacity
+2b885980-3f3c-452f-9ca6-af215dbfe61c,215.0,629.0,172.0,132.0,1,Lung Opacity
+2ba20b8b-50aa-477d-8f39-ded35b460696,632.0,458.0,182.0,324.0,1,Lung Opacity
+2baa8ae3-27e1-4193-b51e-68e2a1cc516a,,,,,0,No Lung Opacity / Not Normal
+2bb1db95-73ad-46b0-8567-8a03d9a83def,598.0,592.0,221.0,169.0,1,Lung Opacity
+2bbcad9d-9dce-41f6-8642-d0fdce90abd5,,,,,0,Normal
+2bbd1729-f918-4712-bdc7-691240c8636f,,,,,0,No Lung Opacity / Not Normal
+2bc72e37-294d-4d3a-b018-298c35c11f29,,,,,0,No Lung Opacity / Not Normal
+2bcd9659-31d3-4e71-aca6-6b7defbb5b3d,,,,,0,No Lung Opacity / Not Normal
+2bd138cb-a07a-48b9-bbc9-137a460e1e2d,,,,,0,Normal
+2bd2356b-305a-4726-9a47-034da8f5f2ee,157.0,482.0,215.0,64.0,1,Lung Opacity
+2bd26d4b-b499-49e8-ad56-a20232b01af3,,,,,0,Normal
+2bd2f688-6bed-4f0c-a385-9eed1b1027de,295.0,270.0,129.0,175.0,1,Lung Opacity
+2bd2f688-6bed-4f0c-a385-9eed1b1027de,295.0,270.0,129.0,175.0,1,Lung Opacity
+2bd2f688-6bed-4f0c-a385-9eed1b1027de,560.0,223.0,190.0,269.0,1,Lung Opacity
+2bd2f688-6bed-4f0c-a385-9eed1b1027de,560.0,223.0,190.0,269.0,1,Lung Opacity
+2bdb2f30-8f33-44f7-9103-fde567dbfd65,,,,,0,Normal
+2bdfab0d-4192-4a7f-a366-587c379ecdba,238.0,188.0,212.0,521.0,1,Lung Opacity
+2bdfab0d-4192-4a7f-a366-587c379ecdba,238.0,188.0,212.0,521.0,1,Lung Opacity
+2bdfab0d-4192-4a7f-a366-587c379ecdba,587.0,199.0,218.0,525.0,1,Lung Opacity
+2bdfab0d-4192-4a7f-a366-587c379ecdba,587.0,199.0,218.0,525.0,1,Lung Opacity
+2beb8746-4e01-499d-ad6a-e29e7b30ddf6,,,,,0,Normal
+2bf8a7ed-b4a5-4ea1-b8e8-cadc7f7adf2d,179.0,254.0,253.0,523.0,1,Lung Opacity
+2bfadcce-abb6-4fe3-82e8-3a9f91dabd61,,,,,0,No Lung Opacity / Not Normal
+2c0fa3c1-f701-4b25-b9f6-34a10ae2508f,,,,,0,Normal
+2c100194-9dd9-42ef-b1f6-5aea93cdf63a,,,,,0,Normal
+2c1a4681-22eb-441b-9fe4-f3ef4dcc918b,,,,,0,Normal
+2c376b9a-167a-43d3-bcc2-b4af32fb9f74,280.0,262.0,185.0,68.0,1,Lung Opacity
+2c43c983-3fb6-4110-87d4-a282af171b69,,,,,0,Normal
+2c575dd0-1a23-40d1-a0b6-da6d9c2556ae,226.0,283.0,140.0,212.0,1,Lung Opacity
+2c575dd0-1a23-40d1-a0b6-da6d9c2556ae,226.0,283.0,140.0,212.0,1,Lung Opacity
+2c575dd0-1a23-40d1-a0b6-da6d9c2556ae,608.0,337.0,154.0,327.0,1,Lung Opacity
+2c575dd0-1a23-40d1-a0b6-da6d9c2556ae,608.0,337.0,154.0,327.0,1,Lung Opacity
+2c587800-9537-42f4-8acd-b86519ab09b4,,,,,0,Normal
+2c7411ab-ce18-469d-868f-de850cafa9ba,304.0,456.0,150.0,215.0,1,Lung Opacity
+2c7411ab-ce18-469d-868f-de850cafa9ba,304.0,456.0,150.0,215.0,1,Lung Opacity
+2c7411ab-ce18-469d-868f-de850cafa9ba,718.0,546.0,169.0,170.0,1,Lung Opacity
+2c7411ab-ce18-469d-868f-de850cafa9ba,718.0,546.0,169.0,170.0,1,Lung Opacity
+2c781913-5f24-4b0e-959c-6b7385c6fce0,652.0,652.0,113.0,153.0,1,Lung Opacity
+2c781913-5f24-4b0e-959c-6b7385c6fce0,652.0,652.0,113.0,153.0,1,Lung Opacity
+2c781913-5f24-4b0e-959c-6b7385c6fce0,160.0,634.0,237.0,67.0,1,Lung Opacity
+2c781913-5f24-4b0e-959c-6b7385c6fce0,160.0,634.0,237.0,67.0,1,Lung Opacity
+2c7b3f02-3fe4-4d33-88d5-413fcf18b118,,,,,0,No Lung Opacity / Not Normal
+2c7ce8e8-56b1-43a7-b955-7e9669ecab45,,,,,0,Normal
+2c80b7ba-3929-4c36-9fd7-c7142ae83922,,,,,0,Normal
+2c810189-ae70-403e-8846-3286925af6dd,,,,,0,Normal
+2c917d3a-95cb-4c11-802c-f83e28cb37bc,113.0,113.0,277.0,708.0,1,Lung Opacity
+2c917d3a-95cb-4c11-802c-f83e28cb37bc,113.0,113.0,277.0,708.0,1,Lung Opacity
+2c917d3a-95cb-4c11-802c-f83e28cb37bc,577.0,205.0,171.0,247.0,1,Lung Opacity
+2c917d3a-95cb-4c11-802c-f83e28cb37bc,577.0,205.0,171.0,247.0,1,Lung Opacity
+2c96c09b-aaa8-4c07-8e69-c2210f04be2d,,,,,0,Normal
+2c9a388f-0042-4b88-b52b-ea0b21fb7960,511.0,470.0,118.0,127.0,1,Lung Opacity
+2cb272c0-90db-4e36-8a78-ed072efcdaa2,,,,,0,Normal
+2cbefce6-6465-479c-ad23-8a4839719cdc,,,,,0,Normal
+2cc72d62-1144-4fe9-a4ab-da083ad11392,708.0,380.0,183.0,300.0,1,Lung Opacity
+2cc72d62-1144-4fe9-a4ab-da083ad11392,708.0,380.0,183.0,300.0,1,Lung Opacity
+2cc72d62-1144-4fe9-a4ab-da083ad11392,371.0,404.0,177.0,283.0,1,Lung Opacity
+2cc72d62-1144-4fe9-a4ab-da083ad11392,371.0,404.0,177.0,283.0,1,Lung Opacity
+2cce4f3d-ad2a-4021-b46a-3f34015600e5,218.0,453.0,135.0,83.0,1,Lung Opacity
+2cce4f3d-ad2a-4021-b46a-3f34015600e5,218.0,453.0,135.0,83.0,1,Lung Opacity
+2cce4f3d-ad2a-4021-b46a-3f34015600e5,668.0,525.0,117.0,80.0,1,Lung Opacity
+2cce4f3d-ad2a-4021-b46a-3f34015600e5,668.0,525.0,117.0,80.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,186.0,427.0,150.0,180.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,186.0,427.0,150.0,180.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,186.0,427.0,150.0,180.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,630.0,389.0,195.0,95.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,630.0,389.0,195.0,95.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,630.0,389.0,195.0,95.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,291.0,224.0,153.0,119.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,291.0,224.0,153.0,119.0,1,Lung Opacity
+2cd0cbc4-bf35-49de-963e-8ee3fd08ca75,291.0,224.0,153.0,119.0,1,Lung Opacity
+2cd2f674-1018-4f20-a1ee-cf09928696d8,,,,,0,No Lung Opacity / Not Normal
+2cda8261-0bf1-427f-bd12-824470b9bcf9,,,,,0,No Lung Opacity / Not Normal
+2ce34f96-40b4-4d2a-b6a1-c7e21e6db8a1,269.0,493.0,218.0,318.0,1,Lung Opacity
+2cf0e85e-a6d7-4c20-a338-0a798d9a136c,,,,,0,No Lung Opacity / Not Normal
+2cf3b965-6711-4f43-8bab-5e27e3d12909,,,,,0,No Lung Opacity / Not Normal
+2cf60de3-5498-43d4-8296-21881a7bc96d,,,,,0,No Lung Opacity / Not Normal
+2cfbc16c-f1e4-4ed2-b9eb-4d0c40b90800,625.0,487.0,220.0,114.0,1,Lung Opacity
+2d0ebb7e-9c57-4a78-9728-e79b0f2bc91c,594.0,513.0,250.0,207.0,1,Lung Opacity
+2d232afa-67dc-4a77-bf1a-665e2531f634,,,,,0,Normal
+2d2a74bc-10a5-40cd-aa6a-4ae5237c6d76,,,,,0,Normal
+2d370cb1-791e-407e-9408-9156664de6b6,739.0,583.0,196.0,135.0,1,Lung Opacity
+2d519447-4bcf-42ad-bb28-cf051b649fff,197.0,766.0,159.0,113.0,1,Lung Opacity
+2d519447-4bcf-42ad-bb28-cf051b649fff,197.0,766.0,159.0,113.0,1,Lung Opacity
+2d519447-4bcf-42ad-bb28-cf051b649fff,673.0,751.0,227.0,136.0,1,Lung Opacity
+2d519447-4bcf-42ad-bb28-cf051b649fff,673.0,751.0,227.0,136.0,1,Lung Opacity
+2d5e1e45-218a-4a12-bef9-43411265b464,,,,,0,Normal
+2d7ebcff-778b-4090-812e-155096ccb6db,,,,,0,Normal
+2d8258d0-7dd4-4de2-a3f7-9501e25883e7,,,,,0,No Lung Opacity / Not Normal
+2d8aa8bb-f2f3-4da0-93f6-5e92d02481ed,,,,,0,Normal
+2d98d4dc-bc2e-4c50-9ca6-5fbffa75d006,,,,,0,No Lung Opacity / Not Normal
+2d9bfa9e-b4c9-4ab2-98d6-f821d61435e2,,,,,0,Normal
+2dac040f-71c3-4bd3-8d4f-4320066e2d04,,,,,0,No Lung Opacity / Not Normal
+2db5d817-4f4c-4773-afa0-ed3cdb3a5035,199.0,450.0,194.0,229.0,1,Lung Opacity
+2db5d817-4f4c-4773-afa0-ed3cdb3a5035,199.0,450.0,194.0,229.0,1,Lung Opacity
+2db5d817-4f4c-4773-afa0-ed3cdb3a5035,566.0,286.0,200.0,374.0,1,Lung Opacity
+2db5d817-4f4c-4773-afa0-ed3cdb3a5035,566.0,286.0,200.0,374.0,1,Lung Opacity
+2db71952-47f3-455b-aed2-675ec9113cf3,,,,,0,Normal
+2dc46628-e8b4-4499-adc1-78907fa247cc,,,,,0,Normal
+2dce8e47-d87c-48c0-964a-f47695522915,,,,,0,No Lung Opacity / Not Normal
+2dd692a5-a60c-443e-8299-af5d03949b60,558.0,714.0,243.0,157.0,1,Lung Opacity
+2ddd7fd9-aa04-4ff7-bdb3-0a0ae843cb43,,,,,0,No Lung Opacity / Not Normal
+2dfde10a-53c1-4c69-b49a-43aa4543b7f4,,,,,0,Normal
+2e02f4ce-3130-42b9-af78-997942bc4f38,150.0,488.0,201.0,146.0,1,Lung Opacity
+2e12816f-48d5-4a6c-a8ac-c3c2ae7ba059,,,,,0,Normal
+2e137828-88e6-4a95-98b2-20471c749937,,,,,0,No Lung Opacity / Not Normal
+2e1956e1-8430-48d7-9888-910934acd22b,613.0,440.0,247.0,201.0,1,Lung Opacity
+2e1956e1-8430-48d7-9888-910934acd22b,613.0,440.0,247.0,201.0,1,Lung Opacity
+2e1956e1-8430-48d7-9888-910934acd22b,191.0,473.0,171.0,135.0,1,Lung Opacity
+2e1956e1-8430-48d7-9888-910934acd22b,191.0,473.0,171.0,135.0,1,Lung Opacity
+2e1e92ea-36f4-4340-98af-eb8956961175,,,,,0,No Lung Opacity / Not Normal
+2e303b9f-1a06-4553-afce-3561db6420f3,,,,,0,No Lung Opacity / Not Normal
+2e3363a0-19d9-47d7-b7e5-d2142da1b9fa,626.0,628.0,133.0,124.0,1,Lung Opacity
+2e3363a0-19d9-47d7-b7e5-d2142da1b9fa,626.0,628.0,133.0,124.0,1,Lung Opacity
+2e3363a0-19d9-47d7-b7e5-d2142da1b9fa,236.0,395.0,96.0,119.0,1,Lung Opacity
+2e3363a0-19d9-47d7-b7e5-d2142da1b9fa,236.0,395.0,96.0,119.0,1,Lung Opacity
+2e34adf2-9e00-4e46-8510-a8d0fc2d3b94,,,,,0,Normal
+2e4998d6-b0dd-4bb0-a139-432a56e82b2b,,,,,0,No Lung Opacity / Not Normal
+2e4e8d73-c213-47f2-a4f4-cebe3a6b2467,,,,,0,Normal
+2e566084-386d-48a6-beb2-8b28732371e7,,,,,0,Normal
+2e81e582-821a-4b3c-bd76-48a7d39e3f82,,,,,0,No Lung Opacity / Not Normal
+2e827502-06a4-425a-9ee3-9a0accbf3a79,,,,,0,Normal
+2e84276a-cac7-4573-b71b-512decbc4f88,,,,,0,Normal
+2e8dae63-1cbd-4361-bb5d-3baba942bbc2,,,,,0,Normal
+2e951e03-086d-464d-87fa-bfab0e329721,,,,,0,Normal
+2e974d90-0e16-4c34-9dee-137daa6b54e3,,,,,0,Normal
+2e9e3ac8-d85c-4d0a-92a0-14030dc21c66,,,,,0,No Lung Opacity / Not Normal
+2ea47f2a-f72d-4de6-8620-d54d44bd5ea9,,,,,0,Normal
+2ebf23e9-cac7-4b6b-b77b-7ff6c3903634,,,,,0,Normal
+2ec54800-bf48-43c5-aee9-18de34508ef4,,,,,0,No Lung Opacity / Not Normal
+2ec88120-5cef-45a0-b9d6-629fdf99ab8c,,,,,0,No Lung Opacity / Not Normal
+2ed06be4-9f0e-4256-b8bf-a4b396cc6364,,,,,0,Normal
+2ed28305-1b61-44f5-ba2c-a8f54635ddb2,,,,,0,Normal
+2ed57b2d-a30f-4728-a2f8-76bb825a813c,,,,,0,No Lung Opacity / Not Normal
+2ee27b62-e1d7-4341-bf2b-9d45dc4068a1,,,,,0,Normal
+2eec752d-9977-4ea9-b73c-78e1d196d98d,,,,,0,No Lung Opacity / Not Normal
+2eeca9b5-d14f-46c6-ac7e-f676ee83e6be,,,,,0,Normal
+2ef4cfe7-bbc1-4ce2-ba1e-6df54a94252c,295.0,595.0,170.0,135.0,1,Lung Opacity
+2ef4cfe7-bbc1-4ce2-ba1e-6df54a94252c,295.0,595.0,170.0,135.0,1,Lung Opacity
+2ef4cfe7-bbc1-4ce2-ba1e-6df54a94252c,728.0,533.0,234.0,178.0,1,Lung Opacity
+2ef4cfe7-bbc1-4ce2-ba1e-6df54a94252c,728.0,533.0,234.0,178.0,1,Lung Opacity
+2ef52c28-b6f9-4317-b062-e016efc73c5f,,,,,0,No Lung Opacity / Not Normal
+2f06b4d6-f9e2-463a-a8f9-f4b9715b61cb,,,,,0,Normal
+2f0e9e81-07d0-4fd3-903d-6223c2cfb1bb,,,,,0,No Lung Opacity / Not Normal
+2f1c6087-6bc6-41c9-8433-c55203f72963,,,,,0,Normal
+2f1cc91c-e75f-4a24-8fea-2edf6e5171f7,,,,,0,No Lung Opacity / Not Normal
+2f200e3f-8e4c-4675-948c-8226cd65163a,639.0,337.0,201.0,352.0,1,Lung Opacity
+2f200e3f-8e4c-4675-948c-8226cd65163a,639.0,337.0,201.0,352.0,1,Lung Opacity
+2f200e3f-8e4c-4675-948c-8226cd65163a,143.0,306.0,234.0,340.0,1,Lung Opacity
+2f200e3f-8e4c-4675-948c-8226cd65163a,143.0,306.0,234.0,340.0,1,Lung Opacity
+2f34acfd-e6bd-46ec-b575-4efa1df5ff8a,,,,,0,No Lung Opacity / Not Normal
+2f42fe81-bd2a-4b14-966b-589873d13663,764.0,509.0,96.0,89.0,1,Lung Opacity
+2f50a1ca-ebd8-4688-863b-fe85ce09c526,,,,,0,Normal
+2f51b8c1-32f8-4df8-af1e-d32c8dddad6f,663.0,556.0,207.0,87.0,1,Lung Opacity
+2f51b8c1-32f8-4df8-af1e-d32c8dddad6f,663.0,556.0,207.0,87.0,1,Lung Opacity
+2f51b8c1-32f8-4df8-af1e-d32c8dddad6f,177.0,615.0,280.0,151.0,1,Lung Opacity
+2f51b8c1-32f8-4df8-af1e-d32c8dddad6f,177.0,615.0,280.0,151.0,1,Lung Opacity
+2f55650d-f85f-47e7-b6e6-79ad8e3c7c53,,,,,0,Normal
+2f55c07d-beb7-4b5f-9e9d-18d4fed5ae27,613.0,427.0,96.0,121.0,1,Lung Opacity
+2f6374c9-baec-4236-acb4-a3815dc8243a,299.0,381.0,98.0,118.0,1,Lung Opacity
+2f6374c9-baec-4236-acb4-a3815dc8243a,299.0,381.0,98.0,118.0,1,Lung Opacity
+2f6374c9-baec-4236-acb4-a3815dc8243a,588.0,255.0,168.0,340.0,1,Lung Opacity
+2f6374c9-baec-4236-acb4-a3815dc8243a,588.0,255.0,168.0,340.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,756.0,581.0,211.0,143.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,756.0,581.0,211.0,143.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,756.0,581.0,211.0,143.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,358.0,547.0,139.0,126.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,358.0,547.0,139.0,126.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,358.0,547.0,139.0,126.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,751.0,316.0,154.0,177.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,751.0,316.0,154.0,177.0,1,Lung Opacity
+2f686840-18b3-45ac-a2bb-6140e3b0ac73,751.0,316.0,154.0,177.0,1,Lung Opacity
+2f6ac842-e243-4c5f-a48c-d70862e316d5,,,,,0,No Lung Opacity / Not Normal
+2f6debad-7dac-4feb-beaf-61f75ec38eae,,,,,0,No Lung Opacity / Not Normal
+2f7fd25d-4968-44bb-96c3-91e377284546,,,,,0,Normal
+2f80ae68-fdc8-4e4c-9e64-7de9db969518,,,,,0,No Lung Opacity / Not Normal
+2f876297-aa92-457a-bc28-efa539885b93,,,,,0,Normal
+2f98447b-c43a-4dc2-873d-c326a34c1ba2,,,,,0,Normal
+2f9c1b97-74a7-4781-bad3-c46cc08c69c8,614.0,575.0,138.0,155.0,1,Lung Opacity
+2f9c1b97-74a7-4781-bad3-c46cc08c69c8,614.0,575.0,138.0,155.0,1,Lung Opacity
+2f9c1b97-74a7-4781-bad3-c46cc08c69c8,185.0,572.0,190.0,148.0,1,Lung Opacity
+2f9c1b97-74a7-4781-bad3-c46cc08c69c8,185.0,572.0,190.0,148.0,1,Lung Opacity
+2fa75092-e364-4326-b5b0-f1d61df464c8,224.0,295.0,189.0,267.0,1,Lung Opacity
+2fa75092-e364-4326-b5b0-f1d61df464c8,224.0,295.0,189.0,267.0,1,Lung Opacity
+2fa75092-e364-4326-b5b0-f1d61df464c8,592.0,259.0,179.0,231.0,1,Lung Opacity
+2fa75092-e364-4326-b5b0-f1d61df464c8,592.0,259.0,179.0,231.0,1,Lung Opacity
+2fa8e28a-dce6-4c68-8bb6-b2537476577d,686.0,307.0,171.0,360.0,1,Lung Opacity
+2faeab4f-17bf-410e-99b9-77bf4ae75963,,,,,0,Normal
+2fb8f201-843f-44fd-90cd-d1f257f996cf,,,,,0,Normal
+2fc6c353-a51d-4eb7-ae51-d971f12a38d9,644.0,359.0,149.0,106.0,1,Lung Opacity
+2fc6c353-a51d-4eb7-ae51-d971f12a38d9,644.0,359.0,149.0,106.0,1,Lung Opacity
+2fc6c353-a51d-4eb7-ae51-d971f12a38d9,287.0,324.0,135.0,189.0,1,Lung Opacity
+2fc6c353-a51d-4eb7-ae51-d971f12a38d9,287.0,324.0,135.0,189.0,1,Lung Opacity
+2fd675cd-8340-498c-90a2-64f5e9abf7b3,,,,,0,Normal
+2fd90436-1b1e-4352-abe6-ea41ec5df91a,,,,,0,No Lung Opacity / Not Normal
+2ff18655-f28c-4992-a622-44300e071629,,,,,0,No Lung Opacity / Not Normal
+30027650-9209-47a7-908f-589fed6b03d5,,,,,0,No Lung Opacity / Not Normal
+30181ed4-6337-47e1-89b7-9dfe63c95131,600.0,590.0,226.0,134.0,1,Lung Opacity
+30181ed4-6337-47e1-89b7-9dfe63c95131,600.0,590.0,226.0,134.0,1,Lung Opacity
+30181ed4-6337-47e1-89b7-9dfe63c95131,242.0,577.0,166.0,158.0,1,Lung Opacity
+30181ed4-6337-47e1-89b7-9dfe63c95131,242.0,577.0,166.0,158.0,1,Lung Opacity
+3019421b-87dd-41f5-ad07-b06c503c0134,,,,,0,No Lung Opacity / Not Normal
+301f54f3-b074-4fa9-9db2-d303fbbf54f0,,,,,0,Normal
+3022b5a2-88d8-48b8-8f90-55e037f4e86b,,,,,0,Normal
+30258414-64e5-43d9-94bf-b6e175b91542,,,,,0,Normal
+303390de-3812-4aae-893f-3f18897a6c21,569.0,603.0,197.0,107.0,1,Lung Opacity
+303390de-3812-4aae-893f-3f18897a6c21,569.0,603.0,197.0,107.0,1,Lung Opacity
+303390de-3812-4aae-893f-3f18897a6c21,204.0,551.0,203.0,156.0,1,Lung Opacity
+303390de-3812-4aae-893f-3f18897a6c21,204.0,551.0,203.0,156.0,1,Lung Opacity
+30363e8f-2955-4a45-b6e5-8e7146d6c243,571.0,549.0,278.0,90.0,1,Lung Opacity
+3036ca10-8d42-4749-81e2-8ed235a6a567,226.0,481.0,143.0,135.0,1,Lung Opacity
+303c2367-2911-4e0a-8b63-24f01c94b217,,,,,0,No Lung Opacity / Not Normal
+3040d9d7-d895-453f-887c-616c10531960,641.0,576.0,241.0,183.0,1,Lung Opacity
+3041269d-fed6-450a-b6dc-39bce3d2dd60,,,,,0,No Lung Opacity / Not Normal
+3041969c-8db3-448c-98fd-10ff11dd59d4,572.0,447.0,136.0,96.0,1,Lung Opacity
+304a94f8-b5cf-4bef-ab88-ad9edbb7e68e,,,,,0,No Lung Opacity / Not Normal
+304e4772-d780-4620-9450-27c7a5b0ad29,,,,,0,No Lung Opacity / Not Normal
+3066b0e3-9a51-4628-bc5f-82dc78c9d558,640.0,350.0,217.0,346.0,1,Lung Opacity
+3066b0e3-9a51-4628-bc5f-82dc78c9d558,640.0,350.0,217.0,346.0,1,Lung Opacity
+3066b0e3-9a51-4628-bc5f-82dc78c9d558,281.0,403.0,189.0,306.0,1,Lung Opacity
+3066b0e3-9a51-4628-bc5f-82dc78c9d558,281.0,403.0,189.0,306.0,1,Lung Opacity
+306a9ffa-7084-4014-b8aa-2675c0c02770,,,,,0,No Lung Opacity / Not Normal
+30865d74-df6d-4ce9-8292-d16759b82e2e,,,,,0,No Lung Opacity / Not Normal
+308cf5b6-fcaf-4673-bc75-737b8d67b889,596.0,353.0,229.0,415.0,1,Lung Opacity
+308cf5b6-fcaf-4673-bc75-737b8d67b889,596.0,353.0,229.0,415.0,1,Lung Opacity
+308cf5b6-fcaf-4673-bc75-737b8d67b889,275.0,303.0,130.0,380.0,1,Lung Opacity
+308cf5b6-fcaf-4673-bc75-737b8d67b889,275.0,303.0,130.0,380.0,1,Lung Opacity
+308e8db6-f833-45b2-adb7-0f019ff96135,598.0,592.0,183.0,135.0,1,Lung Opacity
+309c2bb5-826b-4e7d-9bdb-9808d9450064,,,,,0,No Lung Opacity / Not Normal
+30a6c166-dda2-4b92-aac8-c118fa32cbd4,,,,,0,Normal
+30aa278a-8311-402a-9b9b-dfa4d6c36c8f,,,,,0,No Lung Opacity / Not Normal
+30b23b86-4328-4dc0-a763-350f2d7dc85f,,,,,0,No Lung Opacity / Not Normal
+30b439a2-0a05-4684-b890-85c63b81778c,,,,,0,Normal
+30bf351b-3713-42db-95cb-b668b439d46a,,,,,0,No Lung Opacity / Not Normal
+30c7ba0d-6b34-4a40-a92e-493c756d924a,,,,,0,No Lung Opacity / Not Normal
+30d44656-0af9-4870-b43c-f83de6cd8f2e,569.0,149.0,131.0,106.0,1,Lung Opacity
+30e21f60-403d-4f23-b01b-c42a638adf7e,,,,,0,No Lung Opacity / Not Normal
+30ed2b9d-b832-4c0a-af4d-a6ccc70ef1b5,,,,,0,No Lung Opacity / Not Normal
+30f2c879-2104-45e4-acbd-6284f7a62d35,361.0,289.0,204.0,631.0,1,Lung Opacity
+30f2c879-2104-45e4-acbd-6284f7a62d35,361.0,289.0,204.0,631.0,1,Lung Opacity
+30f2c879-2104-45e4-acbd-6284f7a62d35,674.0,280.0,212.0,663.0,1,Lung Opacity
+30f2c879-2104-45e4-acbd-6284f7a62d35,674.0,280.0,212.0,663.0,1,Lung Opacity
+31005109-092a-4611-9c42-23c7123a40c9,,,,,0,Normal
+311a559e-bed5-478a-94f5-c1bcf1df939a,574.0,293.0,174.0,207.0,1,Lung Opacity
+311a559e-bed5-478a-94f5-c1bcf1df939a,574.0,293.0,174.0,207.0,1,Lung Opacity
+311a559e-bed5-478a-94f5-c1bcf1df939a,190.0,241.0,167.0,239.0,1,Lung Opacity
+311a559e-bed5-478a-94f5-c1bcf1df939a,190.0,241.0,167.0,239.0,1,Lung Opacity
+3132440e-c4bc-4dc5-b7af-ef3e082ed989,,,,,0,No Lung Opacity / Not Normal
+3134ae04-5935-4337-9a7d-f190f118091b,,,,,0,No Lung Opacity / Not Normal
+313677e1-a894-4abc-814c-42ce8ab44dde,,,,,0,Normal
+bfea966c-f72f-42f7-9712-9cf77b66bad6,205.0,185.0,254.0,374.0,1,Lung Opacity
+bfef9bd8-fd91-45f3-8962-cae5503eda0b,,,,,0,No Lung Opacity / Not Normal
+bfefcd13-122d-4c6f-8f4f-5c53417165db,232.0,317.0,229.0,316.0,1,Lung Opacity
+bfefcd13-122d-4c6f-8f4f-5c53417165db,232.0,317.0,229.0,316.0,1,Lung Opacity
+bfefcd13-122d-4c6f-8f4f-5c53417165db,604.0,235.0,200.0,225.0,1,Lung Opacity
+bfefcd13-122d-4c6f-8f4f-5c53417165db,604.0,235.0,200.0,225.0,1,Lung Opacity
+bff56724-dd71-4717-9ce7-9749d44361eb,,,,,0,No Lung Opacity / Not Normal
+bffde351-7ccf-49cd-aa8b-893c7d359e29,539.0,567.0,178.0,201.0,1,Lung Opacity
+bffde351-7ccf-49cd-aa8b-893c7d359e29,539.0,567.0,178.0,201.0,1,Lung Opacity
+bffde351-7ccf-49cd-aa8b-893c7d359e29,197.0,614.0,201.0,308.0,1,Lung Opacity
+bffde351-7ccf-49cd-aa8b-893c7d359e29,197.0,614.0,201.0,308.0,1,Lung Opacity
+bfff04d1-f510-4c26-9525-57e4b6b27c62,,,,,0,Normal
+c003fdb7-d3ca-4295-92a8-03b32bffc780,,,,,0,No Lung Opacity / Not Normal
+c0052da2-7dcd-47e9-9300-122801e1617b,,,,,0,Normal
+c02e993c-7642-4d8a-aace-988c416ec09a,596.0,206.0,273.0,390.0,1,Lung Opacity
+c033f66d-900e-4ba3-8da4-a6823ea89d09,547.0,369.0,177.0,285.0,1,Lung Opacity
+c033f66d-900e-4ba3-8da4-a6823ea89d09,547.0,369.0,177.0,285.0,1,Lung Opacity
+c033f66d-900e-4ba3-8da4-a6823ea89d09,217.0,348.0,161.0,488.0,1,Lung Opacity
+c033f66d-900e-4ba3-8da4-a6823ea89d09,217.0,348.0,161.0,488.0,1,Lung Opacity
+c04f9256-7358-42ef-b843-19dbf64ef287,634.0,421.0,177.0,74.0,1,Lung Opacity
+c059ced8-e99a-4fff-a734-b01cae2491bb,295.0,419.0,104.0,96.0,1,Lung Opacity
+c05d1108-641a-465c-9b56-b32bcb548bb3,,,,,0,No Lung Opacity / Not Normal
+c0608b6d-a375-4cda-8133-b5ec73217435,693.0,519.0,130.0,206.0,1,Lung Opacity
+c0608b6d-a375-4cda-8133-b5ec73217435,693.0,519.0,130.0,206.0,1,Lung Opacity
+c0608b6d-a375-4cda-8133-b5ec73217435,300.0,559.0,147.0,152.0,1,Lung Opacity
+c0608b6d-a375-4cda-8133-b5ec73217435,300.0,559.0,147.0,152.0,1,Lung Opacity
+c0654897-6bfe-4b7c-abd3-dda76d0fcac2,131.0,369.0,270.0,460.0,1,Lung Opacity
+c0654897-6bfe-4b7c-abd3-dda76d0fcac2,131.0,369.0,270.0,460.0,1,Lung Opacity
+c0654897-6bfe-4b7c-abd3-dda76d0fcac2,615.0,456.0,213.0,435.0,1,Lung Opacity
+c0654897-6bfe-4b7c-abd3-dda76d0fcac2,615.0,456.0,213.0,435.0,1,Lung Opacity
+c068a37d-3fe7-4a26-bb74-575ea6be194d,649.0,519.0,153.0,225.0,1,Lung Opacity
+c068a37d-3fe7-4a26-bb74-575ea6be194d,649.0,519.0,153.0,225.0,1,Lung Opacity
+c068a37d-3fe7-4a26-bb74-575ea6be194d,282.0,326.0,150.0,233.0,1,Lung Opacity
+c068a37d-3fe7-4a26-bb74-575ea6be194d,282.0,326.0,150.0,233.0,1,Lung Opacity
+c0760d93-760c-4be7-afca-5e9914e6f8f1,,,,,0,Normal
+c07f52df-d481-434f-84c1-04263926ac40,627.0,177.0,181.0,349.0,1,Lung Opacity
+c07f52df-d481-434f-84c1-04263926ac40,627.0,177.0,181.0,349.0,1,Lung Opacity
+c07f52df-d481-434f-84c1-04263926ac40,234.0,214.0,207.0,471.0,1,Lung Opacity
+c07f52df-d481-434f-84c1-04263926ac40,234.0,214.0,207.0,471.0,1,Lung Opacity
+c0801452-425d-4196-b369-8abd70fa3268,,,,,0,No Lung Opacity / Not Normal
+c08f10a9-1c81-4c81-b411-a53c7b51f20b,140.0,531.0,287.0,215.0,1,Lung Opacity
+c08f10a9-1c81-4c81-b411-a53c7b51f20b,140.0,531.0,287.0,215.0,1,Lung Opacity
+c08f10a9-1c81-4c81-b411-a53c7b51f20b,578.0,668.0,350.0,179.0,1,Lung Opacity
+c08f10a9-1c81-4c81-b411-a53c7b51f20b,578.0,668.0,350.0,179.0,1,Lung Opacity
+c09b4889-d8d1-4690-806e-dfada1f79e0b,606.0,555.0,156.0,129.0,1,Lung Opacity
+c0a4c55a-bd1b-4459-ba2a-8a687c2732e9,,,,,0,No Lung Opacity / Not Normal
+c0d8eb9f-8276-414b-8cbb-d8f28b61aac1,,,,,0,No Lung Opacity / Not Normal
+c0dd2290-7dc1-4589-8061-57dfdfa23a4c,,,,,0,No Lung Opacity / Not Normal
+c0dec778-b56c-4c6e-8132-a606e845235c,,,,,0,No Lung Opacity / Not Normal
+c0efaacc-6601-4193-9858-f5da77a86ee3,,,,,0,Normal
+c0f3d102-ed5f-4820-81d4-89cefcf2d53a,,,,,0,Normal
+c102bfc2-601d-4275-b986-d928bf170ef9,662.0,395.0,253.0,488.0,1,Lung Opacity
+c102bfc2-601d-4275-b986-d928bf170ef9,662.0,395.0,253.0,488.0,1,Lung Opacity
+c102bfc2-601d-4275-b986-d928bf170ef9,220.0,402.0,239.0,490.0,1,Lung Opacity
+c102bfc2-601d-4275-b986-d928bf170ef9,220.0,402.0,239.0,490.0,1,Lung Opacity
+c104d585-85a7-4071-b7ff-930ac2565128,,,,,0,Normal
+c1051685-99dc-41aa-be48-a3d120194035,,,,,0,No Lung Opacity / Not Normal
+c106ddba-42f7-440c-9ba9-f3fa6692f06f,753.0,742.0,185.0,241.0,1,Lung Opacity
+c106ddba-42f7-440c-9ba9-f3fa6692f06f,753.0,742.0,185.0,241.0,1,Lung Opacity
+c106ddba-42f7-440c-9ba9-f3fa6692f06f,630.0,165.0,293.0,434.0,1,Lung Opacity
+c106ddba-42f7-440c-9ba9-f3fa6692f06f,630.0,165.0,293.0,434.0,1,Lung Opacity
+c10726b6-c944-403f-9062-f0bf922ef149,,,,,0,No Lung Opacity / Not Normal
+c109061a-d815-4cae-8343-9230d8024adf,543.0,258.0,175.0,347.0,1,Lung Opacity
+c109061a-d815-4cae-8343-9230d8024adf,543.0,258.0,175.0,347.0,1,Lung Opacity
+c109061a-d815-4cae-8343-9230d8024adf,84.0,285.0,227.0,432.0,1,Lung Opacity
+c109061a-d815-4cae-8343-9230d8024adf,84.0,285.0,227.0,432.0,1,Lung Opacity
+c1098ce4-cb15-41c6-ba39-1fa511b82100,,,,,0,Normal
+c10ae3e5-822f-49e9-8c02-b0e2a98eddc1,,,,,0,No Lung Opacity / Not Normal
+c110e1ed-fb28-4b3d-b450-e370f13d4293,,,,,0,Normal
+c1265ac3-6eae-4cf3-9880-26fd430312f3,,,,,0,No Lung Opacity / Not Normal
+c1273696-fdec-48a9-988c-74e57b6323fa,673.0,253.0,183.0,322.0,1,Lung Opacity
+c12aafdd-4d21-4cd3-a2ae-007bce2e2fc0,606.0,355.0,216.0,368.0,1,Lung Opacity
+c1415e26-fddf-4a0c-a7eb-7b9a0d9e9983,131.0,218.0,214.0,379.0,1,Lung Opacity
+c1415e26-fddf-4a0c-a7eb-7b9a0d9e9983,131.0,218.0,214.0,379.0,1,Lung Opacity
+c1415e26-fddf-4a0c-a7eb-7b9a0d9e9983,497.0,127.0,247.0,368.0,1,Lung Opacity
+c1415e26-fddf-4a0c-a7eb-7b9a0d9e9983,497.0,127.0,247.0,368.0,1,Lung Opacity
+c145df8e-9631-468d-af7f-5690c11c2c88,601.0,265.0,173.0,383.0,1,Lung Opacity
+c145df8e-9631-468d-af7f-5690c11c2c88,601.0,265.0,173.0,383.0,1,Lung Opacity
+c145df8e-9631-468d-af7f-5690c11c2c88,173.0,370.0,178.0,260.0,1,Lung Opacity
+c145df8e-9631-468d-af7f-5690c11c2c88,173.0,370.0,178.0,260.0,1,Lung Opacity
+c14d9ceb-019f-45f6-9299-281b58de57df,578.0,447.0,157.0,258.0,1,Lung Opacity
+c14d9ceb-019f-45f6-9299-281b58de57df,578.0,447.0,157.0,258.0,1,Lung Opacity
+c14d9ceb-019f-45f6-9299-281b58de57df,239.0,268.0,172.0,418.0,1,Lung Opacity
+c14d9ceb-019f-45f6-9299-281b58de57df,239.0,268.0,172.0,418.0,1,Lung Opacity
+c1592aae-c80d-4794-ab28-463905558534,,,,,0,Normal
+c1628c47-5ba3-42dd-8df3-7ad3abd57ad0,622.0,356.0,149.0,128.0,1,Lung Opacity
+c164b17b-aff8-484f-9d9e-dde2932d8df9,,,,,0,No Lung Opacity / Not Normal
+c1718678-44af-407f-829a-fc65bc854094,,,,,0,No Lung Opacity / Not Normal
+c18d1138-ba74-4af5-af21-bdd4d2c96bb5,646.0,386.0,141.0,206.0,1,Lung Opacity
+c18d1138-ba74-4af5-af21-bdd4d2c96bb5,646.0,386.0,141.0,206.0,1,Lung Opacity
+c18d1138-ba74-4af5-af21-bdd4d2c96bb5,295.0,473.0,133.0,176.0,1,Lung Opacity
+c18d1138-ba74-4af5-af21-bdd4d2c96bb5,295.0,473.0,133.0,176.0,1,Lung Opacity
+c196ce23-f37c-4ab3-a9ce-ea8ede90e09c,,,,,0,Normal
+c19b8a3b-ab4e-4a73-8e13-ec0a84b6b6c7,,,,,0,Normal
+c1c3ec5d-20ba-42f7-91f9-48032d97ffc9,,,,,0,Normal
+c1ca4417-83a6-43a7-a9bf-7d9587e7f14f,,,,,0,Normal
+c1cddf32-b957-4753-acaa-472ab1447e86,269.0,416.0,193.0,285.0,1,Lung Opacity
+c1cddf32-b957-4753-acaa-472ab1447e86,269.0,416.0,193.0,285.0,1,Lung Opacity
+c1cddf32-b957-4753-acaa-472ab1447e86,766.0,475.0,135.0,213.0,1,Lung Opacity
+c1cddf32-b957-4753-acaa-472ab1447e86,766.0,475.0,135.0,213.0,1,Lung Opacity
+c1cf3255-d734-4980-bfe0-967902ad7ed9,,,,,0,Normal
+c1e228e4-b7b4-432b-a735-36c48fdb806f,,,,,0,No Lung Opacity / Not Normal
+c1e3eb82-c55a-471f-a57f-fe1a823469da,,,,,0,Normal
+c1e73a4e-7afe-4ec5-8af6-ce8315d7a2f2,666.0,418.0,186.0,223.0,1,Lung Opacity
+c1e73a4e-7afe-4ec5-8af6-ce8315d7a2f2,666.0,418.0,186.0,223.0,1,Lung Opacity
+c1e73a4e-7afe-4ec5-8af6-ce8315d7a2f2,316.0,504.0,179.0,273.0,1,Lung Opacity
+c1e73a4e-7afe-4ec5-8af6-ce8315d7a2f2,316.0,504.0,179.0,273.0,1,Lung Opacity
+c1ec14ff-f6d7-4b38-b0cb-fe07041cbdc8,609.0,464.0,240.0,284.0,1,Lung Opacity
+c1ec14ff-f6d7-4b38-b0cb-fe07041cbdc8,609.0,464.0,240.0,284.0,1,Lung Opacity
+c1ec14ff-f6d7-4b38-b0cb-fe07041cbdc8,185.0,298.0,228.0,379.0,1,Lung Opacity
+c1ec14ff-f6d7-4b38-b0cb-fe07041cbdc8,185.0,298.0,228.0,379.0,1,Lung Opacity
+c1edf42b-5958-47ff-a1e7-4f23d99583ba,,,,,0,Normal
+c1f6b555-2eb1-4231-98f6-50a963976431,,,,,0,Normal
+c1f7889a-9ea9-4acb-b64c-b737c929599a,570.0,393.0,261.0,345.0,1,Lung Opacity
+c1f7889a-9ea9-4acb-b64c-b737c929599a,570.0,393.0,261.0,345.0,1,Lung Opacity
+c1f7889a-9ea9-4acb-b64c-b737c929599a,233.0,424.0,201.0,356.0,1,Lung Opacity
+c1f7889a-9ea9-4acb-b64c-b737c929599a,233.0,424.0,201.0,356.0,1,Lung Opacity
