@@ -26,11 +26,10 @@ import pytorch_retinanet.model_resnet
 import pytorch_retinanet.model_se_resnext
 import pytorch_retinanet.model_xception
 import torch
-
 from config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
 from datasets.detection_dataset import DetectionDataset
 from models import MODELS
-from torch import optim
+from torch import nn, optim
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
 from torchvision import datasets, models, transforms
@@ -352,7 +351,7 @@ def generate_predictions(model_name: str, run: str, fold: int, debug: bool, weig
         pickle.dump(oof, open(prediction_fn, "wb"))
 
 
-def p1p2_to_xywh(p1p2):
+def p1p2_to_xywh(p1p2: np.ndarray) -> np.ndarray:
     """
     Helper function
     converts box coordinates to 
@@ -455,7 +454,6 @@ def main():
     arg("--num-epochs", type=int, default=15, help="Number of epochs to run")
     arg("--batch-size", type=int, default=4, help="Batch size for training")
     arg("--learning-rate", type=float, default=1e-5, help="Initial learning rate")
-    arg("--threshold", type=float, default=0.35, help="Metric threshold")
     arg("--debug", type=bool, default=False, help="If the debugging mode")
     args = parser.parse_args()
 

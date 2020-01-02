@@ -24,11 +24,12 @@ class ModelInfo:
 
     def __init__(self, factory, args, batch_size, dataset_args, use_sgd=False, img_size=IMG_SIZE):
         """
-        :param factory : base model architectures
-        :param args : a dictionary with model arguments
-        :param dataset_args : a dictionary with model arguments    
-        :param batch_size: batch size
-        :param img_size: image size to use in training   
+        Args:
+            factory : base model architectures
+            args : a dictionary with model arguments
+            dataset_args : a dictionary with model arguments    
+            batch_size: batch size
+            img_size: image size to use in training   
         """
         self.factory = factory
         self.args = args

@@ -3,25 +3,24 @@ Created on Thu Aug  8 16:14:23 2019
 
 @author: Tanya
 """
-
 import argparse
-import pandas as pd
-import pickle
-import numpy as np
-import matplotlib.pyplot as plt
 import collections
 import os
+import pickle
 
-# my imports
-from utils.my_utils import set_seed
-from config import IMG_SIZE, TEST_DIR, WEIGHTS_DIR, RESULTS_DIR
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
 import metric
+from config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
+from utils.my_utils import set_seed
 
 
-def load_oof(results_dir: str, model_name: str, fold: int, epoch_num: int):
+def load_oof(results_dir: str, model_name: str, fold: int, epoch_num: int) -> np.ndarray:
     """
-    Helper
-    Loads oof from pickle
+    Helper,
+    Loads oot-of-fold predictions from pickle
     """
     predictions_dir = f"{results_dir}/oof/{model_name}_fold_{fold}"
     fn = f"{predictions_dir}/{epoch_num:03}.pkl"
@@ -30,7 +29,7 @@ def load_oof(results_dir: str, model_name: str, fold: int, epoch_num: int):
     return oof
 
 
-def p1p2_to_xywh(p1p2):
+def p1p2_to_xywh(p1p2: np.ndarray) -> np.ndarray:
     """
     Helper function
     converts box coordinates to 
@@ -42,7 +41,7 @@ def p1p2_to_xywh(p1p2):
     return xywh
 
 
-def get_epoch_metric(oof, thresholds: list, predictions_dir: str, epoch_num: int):
+def get_epoch_metric(oof: np.ndarray, thresholds: list, predictions_dir: str, epoch_num: int) -> list:
     """
     Loads epoch predictions and
     calculates the epoch metric for a set of thresholds
@@ -127,12 +126,9 @@ def get_metrics(predictions_dir: str, model_name: str, fold: int, epochs: int, t
 def main():
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
-    arg("--model", type=str, default="resnet101_512", help="String model name from models dictionary")
+    arg("--model-name", type=str, default="resnet101_512", help="String model name from models dictionary")
     arg("--seed", type=int, default=1234, help="Random seed")
     arg("--fold", type=int, default=0, help="Validation fold")
-    arg("--epoch", type=int, default=12, help="Current epoch")
-    arg("--threshold", type=float, default=0.35, help="Metric threshold")
-    arg("--debug", type=bool, default=False, help="If the debugging mode")
     args = parser.parse_args()
 
     set_seed(args.seed)
@@ -149,7 +145,7 @@ def main():
 
     thresholds = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.9, 1.0]
 
-    get_metrics(RESULTS_DIR, model_name="inc_resnet_v2_512", fold=args.fold, epochs=19, thresholds=thresholds, save_metrics=True)
+    get_metrics(RESULTS_DIR, model_name=args.model_name, fold=args.fold, epochs=19, thresholds=thresholds, save_metrics=True)
 
 
 if __name__ == "__main__":

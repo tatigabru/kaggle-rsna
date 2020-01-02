@@ -7,35 +7,34 @@ import argparse
 import collections
 import os
 import pickle
-import pandas as pd
-import pydicom
-import skimage.transform
 
+import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import skimage.transform
+from tqdm import tqdm
+
+import metric
+import pydicom
+import pytorch_retinanet.dataloader
+import pytorch_retinanet.model
+import pytorch_retinanet.model_dpn
+import pytorch_retinanet.model_incresv2
+import pytorch_retinanet.model_nasnet_mobile
+import pytorch_retinanet.model_pnasnet
+import pytorch_retinanet.model_resnet
+import pytorch_retinanet.model_se_resnext
+import pytorch_retinanet.model_xception
 import torch
 import torch.optim as optim
+from config import DATA_DIR, IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
+from datasets.test_dataset import TestDataset
+from models import MODELS
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
 from torchvision import datasets, models, transforms
-from tqdm import tqdm
-import metric
-import matplotlib.pyplot as plt
-
-import pytorch_retinanet.model
-import pytorch_retinanet.model_resnet
-import pytorch_retinanet.model_se_resnext
-import pytorch_retinanet.model_dpn
-import pytorch_retinanet.model_pnasnet
-import pytorch_retinanet.model_incresv2
-import pytorch_retinanet.model_xception
-import pytorch_retinanet.model_nasnet_mobile
-import pytorch_retinanet.dataloader
-
+from utils.logger import Logger
 from utils.my_utils import set_seed
-from config import IMG_SIZE, TEST_DIR, WEIGHTS_DIR, RESULTS_DIR, DATA_DIR
-from models import MODELS
-from datasets.test_dataset import TestDataset
-from logger import Logger
 
 model_configs = MODELS.keys()
 
@@ -119,7 +118,7 @@ def main():
     set_seed(args.seed)
     # export CUDA_VISIBLE_DEVICES=0
 
-    weights = f"../../checkpoints/{args.model}_fold_{args.fold}/"
+    weights = f"{args.checkpoints_dir}/{args.model}_fold_{args.fold}/"
 
     predict_test(
         model_name=args.model, fold=args.fold, debug=args.debug, checkpoints_dir=weights, save_oof=True, img_size=IMG_SIZE, from_epoch=0, to_epoch=10
