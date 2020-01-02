@@ -149,19 +149,13 @@ def train(
                     data["category"].cuda(),
                 ]
                 # get losses
-                (
-                    classification_loss,
-                    regression_loss,
-                    global_classification_loss,
-                ) = retinanet(inputs, return_loss=True, return_boxes=False)
+                (classification_loss, regression_loss, global_classification_loss,) = retinanet(
+                    inputs, return_loss=True, return_boxes=False
+                )
                 classification_loss = classification_loss.mean()
                 regression_loss = regression_loss.mean()
                 global_classification_loss = global_classification_loss.mean()
-                loss = (
-                    classification_loss
-                    + regression_loss
-                    + global_classification_loss * 0.1
-                )
+                loss = classification_loss + regression_loss + global_classification_loss * 0.1
                 # back prop
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(retinanet.parameters(), 0.05)
@@ -179,19 +173,13 @@ def train(
                 del regression_loss
 
         # save model and log loss history
-        torch.save(
-            retinanet.module, f"{checkpoints_dir}/{model_name}_{epoch_num:03}.pt"
-        )
+        torch.save(retinanet.module, f"{checkpoints_dir}/{model_name}_{epoch_num:03}.pt")
         logger.scalar_summary("loss_train", np.mean(epoch_loss), epoch_num)
-        logger.scalar_summary(
-            "loss_train_classification", np.mean(loss_cls_hist), epoch_num
-        )
+        logger.scalar_summary("loss_train_classification", np.mean(loss_cls_hist), epoch_num)
         logger.scalar_summary(
             "loss_train_global_classification", np.mean(loss_cls_global_hist), epoch_num
         )
-        logger.scalar_summary(
-            "loss_train_regression", np.mean(loss_reg_hist), epoch_num
-        )
+        logger.scalar_summary("loss_train_regression", np.mean(loss_reg_hist), epoch_num)
 
         # validation
         (
@@ -210,17 +198,11 @@ def train(
 
         # log validation loss history
         logger.scalar_summary("loss_valid", np.mean(loss_hist_valid), epoch_num)
+        logger.scalar_summary("loss_valid_classification", np.mean(loss_cls_hist_valid), epoch_num)
         logger.scalar_summary(
-            "loss_valid_classification", np.mean(loss_cls_hist_valid), epoch_num
+            "loss_valid_global_classification", np.mean(loss_cls_global_hist_valid), epoch_num,
         )
-        logger.scalar_summary(
-            "loss_valid_global_classification",
-            np.mean(loss_cls_global_hist_valid),
-            epoch_num,
-        )
-        logger.scalar_summary(
-            "loss_valid_regression", np.mean(loss_reg_hist_valid), epoch_num
-        )
+        logger.scalar_summary("loss_valid_regression", np.mean(loss_reg_hist_valid), epoch_num)
 
         if scheduler_by_epoch:
             scheduler.step(epoch=epoch_num)
@@ -231,11 +213,7 @@ def train(
 
 
 def validation(
-    retinanet: nn.Module,
-    dataloader_valid,
-    epoch_num: int,
-    predictions_dir: str,
-    save_oof=True,
+    retinanet: nn.Module, dataloader_valid, epoch_num: int, predictions_dir: str, save_oof=True,
 ) -> tuple:
     """
     Validate model at the epoch end 
@@ -255,12 +233,12 @@ def validation(
     """
     with torch.no_grad():
         retinanet.eval()
-        (
-            loss_hist_valid,
-            loss_cls_hist_valid,
-            loss_cls_global_hist_valid,
-            loss_reg_hist_valid,
-        ) = ([], [], [], [])
+        (loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid,) = (
+            [],
+            [],
+            [],
+            [],
+        )
         data_iter = tqdm(enumerate(dataloader_valid), total=len(dataloader_valid))
         if save_oof:
             oof = collections.defaultdict(list)
@@ -295,9 +273,7 @@ def validation(
             classification_loss = classification_loss.mean()
             regression_loss = regression_loss.mean()
             global_classification_loss = global_classification_loss.mean()
-            loss = (
-                classification_loss + regression_loss + global_classification_loss * 0.1
-            )
+            loss = classification_loss + regression_loss + global_classification_loss * 0.1
             # loss history
             loss_hist_valid.append(float(loss))
             loss_cls_hist_valid.append(float(classification_loss))
@@ -439,29 +415,17 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
 
         os.makedirs(pics_dir, exist_ok=True)
         plt.savefig(
-            f"{pics_dir}/predict_{iter_num}.eps",
-            dpi=300,
-            bbox_inches="tight",
-            pad_inches=0,
+            f"{pics_dir}/predict_{iter_num}.eps", dpi=300, bbox_inches="tight", pad_inches=0,
         )
         plt.savefig(
-            f"{pics_dir}/predict_{iter_num}.png",
-            dpi=300,
-            bbox_inches="tight",
-            pad_inches=0,
+            f"{pics_dir}/predict_{iter_num}.png", dpi=300, bbox_inches="tight", pad_inches=0,
         )
         plt.close()
         print(nms_scores)
 
 
 def generate_predictions(
-    model_name: str,
-    run: str,
-    fold: int,
-    debug: bool,
-    weights_dir: str,
-    from_epoch=0,
-    to_epoch=10,
+    model_name: str, run: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10,
 ):
     """
     Loads model weights the epoch checkpoints, 
@@ -488,7 +452,9 @@ def generate_predictions(
             continue
         print("epoch", epoch_num)
         # load model checkpoint
-        checkpoint = f"{weights_dir}/{model_name}{run_str}_fold_{fold}/{model_name}_{epoch_num:03}.pt"
+        checkpoint = (
+            f"{weights_dir}/{model_name}{run_str}_fold_{fold}/{model_name}_{epoch_num:03}.pt"
+        )
         print("load", checkpoint)
         try:
             model = torch.load(checkpoint)
@@ -510,9 +476,7 @@ def generate_predictions(
         )
 
         oof = collections.defaultdict(list)
-        for iter_num, data in tqdm(
-            enumerate(dataset_valid), total=len(dataloader_valid)
-        ):
+        for iter_num, data in tqdm(enumerate(dataset_valid), total=len(dataloader_valid)):
             data = pytorch_retinanet.dataloader.collater2d([data])
             img = data["img"].to(device).float()
             nms_scores, global_classification, transformed_anchors = model(
@@ -569,26 +533,7 @@ def check_metric(
     """
     run_str = "" if run is None or run == "" else f"_{run}"
     predictions_dir = f"{oof_dir}/{model_name}{run_str}_fold_{fold}"
-    thresholds = [
-        0.05,
-        0.1,
-        0.15,
-        0.2,
-        0.25,
-        0.28,
-        0.3,
-        0.35,
-        0.4,
-        0.5,
-        0.6,
-        0.7,
-        0.8,
-        0.9,
-        1.0,
-        2.0,
-        3.0,
-        4.0,
-    ]
+    thresholds = [0.05, 0.1, 0.15, 0.2, 0.25, 0.28, 0.3, 0.35, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 2.0]
     all_scores = []
 
     for epoch_num in range(start_epoch, end_epoch):
@@ -671,10 +616,7 @@ def main():
         help="String model name from models dictionary",
     )
     arg(
-        "--run",
-        type=str,
-        default="",
-        help="Experiment id string to be added for saving model",
+        "--run", type=str, default="", help="Experiment id string to be added for saving model",
     )
     arg("--seed", type=int, default=1234, help="Random seed")
     arg("--fold", type=int, default=0, help="Validation fold")
@@ -708,7 +650,9 @@ def main():
 
     if args.action == "test_model":
         run_str = "" if args.run is None or args.run == "" else f"_{args.run}"
-        weights = f"{WEIGHTS_DIR}/{args.model}{run_str}_fold_{args.fold}/{args.model}_{args.epoch:03}.pt"
+        weights = (
+            f"{WEIGHTS_DIR}/{args.model}{run_str}_fold_{args.fold}/{args.model}_{args.epoch:03}.pt"
+        )
         test_model(
             model_name=args.model,
             fold=args.fold,
