@@ -22,7 +22,7 @@ class ModelInfo:
     Initialises main model parameters    
     """
 
-    def __init__(self, factory, args, batch_size, dataset_args, use_sgd=False, img_size=IMG_SIZE):
+    def __init__(self, factory, args: dict, batch_size: int, dataset_args: dict, use_sgd=False, img_size=IMG_SIZE):
         """
         Args:
             factory : base model architectures
@@ -49,7 +49,11 @@ MODELS = {
         dataset_args=dict(augmentation_level=20),
     ),
     "resnet152_512": ModelInfo(
-        factory=pytorch_retinanet.model_resnet.resnet152, args=dict(num_classes=1, pretrained=True), img_size=512, batch_size=4, dataset_args=dict()
+        factory=pytorch_retinanet.model_resnet.resnet152, 
+        args=dict(num_classes=1, pretrained=True), 
+        img_size=512, 
+        batch_size=4, 
+        dataset_args=dict(augmentation_level=20),
     ),
     "se_resnext101_512": ModelInfo(
         factory=pytorch_retinanet.model_se_resnext.se_resnext101,
@@ -109,7 +113,11 @@ MODELS = {
         dataset_args=dict(),
     ),
     "resnet34_256": ModelInfo(
-        factory=pytorch_retinanet.model_resnet.resnet34, args=dict(num_classes=1, pretrained=True), img_size=256, batch_size=32, dataset_args=dict()
+        factory=pytorch_retinanet.model_resnet.resnet34, 
+        args=dict(num_classes=1, pretrained=True), 
+        img_size=256, 
+        batch_size=32, 
+        dataset_args=dict(),
     ),
     "pnas_512": ModelInfo(
         factory=pytorch_retinanet.model_pnasnet.pnasnet5large,
