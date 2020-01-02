@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def iou(box1: list, box2: list):
+def iou(box1: list, box2: list) -> float:
     """
     Helper, calculates Intersection over union
     Args: 
@@ -31,10 +31,10 @@ def test_iou():
     """Helper to test iou function"""
     box1 = [100, 100, 200, 200]
     box2 = [100, 100, 300, 200]
-    assert abs(iou(box1, box2) - 3 / 2) < 1e-4
+    assert abs(iou(box1, box2) - 2 / 3) < 1e-3
 
 
-def map_iou(boxes_true: np.ndarray, boxes_pred: np.adarray, scores: np.ndarray, thresholds=(0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75)):
+def map_iou(boxes_true: np.ndarray, boxes_pred: np.ndarray, scores: np.ndarray, thresholds=(0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75)) -> float:
     """
     Mean average precision at differnet intersection over union (IoU) threshold
 
