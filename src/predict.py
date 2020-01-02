@@ -15,7 +15,6 @@ import skimage.transform
 from tqdm import tqdm
 
 import metric
-import pydicom
 import pytorch_retinanet.dataloader
 import pytorch_retinanet.model
 import pytorch_retinanet.model_dpn
@@ -26,10 +25,10 @@ import pytorch_retinanet.model_resnet
 import pytorch_retinanet.model_se_resnext
 import pytorch_retinanet.model_xception
 import torch
-import torch.optim as optim
 from config import DATA_DIR, IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
 from datasets.test_dataset import TestDataset
 from models import MODELS
+from torch import nn, optim
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
 from torchvision import datasets, models, transforms
@@ -39,7 +38,7 @@ from utils.my_utils import set_seed
 model_configs = MODELS.keys()
 
 
-def load_model(checkpoint: str):
+def load_model(checkpoint: str) -> nn.Module:
     """
     Helper to load model weihts
     """
@@ -65,7 +64,6 @@ def predict_test(model_name: str, fold: int, debug: bool, checkpoints_dir: str, 
         checkpoints_dir: directory with weights 
         from_epoch, to_epoch: the first ad last epochs for predicitions generation  
     """
-    model_info = MODELS[model_name]
     # creates directories for predicitons
     predictions_dir = f"{RESULTS_DIR}/test_oof/{model_name}_fold_{fold}"
     os.makedirs(predictions_dir, exist_ok=True)

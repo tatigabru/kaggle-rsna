@@ -168,7 +168,7 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
     torch.save(retinanet, f"{checkpoints_dir}/{model_name}_final.pt")
 
 
-def validation(retinanet, dataloader_valid, epoch_num: int, predictions_dir: str, save_oof=True):
+def validation(retinanet: nn.Module, dataloader_valid, epoch_num: int, predictions_dir: str, save_oof=True) -> tuple:
     """
     Validate model at the epoch end 
        
@@ -189,13 +189,13 @@ def validation(retinanet, dataloader_valid, epoch_num: int, predictions_dir: str
         retinanet.eval()
         loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid = [], [], [], []
         data_iter = tqdm(enumerate(dataloader_valid), total=len(dataloader_valid))
-        if save_oof or save_oof_numpy:
+        if save_oof:
             oof = collections.defaultdict(list)
         for iter_num, data in data_iter:
             res = retinanet([data["img"].cuda().float(), data["annot"].cuda().float(), data["category"].cuda()], return_loss=True, return_boxes=True)
 
             classification_loss, regression_loss, global_classification_loss, nms_scores, global_class, transformed_anchors = res
-            if save_oof or save_oof_numpy:
+            if save_oof:
                 # predictions
                 oof["gt_boxes"].append(data["annot"].cpu().numpy().copy())
                 oof["gt_category"].append(data["category"].cpu().numpy().copy())
@@ -285,7 +285,7 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
                 color = "g"
             plt.gca().add_patch(plt.Rectangle(p0, width=(p1 - p0)[0], height=(p1 - p0)[1], fill=False, edgecolor=color, linewidth=2))
             plt.gca().text(p0[0], p0[1], f"{nms_score:.3f}", color=color)
-        # plt.show()
+        plt.show()
 
         os.makedirs(pics_dir, exist_ok=True)
         plt.savefig(f"{pics_dir}/predict_{iter_num}.eps", dpi=300, bbox_inches="tight", pad_inches=0)
@@ -426,8 +426,8 @@ def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch
     best_score = np.max(all_scores)
     epochs = np.arange(start_epoch, end_epoch)
     print("best score: ", best_score)
-    # plt.imshow(np.array(all_scores))
-    # plt.show()
+    plt.imshow(np.array(all_scores))
+    plt.show()
     if save_metrics:
         scores_dir = f"{RESULTS_DIR}/scores/{model_name}{run_str}_fold_{fold}"
         os.makedirs(scores_dir, exist_ok=True)
