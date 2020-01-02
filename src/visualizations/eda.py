@@ -6,17 +6,17 @@ EDA
 
 """
 import sys
+sys.path.append("/home/user/rsna/progs/rsna-repo/src")
 
-sys.path.append("/home/user/rsna/progs/rsna/src")
-
-from config import DATA_DIR, TRAIN_DIR, STAGE
 import matplotlib.pyplot as plt
 import numpy as np
-import pydicom
 import pandas as pd
 
+import pydicom
+from config import DATA_DIR, STAGE, TRAIN_DIR
 
-def parse_data(df):
+
+def parse_data(df: pd.DataFrame) -> dict:
     """
     Method to read a CSV file (Pandas dataframe) and parse the 
     data into the following nested dictionary:
@@ -45,14 +45,14 @@ def parse_data(df):
         # Initialize patient entry into parsed
         pid = row["patientId"]
         if pid not in parsed:
-            parsed[pid] = {"dicom": TRAIN_DIR + "/%s.dcm" % pid, "label": row["Target"], "boxes": []}
+            parsed[pid] = {"dicom": '../' + TRAIN_DIR + "/%s.dcm" % pid, "label": row["Target"], "boxes": []}
         # Add box if opacity is present
         if parsed[pid]["label"] == 1:
             parsed[pid]["boxes"].append(extract_box(row))
     return parsed
 
 
-def plot_dicom(data):
+def plot_dicom(data: dict):
     """
     Helper to plot single patient X-Ray with bounding box(es) if present 
     """
@@ -70,7 +70,7 @@ def plot_dicom(data):
     plt.axis("off")
 
 
-def dicom_to_img(data):
+def dicom_to_img(data: dict) -> np.ndarray:
     """
     Helper to convert X-Ray dicom data to image with with bounding box(es) if present 
     """
@@ -86,7 +86,7 @@ def dicom_to_img(data):
     return img
 
 
-def overlay_box(img, box, color, stroke=1):
+def overlay_box(img: np.ndarray, box: list, color: int, stroke=1) -> np.ndarray:
     """
     Helper to overlay single box on image
     """
@@ -103,27 +103,29 @@ def overlay_box(img, box, color, stroke=1):
     return img
 
 
-def plot_patient(num, patient_class, fig_num=1):
+def plot_patient(df: pd.DataFrame, num: int, patient_class: pd.DataFrame, fig_num=1):
     """ Plot a single patient example 
     Args:
+        df: dataframe with meta data
     	num : patient number
     	class_info: dataframe with class labels
     	fig_num : figure number
     """
     patientId = df["patientId"][num]
+    parsed = parse_data(df)
     print(parsed[patientId])
     print(patient_class.loc[patientId]["class"])
     class_str = patient_class.loc[patientId]["class"]
-    fig = plt.figure(fig_num, figsize=(10, 8))
+    plt.figure(fig_num, figsize=(10, 8))
     plt.title(f"Sample - {class_str}")
     plot_dicom(parsed[patientId])
-    return fig
-
+    plt.show()
+    
 
 def main():
-    class_info = pd.read_csv(DATA_DIR + f"stage_{STAGE}_detailed_class_info.csv")
-    df = pd.read_csv(DATA_DIR + f"stage_{STAGE}_train_labels.csv")
-    dicom_dir = TRAIN_DIR
+    class_info = pd.read_csv('../' + DATA_DIR + f"stage_{STAGE}_detailed_class_info.csv")
+    df = pd.read_csv('../' + DATA_DIR + f"stage_{STAGE}_train_labels.csv")
+    
     # sanity checkes
     print(class_info.head())
     print(class_info.shape[0], "class infos loaded")
@@ -131,17 +133,18 @@ def main():
 
     # classes distribution
     print(class_info["patientId"].value_counts().shape[0], "patients")
-    fig = plt.figure(1, figsize=[10, 6])
+    plt.figure(1, figsize=[10, 6])
     class_info.groupby("class").size().plot.bar()
+    plt.show()
 
     # parse data
-    patient_class = pd.read_csv(DATA_DIR + "stage_1_detailed_class_info.csv", index_col=0)
+    patient_class = pd.read_csv('../' + DATA_DIR + "stage_1_detailed_class_info.csv", index_col=0)
     parsed = parse_data(df)
 
     # Normal example
-    plot_patient(10, patient_class, fig_num=2)
+    plot_patient(df, 10, patient_class, fig_num=2)
     # Lung opacity example
-    # plot_patient(8, patient_class, fig_num = 3)
+    # plot_patient(df, 8, patient_class, fig_num = 3)
 
     # all three examples
     fig, axs = plt.subplots(1, 3, figsize=(17, 6))
@@ -158,13 +161,13 @@ def main():
     img = dicom_to_img(parsed[df["patientId"][16]])
     axs[2].imshow(img, cmap=plt.cm.gist_gray)
     axs[2].axis("off")
+    plt.show()
+    
     # save figure
-
-
-# plt.savefig("eda.eps", dpi=300, bbox_inches = 'tight',
-# pad_inches = 0)
-# plt.savefig("eda.pdf", dpi=300, bbox_inches = 'tight',
-# pad_inches = 0)
+    # plt.savefig("eda.eps", dpi=300, bbox_inches = 'tight',
+    # pad_inches = 0)
+    # plt.savefig("eda.pdf", dpi=300, bbox_inches = 'tight',
+    # pad_inches = 0)
 
 
 if __name__ == "__main__":
