@@ -603,29 +603,12 @@ def check_metric(
 def main():
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
-    arg(
-        "--action",
-        type=str,
-        default="train",
-        help="Choose action: train, test_model, check_metric, generate_predictions",
-    )
-    arg(
-        "--model",
-        type=str,
-        default="se_resnext101_dr0.75_512",
-        help="String model name from models dictionary",
-    )
-    arg(
-        "--run", type=str, default="", help="Experiment id string to be added for saving model",
-    )
+    arg("--action", type=str, default="train", help="Choose action: train, test_model, check_metric, generate_predictions")
+    arg("--model", type=str, default="se_resnext101_dr0.75_512", help="String model name from models dictionary")
+    arg("--run", type=str, default="", help="Experiment id string to be added for saving model")
     arg("--seed", type=int, default=1234, help="Random seed")
     arg("--fold", type=int, default=0, help="Validation fold")
-    arg(
-        "--weights_dir",
-        type=str,
-        default="../../checkpoints",
-        help="Directory for loading model weights",
-    )
+    arg("--weights_dir", type=str, default="../../checkpoints", help="Directory for loading model weights")
     arg("--epoch", type=int, default=12, help="Current epoch")
     arg("--from-epoch", type=int, default=1, help="Resume training from epoch")
     arg("--num-epochs", type=int, default=15, help="Number of epochs to run")
@@ -635,10 +618,7 @@ def main():
     args = parser.parse_args()
 
     set_seed(args.seed)
-    print("model string names: ", model_configs)
-
-    # export CUDA_VISIBLE_DEVICES=0
-
+  
     if args.action == "train":
         train(
             model_name=args.model,
