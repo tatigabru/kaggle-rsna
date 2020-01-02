@@ -4,14 +4,14 @@ Created on Thu Aug  8 16:14:23 2019
 
 @author: Tanya
 """
-
 import argparse
-import pandas as pd
-import numpy as np
+
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 
-def load_val_loss(model_name: str, results_dir: str):
+def load_val_loss(model_name: str, results_dir: str) -> pd.DataFrame:
     """Load validation loss from runs
     """
     loss_file = f"{results_dir}/run-{model_name}_fold_0-tag-loss_valid_regression.csv"
@@ -20,11 +20,11 @@ def load_val_loss(model_name: str, results_dir: str):
     return run_loss
 
 
-def plot_val_loss(run_loss, model_name: str, if_save=False):
+def plot_val_loss(run_loss: pd.DataFrame, model_name: str, if_save=False):
     """
     Plot validation loss per epoch
     Input: 
-        run_loss  : array with run results
+        run_loss  : dataframe run results
         model_name: string model names for legend 
         if_save   : saves figure if_save=True
     """
@@ -74,14 +74,6 @@ def plot_val_losses(model_names: list, labels: list, results_dir: str, if_save=F
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    arg = parser.add_argument
-    arg("--fold", type=int, default=0, help="Validation fold")
-    arg("--results_dir", type=str, default="../../output/runs", help="Directory for loading results")
-    arg("--save-pics", type=bool, default=True)
-    arg("--debug", type=bool, default=False, help="If the debugging mode")
-    args = parser.parse_args()
-
     RESULTS_DIR = "../../output/runs"
 
     model_names = [

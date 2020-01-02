@@ -6,25 +6,27 @@ Training models and inference
 import argparse
 import os
 import pickle
-import pandas as pd
 import sys
+sys.path.append("/home/user/rsna/progs/rsna-repo/src")
 
-sys.path.append("/home/user/rsna/progs/rsna/src")
-
-import numpy as np
-from tqdm import tqdm
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
+from tqdm import tqdm
 
-# my imports
+from config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
 from utils.my_utils import set_seed
-from config import IMG_SIZE, TEST_DIR, WEIGHTS_DIR, RESULTS_DIR
 
 
-def load_scores(model_name: str, fold: int, output_dir=RESULTS_DIR):
+def load_scores(model_name: str, fold: int, output_dir=RESULTS_DIR) -> tuple:
     """
     Load scores from a pickle file
+    Args: 
+        model_name: string model name
+        fold      : fold number to load
+        output_dir: string, directory with outputs        
     """
     scores_dir = f"{output_dir}/scores/{model_name}_fold_{fold}"
     scores_file = f"{scores_dir}/all_scores.pkl"
@@ -40,9 +42,16 @@ def load_scores(model_name: str, fold: int, output_dir=RESULTS_DIR):
     return all_scores, thresholds, epochs
 
 
-def scores_heatmap(all_scores, thresholds, epochs, model_name: str, output_dir: str, if_save=False):
+def scores_heatmap(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
     """
     Plot all scores heatmap
+    Args: 
+        all_scores: array of mAP scores
+        thresholds: array of thresholds 
+        epochs    : array of epochs 
+        model_name: string model name
+        output_dir: string, directory with outputs for saving pics
+        if_save   : saves figure if_save=True
     """
     # plt.imshow(all_scores, cmap='hot')
     cmap = plt.get_cmap("PiYG")
@@ -54,9 +63,16 @@ def scores_heatmap(all_scores, thresholds, epochs, model_name: str, output_dir: 
     plt.show()
 
 
-def map_2d(all_scores, thresholds, epochs, model_name: str, output_dir: str, if_save=False):
+def map_2d(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
     """
     Plot all scores heatmap
+    Args: 
+        all_scores: array of mAP scores
+        thresholds: array of thresholds 
+        epochs    : array of epochs 
+        model_name: string model name
+        output_dir: string, directory with outputs for saving pics
+        if_save   : saves figure if_save=True
     """
     # plt.imshow(all_scores, cmap='hot')
     X, Y = thresholds, epochs
@@ -68,7 +84,7 @@ def map_2d(all_scores, thresholds, epochs, model_name: str, output_dir: str, if_
     plt.show()
 
 
-def plot_best_scores(all_scores, thresholds, epochs, model_name: str, output_dir: str, if_save=False):
+def plot_best_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
     """
     Plot the best_scores per epoch
     Args: 
@@ -76,6 +92,7 @@ def plot_best_scores(all_scores, thresholds, epochs, model_name: str, output_dir
         thresholds: array of thresholds 
         epochs    : array of epochs 
         model_name: string model names for legend 
+        output_dir: string, directory with outputs for saving pics
         if_save   : saves figure if_save=True
     """
     # find the best score per epoch
@@ -95,7 +112,7 @@ def plot_best_scores(all_scores, thresholds, epochs, model_name: str, output_dir
         plt.savefig(f"{output_dir}/pics/{model_name}_bestmap.png", dpi=300, bbox_inches="tight", pad_inches=0)
 
 
-def plot_score(all_scores, thresholds, epochs, model_name: str, output_dir: str, if_save=False):
+def plot_score(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
     """
     Plot scores per epoch for fixed threshold
     Args: 
@@ -103,6 +120,7 @@ def plot_score(all_scores, thresholds, epochs, model_name: str, output_dir: str,
         thresholds: array of thresholds 
         epochs    : array of epochs 
         model_name: string model names for legend 
+        output_dir: string, directory with outputs for saving pics
         if_save   : saves figure if_save=True
     """
     # find the best per epoch
@@ -126,12 +144,16 @@ def plot_score(all_scores, thresholds, epochs, model_name: str, output_dir: str,
     plt.show()
 
 
-def plot_scores(all_scores, thresholds, epochs, model_names: list, labels: list, output_dir: str, if_save=False):
+def plot_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_names: list, labels: list, output_dir: str, if_save=False):
     """
     Plot validation losses per epoch
     Args: 
+        all_scores: array of mAP scores
+        thresholds: array of thresholds 
+        epochs    : array of epochs 
         run_loss  : array with run results
-        model_name: string model names for legend 
+        model_name: string model names for legend
+        output_dir: string, directory with outputs for saving pics 
         if_save   : saves figure if_save=True
     """
     plt.figure(figsize=(10, 7))
@@ -170,7 +192,7 @@ def main():
     args = parser.parse_args()
     set_seed(args.seed)
 
-    RESULTS_DIR = "../../../output/"
+    RESULTS_DIR = "../../../../output/"
 
     model_names = [
         "se_resnext101_dr0.75_512",
