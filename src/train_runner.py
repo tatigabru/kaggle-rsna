@@ -39,7 +39,16 @@ from utils.my_utils import set_seed
 model_configs = MODELS.keys()
 
 
-def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, run=None, resume_weights="", resume_epoch=0):
+def train(
+    model_name: str,
+    fold: int,
+    debug: bool,
+    epochs: int,
+    num_workers=4,
+    run=None,
+    resume_weights="",
+    resume_epoch=0,
+):
     """
     Model training
     
@@ -77,9 +86,17 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
     retinanet = torch.nn.DataParallel(retinanet).cuda()
 
     # datasets for train and validation
-    dataset_train = DetectionDataset(fold=fold, img_size=model_info.img_size, is_training=True, debug=debug, **model_info.dataset_args)
+    dataset_train = DetectionDataset(
+        fold=fold,
+        img_size=model_info.img_size,
+        is_training=True,
+        debug=debug,
+        **model_info.dataset_args,
+    )
 
-    dataset_valid = DetectionDataset(fold=fold, img_size=model_info.img_size, is_training=False, debug=debug)
+    dataset_valid = DetectionDataset(
+        fold=fold, img_size=model_info.img_size, is_training=False, debug=debug
+    )
 
     # dataloaders for train and validation
     dataloader_train = DataLoader(
@@ -92,7 +109,12 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
     )
 
     dataloader_valid = DataLoader(
-        dataset_valid, num_workers=num_workers, batch_size=4, shuffle=False, drop_last=True, collate_fn=pytorch_retinanet.dataloader.collater2d
+        dataset_valid,
+        num_workers=num_workers,
+        batch_size=4,
+        shuffle=False,
+        drop_last=True,
+        collate_fn=pytorch_retinanet.dataloader.collater2d,
     )
     print("{} training images".format(len(dataset_train)))
     print("{} validation images".format(len(dataset_valid)))
@@ -100,7 +122,9 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
     # set optimiser and scheduler
     retinanet.training = True
     optimizer = optim.Adam(retinanet.parameters(), lr=1e-5)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=4, verbose=True, factor=0.2)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, patience=4, verbose=True, factor=0.2
+    )
     scheduler_by_epoch = False
 
     # train cycle
@@ -119,13 +143,25 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
             for iter_num, data in data_iter:
                 optimizer.zero_grad()
                 # model inputs
-                inputs = [data["img"].cuda().float(), data["annot"].cuda().float(), data["category"].cuda()]
+                inputs = [
+                    data["img"].cuda().float(),
+                    data["annot"].cuda().float(),
+                    data["category"].cuda(),
+                ]
                 # get losses
-                classification_loss, regression_loss, global_classification_loss = retinanet(inputs, return_loss=True, return_boxes=False)
+                (
+                    classification_loss,
+                    regression_loss,
+                    global_classification_loss,
+                ) = retinanet(inputs, return_loss=True, return_boxes=False)
                 classification_loss = classification_loss.mean()
                 regression_loss = regression_loss.mean()
                 global_classification_loss = global_classification_loss.mean()
-                loss = classification_loss + regression_loss + global_classification_loss * 0.1
+                loss = (
+                    classification_loss
+                    + regression_loss
+                    + global_classification_loss * 0.1
+                )
                 # back prop
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(retinanet.parameters(), 0.05)
@@ -143,22 +179,48 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
                 del regression_loss
 
         # save model and log loss history
-        torch.save(retinanet.module, f"{checkpoints_dir}/{model_name}_{epoch_num:03}.pt")
+        torch.save(
+            retinanet.module, f"{checkpoints_dir}/{model_name}_{epoch_num:03}.pt"
+        )
         logger.scalar_summary("loss_train", np.mean(epoch_loss), epoch_num)
-        logger.scalar_summary("loss_train_classification", np.mean(loss_cls_hist), epoch_num)
-        logger.scalar_summary("loss_train_global_classification", np.mean(loss_cls_global_hist), epoch_num)
-        logger.scalar_summary("loss_train_regression", np.mean(loss_reg_hist), epoch_num)
+        logger.scalar_summary(
+            "loss_train_classification", np.mean(loss_cls_hist), epoch_num
+        )
+        logger.scalar_summary(
+            "loss_train_global_classification", np.mean(loss_cls_global_hist), epoch_num
+        )
+        logger.scalar_summary(
+            "loss_train_regression", np.mean(loss_reg_hist), epoch_num
+        )
 
         # validation
-        loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid = validation(
-            retinanet, dataloader_valid, epoch_num, predictions_dir, save_oof=True, save_oof_numpy=True
+        (
+            loss_hist_valid,
+            loss_cls_hist_valid,
+            loss_cls_global_hist_valid,
+            loss_reg_hist_valid,
+        ) = validation(
+            retinanet,
+            dataloader_valid,
+            epoch_num,
+            predictions_dir,
+            save_oof=True,
+            save_oof_numpy=True,
         )
 
         # log validation loss history
         logger.scalar_summary("loss_valid", np.mean(loss_hist_valid), epoch_num)
-        logger.scalar_summary("loss_valid_classification", np.mean(loss_cls_hist_valid), epoch_num)
-        logger.scalar_summary("loss_valid_global_classification", np.mean(loss_cls_global_hist_valid), epoch_num)
-        logger.scalar_summary("loss_valid_regression", np.mean(loss_reg_hist_valid), epoch_num)
+        logger.scalar_summary(
+            "loss_valid_classification", np.mean(loss_cls_hist_valid), epoch_num
+        )
+        logger.scalar_summary(
+            "loss_valid_global_classification",
+            np.mean(loss_cls_global_hist_valid),
+            epoch_num,
+        )
+        logger.scalar_summary(
+            "loss_valid_regression", np.mean(loss_reg_hist_valid), epoch_num
+        )
 
         if scheduler_by_epoch:
             scheduler.step(epoch=epoch_num)
@@ -168,7 +230,13 @@ def train(model_name: str, fold: int, debug: bool, epochs: int, num_workers=4, r
     torch.save(retinanet, f"{checkpoints_dir}/{model_name}_final.pt")
 
 
-def validation(retinanet: nn.Module, dataloader_valid, epoch_num: int, predictions_dir: str, save_oof=True) -> tuple:
+def validation(
+    retinanet: nn.Module,
+    dataloader_valid,
+    epoch_num: int,
+    predictions_dir: str,
+    save_oof=True,
+) -> tuple:
     """
     Validate model at the epoch end 
        
@@ -187,14 +255,34 @@ def validation(retinanet: nn.Module, dataloader_valid, epoch_num: int, predictio
     """
     with torch.no_grad():
         retinanet.eval()
-        loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid = [], [], [], []
+        (
+            loss_hist_valid,
+            loss_cls_hist_valid,
+            loss_cls_global_hist_valid,
+            loss_reg_hist_valid,
+        ) = ([], [], [], [])
         data_iter = tqdm(enumerate(dataloader_valid), total=len(dataloader_valid))
         if save_oof:
             oof = collections.defaultdict(list)
         for iter_num, data in data_iter:
-            res = retinanet([data["img"].cuda().float(), data["annot"].cuda().float(), data["category"].cuda()], return_loss=True, return_boxes=True)
+            res = retinanet(
+                [
+                    data["img"].cuda().float(),
+                    data["annot"].cuda().float(),
+                    data["category"].cuda(),
+                ],
+                return_loss=True,
+                return_boxes=True,
+            )
 
-            classification_loss, regression_loss, global_classification_loss, nms_scores, global_class, transformed_anchors = res
+            (
+                classification_loss,
+                regression_loss,
+                global_classification_loss,
+                nms_scores,
+                global_class,
+                transformed_anchors,
+            ) = res
             if save_oof:
                 # predictions
                 oof["gt_boxes"].append(data["annot"].cpu().numpy().copy())
@@ -207,7 +295,9 @@ def validation(retinanet: nn.Module, dataloader_valid, epoch_num: int, predictio
             classification_loss = classification_loss.mean()
             regression_loss = regression_loss.mean()
             global_classification_loss = global_classification_loss.mean()
-            loss = classification_loss + regression_loss + global_classification_loss * 0.1
+            loss = (
+                classification_loss + regression_loss + global_classification_loss * 0.1
+            )
             # loss history
             loss_hist_valid.append(float(loss))
             loss_cls_hist_valid.append(float(classification_loss))
@@ -222,7 +312,12 @@ def validation(retinanet: nn.Module, dataloader_valid, epoch_num: int, predictio
         if save_oof:  # save predictions
             pickle.dump(oof, open(f"{predictions_dir}/{epoch_num:03}.pkl", "wb"))
 
-    return loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid
+    return (
+        loss_hist_valid,
+        loss_cls_hist_valid,
+        loss_cls_global_hist_valid,
+        loss_reg_hist_valid,
+    )
 
 
 def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_dir: str):
@@ -244,21 +339,58 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
     model = model.to(device)
     model.eval()
     # load data
-    dataset_valid = DetectionDataset(fold=fold, img_size=model_info.img_size, is_training=False, debug=debug)
-    dataloader_valid = DataLoader(dataset_valid, num_workers=1, batch_size=1, shuffle=False, collate_fn=pytorch_retinanet.dataloader.collater2d)
+    dataset_valid = DetectionDataset(
+        fold=fold, img_size=model_info.img_size, is_training=False, debug=debug
+    )
+    dataloader_valid = DataLoader(
+        dataset_valid,
+        num_workers=1,
+        batch_size=1,
+        shuffle=False,
+        collate_fn=pytorch_retinanet.dataloader.collater2d,
+    )
 
     data_iter = tqdm(enumerate(dataloader_valid), total=len(dataloader_valid))
     for iter_num, data in data_iter:
-        classification_loss, regression_loss, global_classification_loss, nms_scores, nms_class, transformed_anchors = model(
-            [data["img"].to(device).float(), data["annot"].to(device).float(), data["category"].cuda()], return_loss=True, return_boxes=True
+        (
+            classification_loss,
+            regression_loss,
+            global_classification_loss,
+            nms_scores,
+            nms_class,
+            transformed_anchors,
+        ) = model(
+            [
+                data["img"].to(device).float(),
+                data["annot"].to(device).float(),
+                data["category"].cuda(),
+            ],
+            return_loss=True,
+            return_boxes=True,
         )
 
         nms_scores = nms_scores.cpu().detach().numpy()
         nms_class = nms_class.cpu().detach().numpy()
         transformed_anchors = transformed_anchors.cpu().detach().numpy()
-        print("nms_scores {}, transformed_anchors.shape {}".format(nms_scores, transformed_anchors.shape))
-        print("cls loss:", float(classification_loss), "global cls loss:", global_classification_loss, " reg loss:", float(regression_loss))
-        print("category:", data["category"].numpy()[0], np.exp(nms_class[0]), dataset_valid.categories[data["category"][0]])
+        print(
+            "nms_scores {}, transformed_anchors.shape {}".format(
+                nms_scores, transformed_anchors.shape
+            )
+        )
+        print(
+            "cls loss:",
+            float(classification_loss),
+            "global cls loss:",
+            global_classification_loss,
+            " reg loss:",
+            float(regression_loss),
+        )
+        print(
+            "category:",
+            data["category"].numpy()[0],
+            np.exp(nms_class[0]),
+            dataset_valid.categories[data["category"][0]],
+        )
 
         # plot data and ground truth
         plt.figure(iter_num, figsize=(6, 6))
@@ -270,7 +402,16 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
             if np.all(np.isfinite(gt[i])):
                 p0 = gt[i, 0:2]
                 p1 = gt[i, 2:4]
-                plt.gca().add_patch(plt.Rectangle(p0, width=(p1 - p0)[0], height=(p1 - p0)[1], fill=False, edgecolor="b", linewidth=2))
+                plt.gca().add_patch(
+                    plt.Rectangle(
+                        p0,
+                        width=(p1 - p0)[0],
+                        height=(p1 - p0)[1],
+                        fill=False,
+                        edgecolor="b",
+                        linewidth=2,
+                    )
+                )
         # add predicted boxes to the plot
         for i in range(len(nms_scores)):
             nms_score = nms_scores[i]
@@ -283,18 +424,45 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
                 color = "y"
             if nms_score < 0.25:
                 color = "g"
-            plt.gca().add_patch(plt.Rectangle(p0, width=(p1 - p0)[0], height=(p1 - p0)[1], fill=False, edgecolor=color, linewidth=2))
+            plt.gca().add_patch(
+                plt.Rectangle(
+                    p0,
+                    width=(p1 - p0)[0],
+                    height=(p1 - p0)[1],
+                    fill=False,
+                    edgecolor=color,
+                    linewidth=2,
+                )
+            )
             plt.gca().text(p0[0], p0[1], f"{nms_score:.3f}", color=color)
         plt.show()
 
         os.makedirs(pics_dir, exist_ok=True)
-        plt.savefig(f"{pics_dir}/predict_{iter_num}.eps", dpi=300, bbox_inches="tight", pad_inches=0)
-        plt.savefig(f"{pics_dir}/predict_{iter_num}.png", dpi=300, bbox_inches="tight", pad_inches=0)
+        plt.savefig(
+            f"{pics_dir}/predict_{iter_num}.eps",
+            dpi=300,
+            bbox_inches="tight",
+            pad_inches=0,
+        )
+        plt.savefig(
+            f"{pics_dir}/predict_{iter_num}.png",
+            dpi=300,
+            bbox_inches="tight",
+            pad_inches=0,
+        )
         plt.close()
         print(nms_scores)
 
 
-def generate_predictions(model_name: str, run: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10):
+def generate_predictions(
+    model_name: str,
+    run: str,
+    fold: int,
+    debug: bool,
+    weights_dir: str,
+    from_epoch=0,
+    to_epoch=10,
+):
     """
     Loads model weights the epoch checkpoints, 
     calculates oof predictions for and saves them to pickle
@@ -329,15 +497,27 @@ def generate_predictions(model_name: str, run: str, fold: int, debug: bool, weig
         model = model.to(device)
         model.eval()
         # load data
-        dataset_valid = DetectionDataset(fold=fold, img_size=model_info.img_size, is_training=False, debug=debug)
+        dataset_valid = DetectionDataset(
+            fold=fold, img_size=model_info.img_size, is_training=False, debug=debug
+        )
 
-        dataloader_valid = DataLoader(dataset_valid, num_workers=2, batch_size=1, shuffle=False, collate_fn=pytorch_retinanet.dataloader.collater2d)
+        dataloader_valid = DataLoader(
+            dataset_valid,
+            num_workers=2,
+            batch_size=1,
+            shuffle=False,
+            collate_fn=pytorch_retinanet.dataloader.collater2d,
+        )
 
         oof = collections.defaultdict(list)
-        for iter_num, data in tqdm(enumerate(dataset_valid), total=len(dataloader_valid)):
+        for iter_num, data in tqdm(
+            enumerate(dataset_valid), total=len(dataloader_valid)
+        ):
             data = pytorch_retinanet.dataloader.collater2d([data])
             img = data["img"].to(device).float()
-            nms_scores, global_classification, transformed_anchors = model(img, return_loss=False, return_boxes=True)
+            nms_scores, global_classification, transformed_anchors = model(
+                img, return_loss=False, return_boxes=True
+            )
             # model outputs to numpy
             nms_scores = nms_scores.cpu().detach().numpy()
             global_classification = global_classification.cpu().detach().numpy()
@@ -363,7 +543,15 @@ def p1p2_to_xywh(p1p2: np.ndarray) -> np.ndarray:
     return xywh
 
 
-def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch: int, end_epoch: int, save_metrics=False):
+def check_metric(
+    model_name: str,
+    run: str,
+    fold: int,
+    oof_dir: str,
+    start_epoch: int,
+    end_epoch: int,
+    save_metrics=False,
+):
     """
     Loads epoch predicitons and
     calculates the metric for a set of thresholds
@@ -381,7 +569,26 @@ def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch
     """
     run_str = "" if run is None or run == "" else f"_{run}"
     predictions_dir = f"{oof_dir}/{model_name}{run_str}_fold_{fold}"
-    thresholds = [0.05, 0.1, 0.15, 0.2, 0.25, 0.28, 0.3, 0.35, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 2.0, 3.0, 4.0]
+    thresholds = [
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.28,
+        0.3,
+        0.35,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+    ]
     all_scores = []
 
     for epoch_num in range(start_epoch, end_epoch):
@@ -415,7 +622,11 @@ def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch
                     if len(scores[mask]) == 0:
                         score = 0.0
                     else:
-                        score = metric.map_iou(boxes_true=p1p2_to_xywh(gt_boxes), boxes_pred=p1p2_to_xywh(boxes[mask]), scores=scores[mask])
+                        score = metric.map_iou(
+                            boxes_true=p1p2_to_xywh(gt_boxes),
+                            boxes_pred=p1p2_to_xywh(boxes[mask]),
+                            scores=scores[mask],
+                        )
                     # print(score)
                     threshold_scores.append(score)
 
@@ -431,7 +642,11 @@ def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch
     if save_metrics:
         scores_dir = f"{RESULTS_DIR}/scores/{model_name}{run_str}_fold_{fold}"
         os.makedirs(scores_dir, exist_ok=True)
-        print("all scores.shape: {}, thresholds {}, epochs {}".format(np.array(all_scores).shape, thresholds, epochs))
+        print(
+            "all scores.shape: {}, thresholds {}, epochs {}".format(
+                np.array(all_scores).shape, thresholds, epochs
+            )
+        )
         metric_scores = collections.defaultdict(list)
         metric_scores["scores"] = np.array(all_scores)
         metric_scores["tresholds"] = thresholds
@@ -443,12 +658,32 @@ def check_metric(model_name: str, run: str, fold: int, oof_dir: str, start_epoch
 def main():
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
-    arg("--action", type=str, default="train", help="Choose action: train, test_model, check_metric, generate_predictions")
-    arg("--model", type=str, default="se_resnext101_dr0.75_512", help="String model name from models dictionary")
-    arg("--run", type=str, default="", help="Experiment id string to be added for saving model")
+    arg(
+        "--action",
+        type=str,
+        default="train",
+        help="Choose action: train, test_model, check_metric, generate_predictions",
+    )
+    arg(
+        "--model",
+        type=str,
+        default="se_resnext101_dr0.75_512",
+        help="String model name from models dictionary",
+    )
+    arg(
+        "--run",
+        type=str,
+        default="",
+        help="Experiment id string to be added for saving model",
+    )
     arg("--seed", type=int, default=1234, help="Random seed")
     arg("--fold", type=int, default=0, help="Validation fold")
-    arg("--weights_dir", type=str, default="../../checkpoints", help="Directory for loading model weights")
+    arg(
+        "--weights_dir",
+        type=str,
+        default="../../checkpoints",
+        help="Directory for loading model weights",
+    )
     arg("--epoch", type=int, default=12, help="Current epoch")
     arg("--from-epoch", type=int, default=1, help="Resume training from epoch")
     arg("--num-epochs", type=int, default=15, help="Number of epochs to run")
@@ -463,21 +698,45 @@ def main():
     # export CUDA_VISIBLE_DEVICES=0
 
     if args.action == "train":
-        train(model_name=args.model, run=args.run, fold=args.fold, debug=args.debug, epochs=args.num_epochs)
+        train(
+            model_name=args.model,
+            run=args.run,
+            fold=args.fold,
+            debug=args.debug,
+            epochs=args.num_epochs,
+        )
 
     if args.action == "test_model":
         run_str = "" if args.run is None or args.run == "" else f"_{args.run}"
         weights = f"{WEIGHTS_DIR}/{args.model}{run_str}_fold_{args.fold}/{args.model}_{args.epoch:03}.pt"
-        test_model(model_name=args.model, fold=args.fold, debug=args.debug, checkpoint=weights, pics_dir=f"{RESULTS_DIR}/pics")
+        test_model(
+            model_name=args.model,
+            fold=args.fold,
+            debug=args.debug,
+            checkpoint=weights,
+            pics_dir=f"{RESULTS_DIR}/pics",
+        )
 
     if args.action == "check_metric":
         all_scores, thresholds, epochs = check_metric(
-            model_name=args.model, run=args.run, fold=args.fold, oof_dir=f"{RESULTS_DIR}/oof", start_epoch=1, end_epoch=15, save_metrics=True
+            model_name=args.model,
+            run=args.run,
+            fold=args.fold,
+            oof_dir=f"{RESULTS_DIR}/oof",
+            start_epoch=1,
+            end_epoch=15,
+            save_metrics=True,
         )
 
     if args.action == "generate_predictions":
-        generate_predictions(
-            model_name=args.model, run=args.run, fold=args.fold, weights_dir=WEIGHTS_DIR, debug=args.debug, from_epoch=0, to_epoch=19
+        generate_presdictions(
+            model_name=args.model,
+            run=args.run,
+            fold=args.fold,
+            weights_dir=WEIGHTS_DIR,
+            debug=args.debug,
+            from_epoch=0,
+            to_epoch=args.num_epochs,
         )
 
 
