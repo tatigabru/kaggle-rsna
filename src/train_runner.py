@@ -28,6 +28,7 @@ import pytorch_retinanet.model_xception
 import torch
 from config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
 from datasets.detection_dataset import DetectionDataset
+from datasets.dataset_valid import DatasetValid
 from models import MODELS
 from torch import nn, optim
 from torch.optim import lr_scheduler
@@ -233,12 +234,7 @@ def validation(
     """
     with torch.no_grad():
         retinanet.eval()
-        (loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid,) = (
-            [],
-            [],
-            [],
-            [],
-        )
+        loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid = [],[],[],[]
         data_iter = tqdm(enumerate(dataloader_valid), total=len(dataloader_valid))
         if save_oof:
             oof = collections.defaultdict(list)
@@ -288,12 +284,7 @@ def validation(
         if save_oof:  # save predictions
             pickle.dump(oof, open(f"{predictions_dir}/{epoch_num:03}.pkl", "wb"))
 
-    return (
-        loss_hist_valid,
-        loss_cls_hist_valid,
-        loss_cls_global_hist_valid,
-        loss_reg_hist_valid,
-    )
+    return loss_hist_valid, loss_cls_hist_valid, loss_cls_global_hist_valid, loss_reg_hist_valid
 
 
 def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_dir: str):
@@ -425,7 +416,7 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
 
 
 def generate_predictions(
-    model_name: str, run: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10,
+    model_name: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10, save_oof:bool = True,
 ):
     """
     Loads model weights the epoch checkpoints, 
@@ -433,13 +424,11 @@ def generate_predictions(
     
     Args: 
         model_name : string name from the models configs listed in models.py file
-        run : experiment run string to add for checkpoints name
         fold: evaluation fold number, 0-3
         debug: if True, runs debugging on few images 
         from_epoch, to_epoch: the first and last epochs for predicitions generation 
     """
-    run_str = "" if run is None or run == "" else f"_{run}"
-    predictions_dir = f"{RESULTS_DIR}/oof/{model_name}{run_str}_fold_{fold}"
+    predictions_dir = f"{RESULTS_DIR}/test1/{model_name}_fold_{fold}"
     os.makedirs(predictions_dir, exist_ok=True)
 
     model_info = MODELS[model_name]
@@ -453,7 +442,7 @@ def generate_predictions(
         print("epoch", epoch_num)
         # load model checkpoint
         checkpoint = (
-            f"{weights_dir}/{model_name}{run_str}_fold_{fold}/{model_name}_{epoch_num:03}.pt"
+            f"{weights_dir}/{model_name}_fold_{fold}/{model_name}_{epoch_num:03}.pt"
         )
         print("load", checkpoint)
         try:
@@ -463,14 +452,16 @@ def generate_predictions(
         model = model.to(device)
         model.eval()
         # load data
-        dataset_valid = DetectionDataset(
-            fold=fold, img_size=model_info.img_size, is_training=False, debug=debug
-        )
-
+        dataset_valid = DatasetValid(
+            is_training=False,
+            meta_file= "stage_1_test_meta.csv", 
+            debug=debug, 
+            img_size=512,
+            )
         dataloader_valid = DataLoader(
             dataset_valid,
             num_workers=2,
-            batch_size=1,
+            batch_size=4,
             shuffle=False,
             collate_fn=pytorch_retinanet.dataloader.collater2d,
         )
@@ -492,9 +483,11 @@ def generate_predictions(
             oof["boxes"].append(transformed_anchors)
             oof["scores"].append(nms_scores)
             oof["category"].append(global_classification)
-        pickle.dump(oof, open(prediction_fn, "wb"))
-
-
+        # save epoch predictions
+        if save_oof:  
+            pickle.dump(oof, open(f"{predictions_dir}/{epoch_num:03}.pkl", "wb"))
+    
+        
 def p1p2_to_xywh(p1p2: np.ndarray) -> np.ndarray:
     """
     Helper function
@@ -653,7 +646,7 @@ def main():
         )
 
     if args.action == "generate_predictions":
-        generate_presdictions(
+        generate_predictions(
             model_name=args.model,
             run=args.run,
             fold=args.fold,
@@ -661,6 +654,7 @@ def main():
             debug=args.debug,
             from_epoch=0,
             to_epoch=args.num_epochs,
+            save_oof=True,
         )
 
 
