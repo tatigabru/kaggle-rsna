@@ -1,18 +1,24 @@
 # Deep Learning for Automatic Pneumonia Detection.
 
-Pneumonia is the leading cause of death among young children and one of the top mortality causes worldwide. The pneumonia detection is usually performed through examine of chest X-Ray radiograph by highly trained specialists. This process is tedious and often leads to a disagreement between radiologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach based on the novel squeeze-and-extinction deep convolution neural networks for pneumonia regions detection. The proposed approach was evaluated in the context of the Radiological Society of North America Pneumonia Detection Challenge. Our source code is freely available here.
+Pneumonia is the leading cause of death among young children and one of the top mortality causes worldwide. The pneumonia detection is usually performed through examine of chest X-Ray radiograph by highly trained specialists. This process is tedious and often leads to a disagreement between radiologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach for pneumonia regions detection based on single-shot detectors, squeeze-and-extinction deep convolution neural networks, augmentations and multi-task learning. The proposed approach was evaluated in the context of the Radiological Society of North America Pneumonia Detection Challenge, achieving one of the best results in the challenge.
+Our source code is freely available here.
 
 __For more details, please refer to the [paper](https://arxiv.org/abs/...).__
 
 If you are using the results and code of this work, please cite it as
 ```
-@article{rsna_2019,
+@article{rsna_2020,
   title={Deep Learning for Automatic Pneumonia Detection},
   author={..},
   journal={arXiv preprint arXiv:},
-  year={2019}
+  year={2020}
 }
 ```
+
+## References
+This code is based on the original 2nd place solution of Dmytro Poplavskiy, available [here](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) and 
+the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/pytorch-retinanet).
+
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
@@ -25,11 +31,12 @@ Fig. 1 Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opa
 
 ## Metrics
 The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here.](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
-The implemented metric calculation is in src metric.py
+The implemented metric calculation is in src/metric.py
 
 ## Models
 The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch  with few modifications. A number of different base models architectures has been tested. Fig.2 shown validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
 ![eda](pics/runs3.png)
+
 Fig. 2 Validation loss history for a range of model encoders.
 
 
@@ -56,7 +63,7 @@ To download dataset from kaggle one need to have a kaggle account, join the comp
 ### Reproducing the experiments 
 Set up your own path ways in config.py.
 
-You can run pretty much everything with:
+You can run train_runner.py with bash scripts:
 ```bash
 run_experiments.sh
 ```
