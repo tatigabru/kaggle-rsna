@@ -44,8 +44,8 @@ class DetectionDataset(Dataset):
         self.crop_source = crop_source
         self.augmentation_level = augmentation_level
         self.categories = ["No Lung Opacity / Not Normal", "Normal", "Lung Opacity"]
-        samples = pd.read_csv(f"{DATA_DIR}stage_1_train_labels.csv")
-        samples = samples.merge(pd.read_csv(f"{DATA_DIR}folds.csv"), on="patientId", how="left")
+        samples = pd.read_csv(os.path.join(DATA_DIR, "stage_1_train_labels.csv"))
+        samples = samples.merge(pd.read_csv(os.path.join(DATA_DIR, "folds.csv")), on="patientId", how="left")
 
         if self.debug:
             samples = samples.head(32)
@@ -81,7 +81,7 @@ class DetectionDataset(Dataset):
     def get_image(self, patient_id):
         """Load a dicom image to an array"""
         try:
-            dcm_data = pydicom.read_file(f"{TRAIN_DIR}/{patient_id}.dcm")
+            dcm_data = pydicom.read_file(os.path.join(TRAIN_DIR, f"{patient_id}.dcm"))
             img = dcm_data.pixel_array
             return img
         except:
@@ -106,6 +106,7 @@ class DetectionDataset(Dataset):
 
         # set augmentation levels
         augmentation_sigma = {
+            1: dict(scale=0, angle=0, shear=0, gamma=0, hflip=False),
             10: dict(scale=0.1, angle=5.0, shear=2.5, gamma=0.2, hflip=False),
             11: dict(scale=0.1, angle=0.0, shear=2.5, gamma=0.2, hflip=False),
             15: dict(scale=0.15, angle=6.0, shear=4.0, gamma=0.2, hflip=np.random.choice([True, False])),
