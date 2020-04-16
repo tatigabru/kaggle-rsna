@@ -6,14 +6,17 @@ EDA
 
 """
 import sys
-sys.path.append("/home/user/rsna/progs/rsna-repo/src")
 
+from typing import List, Set, Dict, Tuple, Optional
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
 import pydicom
-from config import DATA_DIR, STAGE, TRAIN_DIR
+from src.config import DATA_DIR, STAGE, TRAIN_DIR
+
+sys.path.append("/home/user/rsna/progs/rsna-repo/src")
+
 
 
 def parse_data(df: pd.DataFrame) -> dict:
@@ -39,8 +42,7 @@ def parse_data(df: pd.DataFrame) -> dict:
     """
     # Define lambda to extract coords in list [y, x, height, width]
     extract_box = lambda row: [row["y"], row["x"], row["height"], row["width"]]
-
-    parsed = {}
+    parsed: Dict[str, Any] = {}
     for n, row in df.iterrows():
         # Initialize patient entry into parsed
         pid = row["patientId"]
