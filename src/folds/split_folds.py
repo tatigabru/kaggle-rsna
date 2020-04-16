@@ -4,12 +4,12 @@ Creates stratfied folds
 Saves the train meta with folds to a csv file
  
 """
+import os
 import sys
-sys.path.append("/home/user/rsna/progs/rsna/src")
 import pandas as pd
 from sklearn.model_selection import StratifiedKFold
 
-from config import DATA_DIR, STAGE
+from .. config import DATA_DIR, STAGE
 
 
 def create_folds(df: pd.DataFrame, X: pd.DataFrame, y: pd.DataFrame, nb_folds: int, if_save: bool) -> pd.DataFrame:
@@ -31,7 +31,7 @@ def create_folds(df: pd.DataFrame, X: pd.DataFrame, y: pd.DataFrame, nb_folds: i
         df.loc[test_index, "fold"] = fold
     # save dataframe with folds (optionally)
     if if_save:
-        df.to_csv(DATA_DIR + "folds_stage" + str(STAGE) + ".csv", index=False)
+        df.to_csv(os.path.join(DATA_DIR, f"folds_stage{str(STAGE)}.csv", index=False))
     return df
 
 
@@ -54,7 +54,7 @@ def remove_patients_without_boxes() -> pd.DataFrame:
     Helper, removes patients without annotated boxes, i.e. no pathology
     
     """
-    df = pd.read_csv(DATA_DIR + "folds.csv")
+    df = pd.read_csv(os.path.join(DATA_DIR, "folds.csv"))
     df = df[df["class"] == "Lung Opacity"]
     print(df.head())
     return df
@@ -63,7 +63,7 @@ def remove_patients_without_boxes() -> pd.DataFrame:
 def main():
     nb_folds = 4
     # load meta data
-    training_samples = pd.read_csv(DATA_DIR + "stage_" + str(STAGE) + "_detailed_class_info.csv")
+    training_samples = pd.read_csv(os.path.join(DATA_DIR, f"stage_{str(STAGE)}_detailed_class_info.csv"))
     training_samples = training_samples.drop_duplicates().reset_index(drop=True)
     X = training_samples["patientId"]
     y = training_samples["class"]
