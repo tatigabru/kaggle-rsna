@@ -14,12 +14,12 @@ from tqdm import tqdm
 import pydicom
 import pytorch_retinanet.dataloader
 import torch
-from config import CACHE_DIR, DATA_DIR, TRAIN_DIR
+from .. config import CACHE_DIR, DATA_DIR, TRAIN_DIR
 from imgaug import augmenters as iaa
 from torch.utils.data import Dataset
-from utils.utils import TransformCfg, timeit_context
+from .. utils.utils import TransformCfg, timeit_context
 
-sys.path.append("/home/user/rsna/progs/rsna/src")
+#sys.path.append("/home/user/rsna/progs/rsna/src")
 
 
 class DetectionDataset(Dataset):

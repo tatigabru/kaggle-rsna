@@ -42,7 +42,7 @@ class TestDataset(Dataset):
 
         self.patient_ids = list(sorted(self.samples.patientId.unique()))
         self.patient_categories = {}
-        self.annotations = defaultdict(list)
+        self.annotations: DefaultDict[str, list] = defaultdict(list)
 
         # add annotation points for rotation
         for _, row in self.samples.iterrows():

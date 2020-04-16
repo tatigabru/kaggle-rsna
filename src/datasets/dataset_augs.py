@@ -224,6 +224,7 @@ def plot_augmented_image(sample_num: int, aug_level=20, save=False):
     """Plot augmentations
     Args:
         sample_num: sample number from the dataset
+        aug_level: augmentations level   
     """
     ds = DatasetAugs(fold=0, is_training=True, debug=True, img_size=224, augmentation_level=aug_level)
     print(ds[sample_num])
