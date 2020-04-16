@@ -9,8 +9,9 @@ If you are using the results and code of this work, please cite it as
 ```
 @article{rsna_2020,
   title={Deep Learning for Automatic Pneumonia Detection},
-  author={..},
-  journal={arXiv preprint arXiv:},
+  author={Tatiana Gabruseva, Dmytro Poplavskiy and Alexandr Kalinin},
+  journal={arXiv preprint arXiv: },
+  published = {},
   year={2020}
 }
 ```
@@ -18,7 +19,8 @@ If you are using the results and code of this work, please cite it as
 ## References
 This code is based on the original 2nd place solution of Dmytro Poplavskiy, available [here](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) and 
 the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/pytorch-retinanet).
-
+[RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018)
+The challenge was hosted on [kaggle platform](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
@@ -26,15 +28,20 @@ The labelled dataset of the chest X-Ray (CXR) images and patients meta data was 
 The database comprises frontal-view X-ray images from 26684 unique patients. Each image is labeled with one of three different classes from the associated radiological reports: ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity”. 
 Fig. 1 shows examples of all three classes CXRs labeled with bounding boxes for unhealthy patients.
 
-![eda](pics/eda.png)
+[eda](pics/eda.png)
 Fig. 1 Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity” chest X-Ray (CXR) images.
+
+The classes were well-distributed
+[classes](pics/classes_distr.png)
+
+Fog. 2 Classes distribution in the trainin dataset.
 
 ## Metrics
 The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here.](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
 The implemented metric calculation is in src/metric.py
 
 ## Models
-The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch  with few modifications. A number of different base models architectures has been tested. Fig.2 shown validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
+The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch with few modifications. A number of different base models architectures has been tested. Fig.2 shown validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
 ![eda](pics/runs3.png)
 
 Fig. 2 Validation loss history for a range of model encoders.
@@ -46,8 +53,8 @@ The original images were scaled to 512 x 512 px resolution. The 256 resolution y
 Since the original challenge dataset is not very large the images augmentations were beneficial to reduce overfitting. The dataset with augmentations is at ```src/datasets/detection_dataset.py```
 
 ## Training
-Training All base models used were pre-trained on Imagenet dataset. 
-For learning rate scheduler we used available in Pytorch ReduceLROnPlateau with a patience of 4 and learning rate decrease factor of 0.2. SE-ResNet101 demonstrated the best results, followed by SE-ResNet50. The whole training took around 12 epochs, 50 min per epoch on P100 GPU.
+All base models used were pre-trained on ImageNet dataset. 
+For learning rate scheduler we used available in Pytorch ReduceLROnPlateau with a patience of 4 and learning rate decrease factor of 0.2. RetinaNet single-shot detectors with SE-ResNet101 encoders demonstrated the best results, followed by SE-ResNet50. The whole training took around 12 epochs, 50 min per epoch on P100 GPU.
 
 ## How to install and run
 
