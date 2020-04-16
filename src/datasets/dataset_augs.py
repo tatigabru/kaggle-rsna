@@ -96,6 +96,7 @@ class DatasetAugs(Dataset):
 
         # set augmentation levels
         augmentation_sigma = {
+            1: dict(scale=0, angle=0, shear=0, gamma=0, hflip=False),
             10: dict(scale=0.1, angle=5.0, shear=2.5, gamma=0.2, hflip=False),
             15: dict(scale=0.15, angle=6.0, shear=4.0, gamma=0.2, hflip=np.random.choice([True, False])),
             20: dict(scale=0.15, angle=6.0, shear=4.0, gamma=0.25, hflip=np.random.choice([True, False])),
