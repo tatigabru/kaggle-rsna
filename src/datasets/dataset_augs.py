@@ -13,13 +13,13 @@ from tqdm import tqdm
 
 import pydicom
 import torch
-from config import CACHE_DIR, DATA_DIR, TRAIN_DIR
+from .. config import CACHE_DIR, DATA_DIR, TRAIN_DIR
 from imgaug import augmenters as iaa
 from pytorch_retinanet import dataloader
 from torch.utils.data import Dataset
-from utils.utils import TransformCfg, timeit_context
+from .. utils.utils import TransformCfg, timeit_context
 
-sys.path.append("/home/user/rsna/progs/rsna/src")
+#sys.path.append("/home/user/rsna/progs/rsna/src")
 
 
 class DatasetAugs(Dataset):
@@ -28,14 +28,15 @@ class DatasetAugs(Dataset):
     with ususal rotation  
     """
 
-    def __init__(self, fold: int, is_training: bool, debug: bool, img_size: int, augmentation_level=10, crop_source=1024):
+    def __init__(self, fold: int, is_training: bool, debug: bool, img_size: int, augmentation_level: int=10, crop_source: int=1024):
         """
         Args:
             fold              : integer, number of the fold
             is_training       : if True, runs the training mode, else runs evaluation mode
             debug             : if True, runs the debugging on few images
             img_size          : the desired image size to resize to        
-            augmentation_level: level of augmentations from the set        
+            augmentation_level: level of augmentations from the set     
+            crop_source       : default crop size   
         """
         super(DatasetAugs, self).__init__()  # inherit it from torch Dataset
         self.fold = fold
@@ -192,11 +193,11 @@ def test_dataset_sample(sample_num=0, aug_level=20):
     plt.show()
 
 
-def test_augmentations(sample_num=12, aug_level=20):
+def test_augmentations(sample_num: int=12, aug_level: int=20):
     """Test augmentations on a single sample
     Args:
         sample_num: sample number from the dataset
-        aug_level: augmentations level
+        aug_level : augmentations level, an be 1, 10, 15, 20
     """
     with timeit_context("load ds"):
         ds = DatasetAugs(fold=0, is_training=True, debug=True, img_size=224, augmentation_level=aug_level)
@@ -221,7 +222,7 @@ def test_augmentations(sample_num=12, aug_level=20):
             plt.show()
 
 
-def plot_augmented_image(sample_num: int, aug_level=20, save=False):
+def plot_augmented_image(sample_num: int, aug_level: int=20, save: bool=False):
     """Plot augmentations
     Args:
         sample_num: sample number from the dataset
