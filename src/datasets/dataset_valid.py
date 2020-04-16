@@ -47,7 +47,7 @@ class DatasetValid(Dataset):
         self.crop_source = crop_source
         self.augmentation_level = augmentation_level
         self.categories = ["No Lung Opacity / Not Normal", "Normal", "Lung Opacity"]
-        self.samples = pd.read_csv(f"{DATA_DIR}{meta_file}")
+        self.samples = pd.read_csv(os.path.join(DATA_DIR, meta_file))
         
         if self.debug:
             self.samples = self.samples.head(32)
@@ -74,6 +74,8 @@ class DatasetValid(Dataset):
                         [x + w * 2 / 3, y + h],
                     ]
                 )
+#                 # uncomment for using only basic rotations
+#                 points = np.array([[x, y], [x, y + h], [x + w, y], [x + w, y + h],])
                 self.annotations[patient_id].append(points)
 
     def get_image(self, patient_id):

@@ -37,6 +37,10 @@ from torchvision import datasets, models, transforms
 from utils.logger import Logger
 from utils.my_utils import set_seed
 
+import warnings
+warnings.filterwarnings('ignore')
+os.environ["CUDA_VISIBLE_DEVICES"] = '1'
+
 model_configs = MODELS.keys()
 
 
@@ -157,6 +161,10 @@ def train(
                 regression_loss = regression_loss.mean()
                 global_classification_loss = global_classification_loss.mean()
                 loss = classification_loss + regression_loss + global_classification_loss * 0.1
+#                 # uncomment for regress_only
+#                 loss = classification_loss + regression_loss
+#                 # uncomment for classification0.1
+#                 loss = classification_loss * 0.1 + regression_loss
                 # back prop
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(retinanet.parameters(), 0.05)
@@ -194,7 +202,6 @@ def train(
             epoch_num,
             predictions_dir,
             save_oof=True,
-            save_oof_numpy=True,
         )
 
         # log validation loss history
@@ -223,8 +230,7 @@ def validation(
         retinanet: current model 
         dataloader_valid: dataloader for the validation fold
         epoch_num: current epoch
-        save_oof: boolean flag, if calculate oof predictions and save them in pickle 
-        save_oof_numpy: boolean flag, if save oof predictions in numpy 
+        save_oof: boolean flag, if calculate oof predictions and save them in pickle
         predictions_dir: directory fro saving predictions
 
     Outputs:
@@ -416,7 +422,7 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
 
 
 def generate_predictions(
-    model_name: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10, save_oof:bool = True,
+    model_name: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10, save_oof:bool = True, run=None,
 ):
     """
     Loads model weights the epoch checkpoints, 
@@ -603,8 +609,8 @@ def main():
     arg("--fold", type=int, default=0, help="Validation fold")
     arg("--weights_dir", type=str, default="../../checkpoints", help="Directory for loading model weights")
     arg("--epoch", type=int, default=12, help="Current epoch")
-    arg("--from-epoch", type=int, default=1, help="Resume training from epoch")
-    arg("--num-epochs", type=int, default=15, help="Number of epochs to run")
+    arg("--from-epoch", type=int, default=2, help="Resume training from epoch")
+    arg("--num-epochs", type=int, default=20, help="Number of epochs to run")
     arg("--batch-size", type=int, default=4, help="Batch size for training")
     arg("--learning-rate", type=float, default=1e-5, help="Initial learning rate")
     arg("--debug", type=bool, default=False, help="If the debugging mode")
@@ -652,8 +658,8 @@ def main():
             fold=args.fold,
             weights_dir=WEIGHTS_DIR,
             debug=args.debug,
-            from_epoch=0,
-            to_epoch=args.num_epochs,
+            from_epoch=args.from_epoch,
+            to_epoch=args.num_epochs + 1,
             save_oof=True,
         )
 
