@@ -7,20 +7,24 @@ __For more details, please refer to the [paper](https://arxiv.org/abs/...).__
 
 If you are using the results and code of this work, please cite it as
 ```
-@article{rsna_2020,
-  title={Deep Learning for Automatic Pneumonia Detection},
-  author={Tatiana Gabruseva, Dmytro Poplavskiy and Alexandr Kalinin},
-  journal={arXiv preprint arXiv: },
-  published = {},
-  year={2020}
+@InProceedings{rsna_2020,
+  title = {Deep Learning for Automatic Pneumonia Detection},
+  author = {Tatiana Gabruseva and Dmytro Poplavskiy and Alexandr Kalinin},
+  journal = {},
+  eprint = {arXiv:},
+  url = {https://arxiv.org/abs/},
+  month = {apr},
+  year = {2020}
 }
 ```
-
 ## References
 This code is based on the original 2nd place solution of Dmytro Poplavskiy, available [here](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) and 
 the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/pytorch-retinanet).
 [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018)
 The challenge was hosted on [kaggle platform](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
+
+## Disclaimer
+This is still a work under porgress, so some minor issues and changes are possible. If you encoutered any problems, are am more that happy to accept pull requests with changes. please do not hesitate to submit issues and pull requests.
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
@@ -28,23 +32,23 @@ The labelled dataset of the chest X-Ray (CXR) images and patients meta data was 
 The database comprises frontal-view X-ray images from 26684 unique patients. Each image is labeled with one of three different classes from the associated radiological reports: ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity”. 
 Fig. 1 shows examples of all three classes CXRs labeled with bounding boxes for unhealthy patients.
 
-[eda](pics/eda.png)
+![eda](pics/eda.png)
 Fig. 1 Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity” chest X-Ray (CXR) images.
 
 The classes were well-distributed
-[classes](pics/classes_distr.png)
+![classes](pics/classes_distr.png)
 
-Fog. 2 Classes distribution in the trainin dataset.
+Fog. 2 Classes distribution in the training dataset.
 
 ## Metrics
 The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here.](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
-The implemented metric calculation is in src/metric.py
+The implemented mAP metric calculation is in src/metric.py
 
 ## Models
 The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch with few modifications. A number of different base models architectures has been tested. Fig.2 shown validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
 ![eda](pics/runs3.png)
 
-Fig. 2 Validation loss history for a range of model encoders.
+Fig. 3 Validation loss history for a range of model encoders.
 
 
 ## Images preprocessing and augmentations
@@ -70,13 +74,13 @@ To download dataset from kaggle one need to have a kaggle account, join the comp
 ### Reproducing the experiments 
 Set up your own path ways in config.py.
 
-You can run train_runner.py with bash scripts:
-```bash
-run_experiments.sh
-```
-This will **download** the data, **train** the models, **generate** predictions, and **plot** the metrics. Evaluation results will be saved in the directory denoted in condigs.py.
+Run ```src/train_runner.py``` with ```args.action == "train"``` for training the models, 
+use ```args.action == "check_metric"``` to check the score, and ```args.action == "generate_predictions"``` to generate predictions.
+
+From predictions you can calculate mAP score for the range of NMS thresholds using ```src/scores.py``` and visualise the saved scres for differnet runs and models by 
+```src/visualizations/plot_metrics.py```. 
 
 ## Inference on your data
-Once you have saved checkpoints for the trained models you may call predict.py with the path to your models checkpoint and generate predtions for your test images. 
-You may need to change csv file with test images ids, that are loaded in the ```src/datasets/test_dataset.py``` and the test directory is in configs.py
+Once you have saved checkpoints for the trained models, you may call  ```src/train_runner.py``` with ```args.action == "generate_predictions"``` with the path to your models checkpoint and generate predictions for your test images. 
+The test dataset class is in the ```src/datasets/test_dataset.py``` and the test directory is in ```configs.py```
 
