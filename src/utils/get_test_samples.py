@@ -3,7 +3,7 @@ from config import DATA_DIR
 import pandas as pd
 
 
-def get_test_labels():
+def get_test_labels() -> None:
     """Helper, gets test patients and labels"""
     # load stage 1 meta data
     training_samples = pd.read_csv(DATA_DIR + "stage_1_train_labels.csv")
@@ -32,7 +32,7 @@ def get_test_labels():
     # test_patients.to_csv(DATA_DIR + 'test_patients_id_stage_1.csv', index=False)
 
 
-def merge_data():
+def merge_data() -> None:
     samples = pd.read_csv(DATA_DIR + "test_labels_stage_1.csv")
     samples = samples.merge(pd.read_csv(DATA_DIR + "test_meta_stage_1.csv"), on="patientId", how="left")
     samples.to_csv(DATA_DIR + "stage_1_test_meta.csv", index=False)
@@ -41,9 +41,5 @@ def merge_data():
     print(samples.head())
 
 
-def main():
-    merge_data()
-
-
 if __name__ == "__main__":
-    main()
+    merge_data()

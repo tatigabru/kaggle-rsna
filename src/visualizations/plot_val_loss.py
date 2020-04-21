@@ -20,7 +20,7 @@ def load_val_loss(model_name: str, results_dir: str) -> pd.DataFrame:
     return run_loss
 
 
-def plot_val_loss(run_loss: pd.DataFrame, model_name: str, if_save=False):
+def plot_val_loss(run_loss: pd.DataFrame, model_name: str, if_save: bool=False) -> None:
     """
     Plot validation loss per epoch
     Input: 
@@ -43,7 +43,7 @@ def plot_val_loss(run_loss: pd.DataFrame, model_name: str, if_save=False):
         plt.savefig("fig.pdf", dpi=300, bbox_inches="tight", pad_inches=0)
 
 
-def plot_val_losses(model_names: list, labels: list, results_dir: str, if_save=False):
+def plot_val_losses(model_names: list, labels: list, results_dir: str, if_save: bool=False) -> None:
     """
     Plot validation losses per epoch
     Input: 
@@ -73,7 +73,7 @@ def plot_val_losses(model_names: list, labels: list, results_dir: str, if_save=F
         plt.savefig("runs.png", dpi=300, bbox_inches="tight", pad_inches=0)
 
 
-def main():
+def main() -> None:
     RESULTS_DIR = "../../output/runs"
 
     model_names = [

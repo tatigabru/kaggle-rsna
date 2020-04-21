@@ -1,7 +1,8 @@
 import numpy as np
+from typing import List, Set, Dict, Tuple, Optional
 
 
-def iou(box1: list, box2: list) -> float:
+def iou(box1: List[int], box2: List[int]) -> float:
     """
     Helper, calculates Intersection over union
     Args: 
@@ -27,14 +28,14 @@ def iou(box1: list, box2: list) -> float:
         return intersect / union
 
 
-def test_iou():
+def test_iou() -> None:
     """Helper to test iou function"""
     box1 = [100, 100, 200, 200]
     box2 = [100, 100, 300, 200]
     assert abs(iou(box1, box2) - 2 / 3) < 1e-3
 
 
-def map_iou(boxes_true: np.ndarray, boxes_pred: np.ndarray, scores: np.ndarray, thresholds=(0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75)) -> float:
+def map_iou(boxes_true: np.ndarray, boxes_pred: np.ndarray, scores: np.ndarray, thresholds: Tuple[float]=(0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75)) -> Optional[float]:
     """
     Mean average precision at differnet intersection over union (IoU) threshold
 
@@ -60,7 +61,7 @@ def map_iou(boxes_true: np.ndarray, boxes_pred: np.ndarray, scores: np.ndarray, 
         # sort boxes_pred by scores in decreasing order
         boxes_pred = boxes_pred[np.argsort(scores)[::-1], :]
 
-    map_total = 0
+    map_total = 0.0
     # loop over thresholds
     for t in thresholds:
         matched_bt = set()
@@ -82,7 +83,7 @@ def map_iou(boxes_true: np.ndarray, boxes_pred: np.ndarray, scores: np.ndarray, 
     return map_total / len(thresholds)
 
 
-def test_map_iou():
+def test_map_iou() -> Optional[float]:
     """Helper to test map_iou function"""
     boxes_true = [100, 100, 200, 200]
     boxes_pred = [100, 100, 300, 200]

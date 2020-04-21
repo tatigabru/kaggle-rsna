@@ -16,7 +16,7 @@ class TransformCfg:
     and augmentations
     """
 
-    def __init__(self, crop_size, src_center_x, src_center_y, scale_x=1.0, scale_y=1.0, angle=0.0, shear=0.0, hflip=False, vflip=False):
+    def __init__(self, crop_size: int, src_center_x: int, src_center_y: int, scale_x: float=1.0, scale_y: float=1.0, angle: float=0.0, shear: float=0.0, hflip: bool=False, vflip: bool=False):
         self.crop_size = crop_size
         self.src_center_x = src_center_x
         self.src_center_y = src_center_y
@@ -27,10 +27,10 @@ class TransformCfg:
         self.vflip = vflip
         self.hflip = hflip
 
-    def __str__(self):
+    def __str__(self) -> str:
         return str(self.__dict__)
 
-    def transform(self):
+    def transform(self) -> AffineTransform:
         scale_x = self.scale_x
         if self.hflip:
             scale_x *= -1
@@ -45,13 +45,13 @@ class TransformCfg:
 
         return tform
 
-    def transform_image(self, img):
+    def transform_image(self, img: np.array) -> np.array:
         crop = skimage.transform.warp(img, self.transform(), mode="constant", cval=0, order=1, output_shape=(self.crop_size, self.crop_size))
         # crop = np.clip(crop, 0, 255).astype(np.uint8)
         return crop
 
 
-def crop_edge(img, x, y, w, h, mode="edge"):
+def crop_edge(img: np.array, x: int, y: int, w: int, h: int, mode: str="edge") -> np.array:
     img_w = img.shape[1]
     img_h = img.shape[0]
 
@@ -70,14 +70,14 @@ def timeit_context(name):
     print("[{}] finished in {} ms".format(name, int(elapsedTime * 1000)))
 
 
-def chunks(l, n):
+def chunks(l: list, n: int):
     """Yield successive n-sized chunks from l."""
     for i in range(0, len(l) // n * n + n - 1, n):
         if len(l[i : i + n]):
             yield l[i : i + n]
 
 
-def get_image_crop(full_rgb, rect, scale_rect_x=1.0, scale_rect_y=1.0, shift_x_ratio=0.0, shift_y_ratio=0.0, angle=0.0, out_size=299):
+def get_image_crop(full_rgb: np.array, rect: , scale_rect_x: float=1.0, scale_rect_y: float=1.0, shift_x_ratio: float=0.0, shift_y_ratio: float=0.0, angle: float=0.0, out_size: int=299) -> np.array:
     center_x = rect.x + rect.w / 2
     center_y = rect.y + rect.h / 2
     size = int(max(rect.w, rect.h))
@@ -161,7 +161,7 @@ def rand_scale_log_normal(mean_scale, one_sigma_at_scale):
     return mean_scale * math.exp(random.normalvariate(0.0, log_sigma))
 
 
-def print_stats(title, array):
+def print_stats(title: str, array: np.array) -> None:
     if len(array):
         print(
             "{} shape:{} dtype:{} min:{} max:{} mean:{} median:{}".format(
@@ -172,7 +172,7 @@ def print_stats(title, array):
         print(title, "empty")
 
 
-def nonzero_crop(mask):
+def nonzero_crop(mask: np.array) -> tuple:
     """
     Crop mask to keep only non zero areas
 
@@ -185,7 +185,7 @@ def nonzero_crop(mask):
     return crop.copy(), (rows_non_zero[0], cols_non_zero[0])
 
 
-def transform_crop(crop: np.ndarray, crop_offset: np.ndarray, transform: AffineTransform, output_shape):
+def transform_crop(crop: np.ndarray, crop_offset: np.ndarray, transform: AffineTransform, output_shape: tuple):
     # src_x_min = crop_offset[1]
     # src_x_max = crop_offset[1] + crop.shape[1]
     # src_y_min = crop_offset[0]
@@ -201,7 +201,7 @@ def transform_crop(crop: np.ndarray, crop_offset: np.ndarray, transform: AffineT
     return skimage.transform.warp(crop, tform, mode="constant", order=0, output_shape=output_shape)
 
 
-def test_transform_crop():
+def test_transform_crop() -> None:
 
     mask = np.zeros((128, 128))
     mask[20:30, 40:45] = 1

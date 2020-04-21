@@ -52,7 +52,7 @@ def load_model(checkpoint: str) -> nn.Module:
     return model
 
 
-def predict_test(model_name: str, fold: int, debug: bool, checkpoints_dir: str, save_oof=True, img_size=IMG_SIZE, from_epoch=0, to_epoch=10):
+def predict_test(model_name: str, fold: int, debug: bool, checkpoints_dir: str, save_oof: bool=True, img_size: int=IMG_SIZE, from_epoch: int=0, to_epoch: int=10):
     """
     Make test predicitons
     
@@ -114,8 +114,7 @@ def main():
     args = parser.parse_args()
 
     set_seed(args.seed)
-    # export CUDA_VISIBLE_DEVICES=0
-
+    
     weights = f"{args.checkpoints_dir}/{args.model}_fold_{args.fold}/"
 
     predict_test(

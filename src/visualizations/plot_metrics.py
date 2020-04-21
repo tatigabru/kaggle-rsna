@@ -7,7 +7,7 @@ import argparse
 import os
 import pickle
 import sys
-sys.path.append("/home/user/rsna/progs/rsna-repo/src")
+#sys.path.append("/home/user/rsna/progs/rsna-repo/src")
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,11 +16,11 @@ from matplotlib.colors import BoundaryNorm
 from matplotlib.ticker import MaxNLocator
 from tqdm import tqdm
 
-from config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
-from utils.my_utils import set_seed
+from .. config import IMG_SIZE, RESULTS_DIR, TEST_DIR, WEIGHTS_DIR
+from .. utils.my_utils import set_seed
 
 
-def load_scores(model_name: str, fold: int, output_dir=RESULTS_DIR) -> tuple:
+def load_scores(model_name: str, fold: int, output_dir: str=RESULTS_DIR) -> tuple:
     """
     Load scores from a pickle file
     Args: 
@@ -42,7 +42,7 @@ def load_scores(model_name: str, fold: int, output_dir=RESULTS_DIR) -> tuple:
     return all_scores, thresholds, epochs
 
 
-def scores_heatmap(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
+def scores_heatmap(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save: bool=False) -> None:
     """
     Plot all scores heatmap
     Args: 
@@ -63,7 +63,7 @@ def scores_heatmap(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.nd
     plt.show()
 
 
-def map_2d(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
+def map_2d(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save: bool=False) -> None:
     """
     Plot all scores heatmap
     Args: 
@@ -84,7 +84,7 @@ def map_2d(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, m
     plt.show()
 
 
-def plot_best_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
+def plot_best_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save: bool=False) -> None:
     """
     Plot the best_scores per epoch
     Args: 
@@ -112,7 +112,7 @@ def plot_best_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.
         plt.savefig(f"{output_dir}/pics/{model_name}_bestmap.png", dpi=300, bbox_inches="tight", pad_inches=0)
 
 
-def plot_score(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save=False):
+def plot_score(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_name: str, output_dir: str, if_save: bool=False) -> None:
     """
     Plot scores per epoch for fixed threshold
     Args: 
@@ -144,7 +144,7 @@ def plot_score(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarra
     plt.show()
 
 
-def plot_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_names: list, labels: list, output_dir: str, if_save=False):
+def plot_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarray, model_names: list, labels: list, output_dir: str, if_save: bool=False) -> None:
     """
     Plot validation losses per epoch
     Args: 
@@ -181,7 +181,7 @@ def plot_scores(all_scores: np.ndarray, thresholds: np.ndarray, epochs: np.ndarr
     plt.show()
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
     arg("--seed", type=int, default=1234, help="Random seed")

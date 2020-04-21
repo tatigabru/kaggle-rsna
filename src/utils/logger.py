@@ -1,25 +1,25 @@
 # Code referenced from https://gist.github.com/gyglim/1f8dfb1b5c82627ae3efcfbbadb9f514.
 from io import BytesIO  # Python 3.x
+from io import StringIO
 
 import numpy as np
 import scipy.misc
-
 import tensorflow as tf
 
 
 class Logger(object):
-    def __init__(self, log_dir):
+    def __init__(self, log_dir: str):
         """Create a summary writer logging to log_dir."""
         self.writer = tf.compat.v1.summary.FileWriter(log_dir)  # tf.summary.FileWriter(log_dir)
 
-    def scalar_summary(self, tag, value, step):
+    def scalar_summary(self, tag: str, value: float, step: int):
         """Log a scalar variable."""
         summary = tf.Summary(value=[tf.Summary.Value(tag=tag, simple_value=value)])
         # summary = tf.Summary(value=[tf.Summary.Value(tag=tag, simple_value=value.tolist())])  # .tolist() is a wierd way to convert GPU tensor to float
         self.writer.add_summary(summary, step)
         self.writer.flush()
 
-    def image_summary(self, tag, images, step):
+    def image_summary(self, tag: str, images: list, step: int):
         """Log a list of images."""
 
         img_summaries = []
@@ -40,7 +40,7 @@ class Logger(object):
         summary = tf.Summary(value=img_summaries)
         self.writer.add_summary(summary, step)
 
-    def histo_summary(self, tag, values, step, bins=1000):
+    def histo_summary(self, tag: str, values: list, step: int, bins: int=1000):
         """Log a histogram of the tensor of values."""
 
         # Create a histogram using numpy

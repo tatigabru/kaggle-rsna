@@ -85,7 +85,7 @@ def get_epoch_metric(oof: np.ndarray, thresholds: list, predictions_dir: str, ep
     return epoch_scores
 
 
-def get_metrics(predictions_dir: str, model_name: str, fold: int, epochs: int, thresholds: list, save_metrics=False):
+def get_metrics(predictions_dir: str, model_name: str, fold: int, epochs: int, thresholds: list, save_metrics: bool=False) -> None:
     """
     Loads predicitons and
     calculates the metric for a set of thresholds for all epochs
@@ -123,14 +123,14 @@ def get_metrics(predictions_dir: str, model_name: str, fold: int, epochs: int, t
         pickle.dump(metric_scores, open(f"{scores_dir}/all_scores.pkl", "wb"))
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
     arg("--model-name", type=str, default="resnet101_512", help="String model name from models dictionary")
+    arg("--results_dir", type=str, default="'../../output'", help="Directory for loading predictions")
     arg("--seed", type=int, default=1234, help="Random seed")
     arg("--fold", type=int, default=0, help="Validation fold")
     args = parser.parse_args()
-
     set_seed(args.seed)
 
     model_names = [
@@ -145,7 +145,14 @@ def main():
 
     thresholds = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.9, 1.0]
 
-    get_metrics(RESULTS_DIR, model_name=args.model_name, fold=args.fold, epochs=19, thresholds=thresholds, save_metrics=True)
+    get_metrics(
+        predictions_dir = RESULTS_DIR, 
+        model_name=args.model_name, 
+        fold=args.fold, 
+        epochs=19, 
+        thresholds=thresholds, 
+        save_metrics=True
+        )
 
 
 if __name__ == "__main__":

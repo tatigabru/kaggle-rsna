@@ -5,15 +5,16 @@ Created on Sun Jul 21 18:01:28 2019
 Models
 
 """
+from torch import nn
+
+import pytorch_retinanet.dataloader
 import pytorch_retinanet.model
+import pytorch_retinanet.model_incresv2
+import pytorch_retinanet.model_nasnet_mobile
+import pytorch_retinanet.model_pnasnet
 import pytorch_retinanet.model_resnet
 import pytorch_retinanet.model_se_resnext
-import pytorch_retinanet.model_pnasnet
-import pytorch_retinanet.model_incresv2
 import pytorch_retinanet.model_xception
-import pytorch_retinanet.model_nasnet_mobile
-import pytorch_retinanet.dataloader
-
 from config import IMG_SIZE
 
 
@@ -22,7 +23,7 @@ class ModelInfo:
     Initialises main model parameters    
     """
 
-    def __init__(self, factory, args: dict, batch_size: int, dataset_args: dict, use_sgd=False, img_size=IMG_SIZE):
+    def __init__(self, factory: nn.Module, args: dict, batch_size: int, dataset_args: dict, use_sgd: bool=False, img_size: int=IMG_SIZE):
         """
         Args:
             factory : base model architectures
@@ -90,7 +91,6 @@ MODELS = {
         batch_size=6,
         dataset_args=dict(augmentation_level=10)
     ),
-#    se_resnext101_dr0.75_512_basic_rotations = aug10 + edited DatasetValid
     'se_resnext101_dr0.75_512_basic_rotations': ModelInfo(
         factory=pytorch_retinanet.model_se_resnext.se_resnext101,
         args=dict(num_classes=1, pretrained='imagenet', dropout=0.75),

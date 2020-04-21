@@ -49,10 +49,10 @@ def train(
     fold: int,
     debug: bool,
     epochs: int,
-    num_workers=4,
-    run=None,
-    resume_weights="",
-    resume_epoch=0,
+    num_workers: int=4,
+    run: str=None,
+    resume_weights: str="",
+    resume_epoch: int=0,
 ):
     """
     Model training
@@ -221,7 +221,7 @@ def train(
 
 
 def validation(
-    retinanet: nn.Module, dataloader_valid, epoch_num: int, predictions_dir: str, save_oof=True,
+    retinanet: nn.Module, dataloader_valid: nn.Module, epoch_num: int, predictions_dir: str, save_oof=True,
 ) -> tuple:
     """
     Validate model at the epoch end 
@@ -422,7 +422,7 @@ def test_model(model_name: str, fold: int, debug: bool, checkpoint: str, pics_di
 
 
 def generate_predictions(
-    model_name: str, fold: int, debug: bool, weights_dir: str, from_epoch=0, to_epoch=10, save_oof:bool = True, run=None,
+    model_name: str, fold: int, debug: bool, weights_dir: str, from_epoch: int=0, to_epoch: int=10, save_oof: bool = True, run: str=None,
 ):
     """
     Loads model weights the epoch checkpoints, 
@@ -430,9 +430,13 @@ def generate_predictions(
     
     Args: 
         model_name : string name from the models configs listed in models.py file
-        fold: evaluation fold number, 0-3
-        debug: if True, runs debugging on few images 
-        from_epoch, to_epoch: the first and last epochs for predicitions generation 
+        fold       : evaluation fold number, 0-3
+        debug      : if True, runs debugging on few images 
+        weights_dir: directory qith model weigths
+        from_epoch : the first epoch for predicitions generation 
+        to_epoch   : the last epoch for predicitions generation 
+        save_oof   : boolean flag weathe rto save precitions
+        run        : string name to be added in the experinet name
     """
     predictions_dir = f"{RESULTS_DIR}/test1/{model_name}_fold_{fold}"
     os.makedirs(predictions_dir, exist_ok=True)
@@ -513,21 +517,23 @@ def check_metric(
     oof_dir: str,
     start_epoch: int,
     end_epoch: int,
-    save_metrics=False,
+    save_metrics: bool=False,
 ):
     """
     Loads epoch predicitons and
     calculates the metric for a set of thresholds
 
     Args: 
-        model_name : string name from the models configs listed in models.py file
-        run : experiment run string to add for checkpoints name
-        fold: evaluation fold number, 0-3
+        model_name  : string name from the models configs listed in models.py file
+        run         : experiment run string to add for checkpoints name
+        fold        : evaluation fold number, 0-3
+        oof_dir     : directory with out-of-fold predictions
         start_epoch, end_epoch: the first ad last epochs for metric calculation
+        save_metrics: boolean flag weather to save metrics
         
     Output:
         thresholds: list of thresholds for mean average precision calculation
-        epochs: range of epochs
+        epochs    : range of epochs
         all_scores: all metrics values for all thresholds and epochs
     """
     run_str = "" if run is None or run == "" else f"_{run}"

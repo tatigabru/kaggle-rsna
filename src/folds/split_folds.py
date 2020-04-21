@@ -31,11 +31,11 @@ def create_folds(df: pd.DataFrame, X: pd.DataFrame, y: pd.DataFrame, nb_folds: i
         df.loc[test_index, "fold"] = fold
     # save dataframe with folds (optionally)
     if if_save:
-        df.to_csv(os.path.join(DATA_DIR, f"folds_stage{str(STAGE)}.csv", index=False))
+        df.to_csv(os.path.join(DATA_DIR, f"folds_stage{str(STAGE)}.csv"), index=False)
     return df
 
 
-def test_folds(df: pd.DataFrame, nb_folds: int):
+def test_folds(df: pd.DataFrame, nb_folds: int) -> None:
     """
     Test class distribution in folds
     Args: 
@@ -60,7 +60,7 @@ def remove_patients_without_boxes() -> pd.DataFrame:
     return df
 
 
-def main():
+def main() -> None:
     nb_folds = 4
     # load meta data
     training_samples = pd.read_csv(os.path.join(DATA_DIR, f"stage_{str(STAGE)}_detailed_class_info.csv"))

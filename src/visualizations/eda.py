@@ -6,17 +6,17 @@ EDA
 
 """
 import sys
+from typing import Dict, List, Optional, Set, Tuple, Any
 
-from typing import List, Set, Dict, Tuple, Optional
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
 import pydicom
-from src.config import DATA_DIR, STAGE, TRAIN_DIR
 
-sys.path.append("/home/user/rsna/progs/rsna-repo/src")
+from ..config import DATA_DIR, STAGE, TRAIN_DIR
 
+#sys.path.append("/home/user/rsna/progs/rsna-repo/src")
 
 
 def parse_data(df: pd.DataFrame) -> dict:
@@ -54,7 +54,7 @@ def parse_data(df: pd.DataFrame) -> dict:
     return parsed
 
 
-def plot_dicom(data: dict):
+def plot_dicom(data: dict) -> None:
     """
     Helper to plot single patient X-Ray with bounding box(es) if present 
     """
@@ -88,7 +88,7 @@ def dicom_to_img(data: dict) -> np.ndarray:
     return img
 
 
-def overlay_box(img: np.ndarray, box: list, color: int, stroke=1) -> np.ndarray:
+def overlay_box(img: np.ndarray, box: list, color: List[int], stroke: int=1) -> np.ndarray:
     """
     Helper to overlay single box on image
     """
@@ -124,7 +124,7 @@ def plot_patient(df: pd.DataFrame, num: int, patient_class: pd.DataFrame, fig_nu
     plt.show()
     
 
-def main():
+def main() -> None:
     class_info = pd.read_csv('../' + DATA_DIR + f"stage_{STAGE}_detailed_class_info.csv")
     df = pd.read_csv('../' + DATA_DIR + f"stage_{STAGE}_train_labels.csv")
     
