@@ -24,7 +24,7 @@ the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/
 The challenge was hosted on [kaggle platform](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
 
 ## Disclaimer
-This is still a work under porgress, so some minor issues and changes are possible. If you encoutered any problems, are am more that happy to accept pull requests with changes. please do not hesitate to submit issues and pull requests.
+This is still a work under porgress, so some minor issues and changes are possible. If you encoutered any problems, I am more that happy to accept pull requests with changes. Please do not hesitate to submit your issues and/or pull requests.
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
@@ -41,7 +41,7 @@ The classes were well-distributed
 Fog. 2 Classes distribution in the training dataset.
 
 ## Metrics
-The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here.](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
+The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
 The implemented mAP metric calculation is in src/metric.py
 
 ## Models
@@ -81,6 +81,6 @@ From predictions you can calculate mAP score for the range of NMS thresholds usi
 ```src/visualizations/plot_metrics.py```. 
 
 ## Inference on your data
-Once you have saved checkpoints for the trained models, you may call  ```src/train_runner.py``` with ```args.action == "generate_predictions"``` with the path to your models checkpoint and generate predictions for your test images. 
+Once you have saved checkpoints for the trained models, you may call  ```src/train_runner.py``` with ```args.action == "generate_predictions"``` with the path to your model checkpoint and generate predictions for your test images. 
 The test dataset class is in the ```src/datasets/test_dataset.py``` and the test directory is in ```configs.py```
 
