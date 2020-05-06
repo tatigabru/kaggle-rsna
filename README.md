@@ -10,7 +10,7 @@ If you are using the results and code of this work, please cite it as
 @InProceedings{rsna_2020,
   title = {Deep Learning for Automatic Pneumonia Detection},
   author = {Tatiana Gabruseva and Dmytro Poplavskiy and Alexandr Kalinin},
-  journal = {},
+  journal = {CVPR workshop},
   eprint = {arXiv:},
   url = {https://arxiv.org/abs/},
   month = {apr},
@@ -24,7 +24,7 @@ the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/
 The challenge was hosted on [kaggle platform](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
 
 ## Disclaimer
-This is still a work under porgress, so some minor issues and changes are possible. If you encoutered any problems, I am more that happy to accept pull requests with changes. Please do not hesitate to submit your issues and/or pull requests.
+This is still work in porgress, so some minor issues and changes are highly possible. If you encoutered any problems, I am more that happy to accept pull requests with changes. Please do not hesitate to submit your issues and/or pull requests.
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
