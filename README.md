@@ -3,25 +3,22 @@
 Pneumonia is the leading cause of death among young children and one of the top mortality causes worldwide. The pneumonia detection is usually performed through examine of chest X-Ray radiograph by highly trained specialists. This process is tedious and often leads to a disagreement between radiologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach for pneumonia regions detection based on single-shot detectors, squeeze-and-extinction deep convolution neural networks, augmentations and multi-task learning. The proposed approach was evaluated in the context of the Radiological Society of North America Pneumonia Detection Challenge, achieving one of the best results in the challenge.
 Our source code is freely available here.
 
-__For more details, please refer to the [paper](https://arxiv.org/abs/...).__
+__For more details, please refer to the [paper](https://arxiv.org/abs/2005.13899).__
 
 If you are using the results and code of this work, please cite it as
 ```
 @InProceedings{rsna_2020,
   title = {Deep Learning for Automatic Pneumonia Detection},
-  author = {Tatiana Gabruseva and Dmytro Poplavskiy and Alexandr Kalinin},
-  journal = {CVPR workshop},
-  eprint = {arXiv:},
-  url = {https://arxiv.org/abs/},
-  month = {apr},
+  author = {Tatiana Gabruseva and Dmytro Poplavskiy and Alexandr A. Kalinin},
+  journal = {2020 Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  eprint = {arXiv:2005.13899},
+  url = {https://arxiv.org/abs/2005.13899},
+  month = {may},
   year = {2020}
 }
 ```
 ## References
-This code is based on the original 2nd place solution of Dmytro Poplavskiy, available [here](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) and 
-the Pytorch RetinaNet implementation from [this repo](https://github.com/yhenon/pytorch-retinanet).
-[RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018)
-The challenge was hosted on [kaggle platform](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
+This code is based on the original [2nd place solution](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) by [Dmytro Poplavskiy](https://www.kaggle.com/dmytropoplavskiy) and the [Pytorch RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation. [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018) was hosted on [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge).
 
 ## Disclaimer
 This is still work in porgress, so some minor issues and changes are highly possible. If you encoutered any problems, I am more that happy to accept pull requests with changes. Please do not hesitate to submit your issues and/or pull requests.
