@@ -1,19 +1,17 @@
-# Deep Learning for Automatic Pneumonia Detection.
+# Deep Learning for Automatic Pneumonia Detection
 
 Pneumonia is the leading cause of death among young children and one of the top mortality causes worldwide. The pneumonia detection is usually performed through examine of chest X-Ray radiograph by highly trained specialists. This process is tedious and often leads to a disagreement between radiologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach for pneumonia regions detection based on single-shot detectors, squeeze-and-extinction deep convolution neural networks, augmentations and multi-task learning. The proposed approach was evaluated in the context of the Radiological Society of North America Pneumonia Detection Challenge, achieving one of the best results in the challenge.
 Our source code is freely available here.
 
-__For more details, please refer to the [paper](https://arxiv.org/abs/2005.13899).__
+__For more details, please refer to the [paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w22/Gabruseva_Deep_Learning_for_Automatic_Pneumonia_Detection_CVPRW_2020_paper.html).__
 
 If you are using the results and code of this work, please cite it as
 ```
-@InProceedings{rsna_2020,
+@InProceedings{Gabruseva_2020_CVPR_Workshops,
+  author = {Gabruseva, Tatiana and Poplavskiy, Dmytro and Kalinin, Alexandr A.},
   title = {Deep Learning for Automatic Pneumonia Detection},
-  author = {Tatiana Gabruseva and Dmytro Poplavskiy and Alexandr A. Kalinin},
-  journal = {2020 Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
-  eprint = {arXiv:2005.13899},
-  url = {https://arxiv.org/abs/2005.13899},
-  month = {may},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month = {June},
   year = {2020}
 }
 ```
