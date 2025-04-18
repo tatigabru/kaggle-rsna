@@ -18,8 +18,9 @@ If you are using the results and code of this work, please cite it as
 ## References
 This code is based on the original [2nd place solution](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) by [Dmytro Poplavskiy](https://www.kaggle.com/dmytropoplavskiy) and the [Pytorch RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation. [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018) was hosted on [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge).
 
-## Disclaimer
-This is still work in porgress, so some minor issues and changes are highly possible. If you encoutered any problems, I am more that happy to accept pull requests with changes. Please do not hesitate to submit your issues and/or pull requests.
+## Disclaimer - UPDATE
+This codebase is outdated. In 2025 transformers is all you need :)
+Please let me redirect you to this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
@@ -33,7 +34,7 @@ Fig. 1 Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opa
 The classes were well-distributed
 ![classes](pics/classes_distr.png)
 
-Fog. 2 Classes distribution in the training dataset.
+Fig. 2 Classes distribution in the training dataset.
 
 ## Metrics
 The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
