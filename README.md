@@ -18,6 +18,9 @@ If you are using the results and code of this work, please cite it as
 ## References
 This code is based on the original [2nd place solution](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) by [Dmytro Poplavskiy](https://www.kaggle.com/dmytropoplavskiy) and the [Pytorch RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation. [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018) was hosted on [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge).
 
+## Hall of Fame: further research papers that build on our work
+
+
 ## Disclaimer - UPDATE
 This codebase is outdated. In 2025 transformers is all you need :)
 Please let me redirect you to this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
