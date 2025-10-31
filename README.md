@@ -5,7 +5,7 @@ Our source code is freely available here.
 
 __For more details, please refer to the [paper](https://openaccess.thecvf.com/content_CVPRW_2020/html/w22/Gabruseva_Deep_Learning_for_Automatic_Pneumonia_Detection_CVPRW_2020_paper.html).__
 
-If you are using the results and code of this work, please cite it as
+If you are using the results or code of this work, please cite it as:
 ```
 @InProceedings{Gabruseva_2020_CVPR_Workshops,
   author = {Gabruseva, Tatiana and Poplavskiy, Dmytro and Kalinin, Alexandr A.},
@@ -18,37 +18,37 @@ If you are using the results and code of this work, please cite it as
 ## References
 This code is based on the original [2nd place solution](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) by [Dmytro Poplavskiy](https://www.kaggle.com/dmytropoplavskiy) and the [Pytorch RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation. [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018) was hosted on [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge).
 
-## Hall of Fame: further research papers that build on our work
-
+## Hall of Fame: further research that builds on our work
+The list o notable papers that implemented and relied on our work to further improve pneumonia detection:
+In 2025, transformers are all you need :). Let me redirect you to this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Disclaimer - UPDATE
-This codebase is outdated. In 2025 transformers is all you need :)
-Please let me redirect you to this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
+This codebase is outdated. In 2025, transformers are all you need :)
+For transformer-based solution, see this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Dataset
 The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
 
 The database comprises frontal-view X-ray images from 26684 unique patients. Each image is labeled with one of three different classes from the associated radiological reports: ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity”. 
-Fig. 1 shows examples of all three classes CXRs labeled with bounding boxes for unhealthy patients.
+Figure 1 shows examples of all three classes CXRs labeled with bounding boxes for unhealthy patients.
 
 ![eda](pics/eda.png)
-Fig. 1 Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity” chest X-Ray (CXR) images.
+Figure 1. Examples of ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity” chest X-Ray (CXR) images.
 
 The classes were well-distributed
 ![classes](pics/classes_distr.png)
 
-Fig. 2 Classes distribution in the training dataset.
+Figure 2. Classes distribution in the training dataset.
 
 ## Metrics
 The evaluation metric was provided in the challenge. The models were evaluated using the mean average precision (mAP) at different intersection-over-union (IoU) thresholds. [See evaluation here](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview/evaluation).
 The implemented mAP metric calculation is in src/metric.py
 
 ## Models
-The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch with few modifications. A number of different base models architectures has been tested. Fig.2 shown validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
+The model is based on [RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation on Pytorch with a few modifications. Several different base models' architectures have been tested. Fig.3 shows validation losses for a range of various backbones. The SE-type nets demonstrated optimal performance, with se-resnext101 showing the best results and se-resnext50 being slightly worse.
 ![eda](pics/runs3.png)
 
-Fig. 3 Validation loss history for a range of model encoders.
-
+Figure 3. Validation loss history for a range of model encoders.
 
 ## Images preprocessing and augmentations
 The original images were scaled to 512 x 512 px resolution. The 256 resolution yield degradation of the results, while the full original resolution (typically, over 2000 x 2000 px) was not practical with heavier base models.
@@ -57,7 +57,7 @@ Since the original challenge dataset is not very large the images augmentations 
 
 ## Training
 All base models used were pre-trained on ImageNet dataset. 
-For learning rate scheduler we used available in Pytorch ReduceLROnPlateau with a patience of 4 and learning rate decrease factor of 0.2. RetinaNet single-shot detectors with SE-ResNet101 encoders demonstrated the best results, followed by SE-ResNet50. The whole training took around 12 epochs, 50 min per epoch on P100 GPU.
+For learning rate scheduler, we used ReduceLROnPlateau with a patience of 4 and a learning rate decrease factor of 0.2. RetinaNet single-shot detectors with SE-ResNet101 encoders demonstrated the best results, followed by SE-ResNet50. The whole training took around 12 epochs, 50 min per epoch on P100 GPU.
 
 ## How to install and run
 
@@ -79,7 +79,7 @@ use ```args.action == "check_metric"``` to check the score, and ```args.action =
 From predictions you can calculate mAP score for the range of NMS thresholds using ```src/scores.py``` and visualise the saved scres for differnet runs and models by 
 ```src/visualizations/plot_metrics.py```. 
 
-## Inference on your data
+### Inference on your data
 Once you have saved checkpoints for the trained models, you may call  ```src/train_runner.py``` with ```args.action == "generate_predictions"``` with the path to your model checkpoint and generate predictions for your test images. 
 The test dataset class is in the ```src/datasets/test_dataset.py``` and the test directory is in ```configs.py```
 
