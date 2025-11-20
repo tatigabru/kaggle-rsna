@@ -19,15 +19,21 @@ If you are using the results or code of this work, please cite it as:
 This code is based on the original [2nd place solution](https://github.com/pdima/kaggle_RSNA_Pneumonia_Detection) by [Dmytro Poplavskiy](https://www.kaggle.com/dmytropoplavskiy) and the [Pytorch RetinaNet](https://github.com/yhenon/pytorch-retinanet) implementation. [RSNA Challenge](https://www.rsna.org/en/education/ai-resources-and-training/ai-image-challenge/RSNA-Pneumonia-Detection-Challenge-2018) was hosted on [Kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge).
 
 ## Hall of Fame: further research that builds on our work
-The list o notable papers that implemented and relied on our work to further improve pneumonia detection:
-In 2025, transformers are all you need :). Let me redirect you to this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
+The list of notable papers that implemented and relied on our work:
+
+1. Park, S., Kim, G., Kim, J., Kim, B., & Ye, J. C. (2021). Federated Split Vision Transformer for COVID-19 CXR Diagnosis using Task-Agnostic Training (arXiv:2111.01338). 35th Conference on Neural Information Processing Systems (NeurIPS 2021). https://doi.org/10.48550/arXiv.2111.01338 
+
+2. Kim, E., Lee, S., & Lee, K. M. (2023). Abnormality detection in chest X-ray via residual-saliency from normal generation. IEEE Access, 11, 21799–21810. 
+https://doi.org/10.1109/access.2023.3251350 
+
+3. Publication in progress. See this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Disclaimer - UPDATE
 This codebase is outdated. In 2025, transformers are all you need :)
 For transformer-based solution, see this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Dataset
-The labelled dataset of the chest X-Ray (CXR) images and patients meta data was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on kaggle platform.
+The labelled dataset of the chest X-Ray (CXR) images and patients' metadata was publicly provided for the challenge by the US National Institutes of Health Clinical Center. The [dataset](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) is available on Kaggle platform.
 
 The database comprises frontal-view X-ray images from 26684 unique patients. Each image is labeled with one of three different classes from the associated radiological reports: ”Normal”, ”No Lung Opacity / Not Normal”, ”Lung Opacity”. 
 Figure 1 shows examples of all three classes CXRs labeled with bounding boxes for unhealthy patients.
