@@ -1,5 +1,7 @@
 # Deep Learning for Automatic Pneumonia Detection
 
+*Repository author: Dr. Tatiana Habruseva*
+
 Pneumonia is the leading cause of death among young children and one of the top mortality causes worldwide. The pneumonia detection is usually performed through examine of chest X-Ray radiograph by highly trained specialists. This process is tedious and often leads to a disagreement between radiologists. Computer-aided diagnosis systems showed potential for improving the diagnostic accuracy. In this work, we develop the computational approach for pneumonia regions detection based on single-shot detectors, squeeze-and-extinction deep convolution neural networks, augmentations and multi-task learning. The proposed approach was evaluated in the context of the Radiological Society of North America Pneumonia Detection Challenge, achieving one of the best results in the challenge.
 Our source code is freely available here.
 
@@ -27,8 +29,6 @@ The list of notable papers that implemented and relied on our work:
 https://doi.org/10.1109/access.2023.3251350 
 
 3. Publication in progress. See this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
-
-## Disclaimer - UPDATE
 This codebase is outdated. In 2025, transformers are all you need :)
 For transformer-based solution, see this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
