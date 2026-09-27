@@ -28,8 +28,7 @@ The list of notable papers that implemented and relied on our work:
 2. Kim, E., Lee, S., & Lee, K. M. (2023). Abnormality detection in chest X-ray via residual-saliency from normal generation. IEEE Access, 11, 21799–21810. 
 https://doi.org/10.1109/access.2023.3251350 
 
-3. Publication in progress. See this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
-This codebase is outdated. In 2025, transformers are all you need :)
+3. See this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 For transformer-based solution, see this repo https://github.com/amirrezafateh/Multi-Scale-Transformer-Pneumonia
 
 ## Dataset
